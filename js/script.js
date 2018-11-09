@@ -146,6 +146,17 @@ $(window).on("load", function() {
   // $(".checkAll").click(function() {
   //   $(".listCheck").prop("checked", this.checked); //toggle check
   // });
+
+  //for Add File - button #add cannot place in <form> or not working
+  $(".file").before($(".file").clone().addClass('uk-hidden'));
+  $("#addFile").click(function() {
+    var counter = $(".fileBlock>div").length;
+    var newFile = $(".file:first").clone().removeClass('uk-hidden');
+    if (counter < 5) {
+      $(".file:last").after(newFile);
+    }
+  });
+
 });
 
 $(window).on("resize load", function() {
