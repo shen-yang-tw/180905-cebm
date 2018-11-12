@@ -20,11 +20,13 @@ function toggleCheck(cs) {
 
 //Toggle Input Type (Password Visibility) with onclick="togglePassword('>input')"
 function togglePassword(cs) { //cs means CSS selectors
-  var el = document.querySelector(cs);
-  if (el.type === "password") {
-    el.type = "text";
-  } else {
-    el.type = "password";
+  var i, el = document.querySelectorAll(cs);
+  for (i = 0; i < el.length; i++) {
+    if (el[i].type === "password") {
+      el[i].type = "text";
+    } else {
+      el[i].type = "password";
+    }
   }
 }
 
