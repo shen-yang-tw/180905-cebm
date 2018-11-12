@@ -95,6 +95,8 @@ input.color_white::-ms-input-placeholder, textarea.color_white::-ms-input-placeh
 
 .color_default, .color_default *, .hover_color_default:focus, .hover_color_default:hover {color: #444 !important;}
 .color_black, .color_black *, .hover_color_black:focus, .hover_color_black:hover {color: #000 !important;}
+.color_Opacity1, .color_Opacity1 *, .hover_color_Opacity1:focus, .hover_color_Opacity1:hover {color: rgba(0, 0, 0, 0.1) !important;}
+.color_Opacity3, .color_Opacity3 *, .hover_color_Opacity3:focus, .hover_color_Opacity3:hover {color: rgba(0, 0, 0, 0.3) !important;}
 .color_defaultGrey, .color_defaultGrey *, .hover_color_defaultGrey:focus, .hover_color_defaultGrey:hover {color: #999 !important}
 .color_grey, .color_grey *, .hover_color_grey:focus, .hover_color_grey:hover {color: #486d7b !important;}
 
@@ -324,7 +326,6 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .cursor_pointer {cursor: pointer;}
 
 /* Form */
-textarea {min-height: 100px;}
 textarea.noresize {resize: none;}
 
 /* Brand */
