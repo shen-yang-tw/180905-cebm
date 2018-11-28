@@ -36,7 +36,7 @@ a:not([class*=uk-slidenav]):not([class*=uk-button]):not([class*=btn_]), a:not([c
 a:not([accesskey]):not([class*=uk-button]):not([class*=btn_]):hover, a:not([accesskey]):not([class*=uk-button]):not([class*=btn_]):hover>span, a:not([class*=uk-button]):not([class*=btn_]):active {color: #000; text-decoration: underline;}
 a:hover {transition: all 500ms ease;}
 .notransition [class*=uk-nav] a, [class*=uk-tab] a, [class*=list] a {transition: none;}
-a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 2px solid rgba(30, 135, 240, 0.85) !important; -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important;}
+/* a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 2px solid rgba(30, 135, 240, 0.85) !important; -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important;} */
 /* *:focus {-webkit-box-shadow: 0 0 0 3px #1e87f0 !important; box-shadow: 0 0 0 3px #1e87f0 !important;} */
 
 /* Google Font */
@@ -85,7 +85,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 2px so
 .underline {text-decoration: underline;}
 .hover_remove_underline:hover, .remove_underline, .remove_underline:hover {text-decoration: none !important;}
 .linkline, .linkline>span, .hover_linkline:hover {text-decoration: underline !important;}
-.linkline:hover, .linkline:hover>span, [class*="btn"], [class*=list] a:not([class*=link]) {text-decoration: none !important;}
+.linkline:hover, .linkline:hover>span, [class*="btn"] {text-decoration: none !important;}
 
 /* Color */
 .color_white, .hover_color_white:focus, .hover_color_white:hover, a.color_white, .color_white>a, ul.color_white>li>a .bg_primary>a, .bg_secondary>a, .bg_primary>ul a, .bg_secondary>ul a {color: white !important;}
@@ -368,6 +368,7 @@ textarea.noresize {resize: none;}
 
 .btn {white-space: normal !important; word-wrap: break-word;}
 .text-dark, .text-dark a {color: #343a40!important;}
+.text-white, .text-white * {color: #ffffff!important;}
 
 .list-group-item>ul a, .list-group-item>ul span {background: white;}
 .list-group-item.uk-parent.uk-open>a, .list-group-item.active, .list-group-item .active>a, .list-group-item a:hover {background-color: #f5f5f5; border-color: rgba(0,0,0,.125);}
@@ -445,6 +446,8 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 
 .uk-list.list_collapse>li:nth-child(n+2), .uk-list.list_collapse>li>ul {margin-top: 0;}
 .uk-list.list_small>li:nth-child(n+2), .uk-list.list_small>li>ul {margin-top: 5px;}
+.uk-list-bullet>li {padding-left: 1.5em;}
+.uk-list-bullet.uk-light>li::before {background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2JyBoZWlnaHQ9JzYnIHZpZXdCb3g9JzAgMCA2IDYnPjxjaXJjbGUgZmlsbD0nI2ZmZicgY3g9JzMnIGN5PSczJyByPSczJy8+PC9zdmc+');}
 
 .uk-checkbox.form_white, .uk-radio.form_white {background-color: white;}
 .uk-checkbox.form_white:checked, .uk-checkbox.form_white:indeterminate, .uk-radio.form_white:checked {background-color: #1e87f0;}

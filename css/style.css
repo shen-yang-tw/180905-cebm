@@ -151,6 +151,8 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 .bg_heart {background-image: url(../img/bg_heart.png);  background-position-y: -150px; background-size: 750px;}
 .bg_heart_index {background-size: 570px;}
 .circleTab img {width: 80px;}
+body#top>div:nth-child(2) {background-size: auto 75%;}
+
 /* footer, footer a {color: white !important;} */
 
 /* Bootstrap 4 Style

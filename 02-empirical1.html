@@ -213,9 +213,40 @@
             <div class="p-3 position-relative">
               <form class="uk-form-stacked" uk-margin>
                 <div>
-                  <label class="uk-form-label" for="form_textarea">Text</label>
+                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_textarea">Text</label>
                   <div class="uk-form-controls">
                     <textarea class="uk-textarea" id="form_textarea" rows="4">77歲的林奶奶，有風濕性關節炎，胃潰瘍病 史，去年因急性冠心症接受心導管介入，放 置兩隻塗藥支架，術後開始使用抗血小板藥 品治療，心臟科醫師知道林奶奶有胃潰瘍病 史，因此建議使用PPI預防腸胃道出血。</textarea>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-grid-small uk-child-width-expand@m" uk-margin uk-grid>
+                    <div>
+                      <label class="fontSize1 font-weight-bold uk-form-label" for="form_s_div">科別</label>
+                      <select id="form_s_div" class="uk-select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="fontSize1 font-weight-bold uk-form-label" for="form_s_topic">主題類別</label>
+                      <select id="form_s_topic" class="uk-select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="fontSize1 font-weight-bold uk-form-label">決策類型</label>
+                      <div class="uk-form-controls">
+                        <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="r_type">診斷</label>
+                        <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="r_type">篩檢</label>
+                        <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="r_type" checked>治療</label>
+                        <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="r_type">其他</label>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="fontSize1 font-weight-bold uk-form-label" for="form_s_keywords">關鍵字</label>
+                      <input class="uk-input" id="form_s_keywords" type="text" placeholder="">
+                    </div>
                   </div>
                 </div>
                 <div class="uk-grid-small uk-child-width-expand" uk-grid>
@@ -240,26 +271,21 @@
                   <h3 class="m-0 fontSize1 align-self-sm-center"><span class="color_secondary mr-2">Patient, Population, Problem or disease</span><small class="d-inline">(who are the patients, what is the problem)</small></h3>
                   <div></div>
                 </div>
-                <div class="uk-grid-small uk-child-width-auto@s uk-grid">
-                  <label class="uk-form-label">Gender</label>
-                  <label><input class="form_white mr-1 uk-radio" type="radio" name="gender" checked>Male</label>
-                  <label><input class="form_white mr-1 uk-radio" type="radio" name="gender">Female</label>
-                  <label><input class="form_white mr-1 uk-radio" type="radio" name="gender">Both genders</label>
-                </div>
                 <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
                   <div>
-                    <label class="uk-form-label" for="form_s">Age</label>
-                    <select class="uk-select" id="form_s">
-                      <option>All ages (65 and over)</option>
-                      <option>Option</option>
-                    </select>
+                    <label class="fontSize1 font-weight-bold uk-form-label">Gender</label>
+                    <div class="uk-form-controls">
+                      <label class="mr-4"><input class="form_white mr-1 uk-radio" type="radio" name="gender" checked>Male</label>
+                      <label class="mr-4"><input class="form_white mr-1 uk-radio" type="radio" name="gender">Female</label>
+                      <label class="mr-4"><input class="form_white mr-1 uk-radio" type="radio" name="gender">Both genders</label>
+                    </div>
                   </div>
                   <div>
-                    <label class="uk-form-label" for="form_ethnicity">Ethnicity</label>
-                    <input class="uk-input" id="form_ethnicity" type="text" placeholder="">
+                    <label class="fontSize1 font-weight-bold uk-form-label" for="form_txt">Text</label>
+                    <input class="uk-input" id="form_txt" type="text" placeholder="">
                   </div>
                   <div>
-                    <label class="uk-form-label" for="form_disorder">Disorder</label>
+                    <label class="fontSize1 font-weight-bold uk-form-label" for="form_disorder">Disorder</label>
                     <input class="uk-input" id="form_disorder" type="text" placeholder="">
                   </div>
                 </div>
@@ -290,12 +316,8 @@
                         </span>
                       </div>
                       <h3 class="m-0 fontSize1 align-self-sm-center align-self-lg-start align-self-xl-center"><label class="color_secondary mr-2 align-self-sm-center align-self-lg-start align-self-xl-center uk-form-label" for="form_c">Comparison intervention or issue</label><small class="d-inline">(what do we compare the intervention with)</small></h3>
-                      <div></div>
                     </div>
-                    <div class="uk-grid-small uk-child-width-1-2@l" uk-grid>
-                      <div><input class="uk-input" id="form_c" type="text" placeholder=""></div>
-                      <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#">MeSH</a></div>
-                    </div>
+                    <div><input class="uk-input" id="form_c" type="text" placeholder=""></div>
                   </div>
                   <div>
                     <div class="uk-flex uk-margin">
@@ -327,15 +349,16 @@
         <div class="position-relative"><a class="remove_underline text-dark px-1 uk-position-absolute uk-visible@m" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z" style="left:-30px">:::</a></div>
         <footer class="uk-grid-small" uk-grid uk-margin>
           <!-- <div class="uk-width-1-4@m uk-width-1-5@l uk-width-1-6@xl"><img class="uk-width-1-2 uk-width-1-1@m" data-src="img/logo_white.svg" alt="logo" uk-img></div> -->
-          <div><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>106 台北市大安區基隆路三段155巷57號</div>
-          <div><i class="mr-1 fas fa-phone fa-fw"></i>+ 886 2 2322-0322</div>
-          <div><i class="mr-1 fas fa-envelope fa-fw"></i><a class="linkline" href="mailto:ntuccac@ntu.edu.tw">ntuccac@ntu.edu.tw</a></div>
+          <div><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>112台北市北投區石牌路二段322號3樓</div>
+          <div><i class="mr-1 fas fa-phone fa-fw"></i>（02）2875-7302</div>
+          <div><i class="mr-1 fas fa-fax fa-fw"></i>（02）2875-7305</div>
+          <div><i class="mr-1 fas fa-envelope fa-fw"></i><a class="linkline" href="mailto:d2-ebm@vghtpe.gov.tw">d2-ebm@vghtpe.gov.tw</a></div>
           <div uk-margin><span><i class="mr-1 fas fa-eye fa-fw"></i>當日瀏覽 <span class="bg-dark text-white px-2 mr-3">2,806</span></span><span><i class="mr-1 fas fa-users fa-fw"></i>在線人數 <span class="bg-dark text-white px-2 mr-3">49</span></span><span><i class="mr-1 fas fa-chart-bar fa-fw"></i>瀏覽總計 <span class="bg-dark text-white px-2 mr-3">6,215,595</span></span></div>
           <div><a class="linkline" href="#">隱私權保護及資訊安全政策</a></div>
           <div>建議使用 IE11 以上或 Edge、Firefox、Chrome 瀏覽器</div>
           <div>最佳瀏覽螢幕解析度 1920x1080</div>
           <div>最後更新日期<span class="ml-1">107-09-20</span></div>
-          <div>版權所有 © <span class="year"></span> 國立臺灣大學醫學院附設癌醫中心醫院</div>
+          <div>版權所有 © <span class="year"></span> 臺北榮民總醫院 教學部實證醫學中心</div>
         </footer>
       </div>
       <!-- End uk-container -->
