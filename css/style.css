@@ -9,14 +9,14 @@ body {background: linear-gradient(to bottom, #79e0f2 0%, #00bed0 100%);}
 /* Color */
 .color_primary, .color_primary *, .hover_color_primary:focus, .hover_color_primary:hover, ul.hover_color_primary>li>a:focus, ul.hover_color_primary>li>a:hover {color: #36863d !important;}
 a.color_primary:hover, a.color_primary:hover *, .color_primary a:hover {color: #2d6f32 !important;}
-.color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover {color: #1f73c9 !important;}
+.color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover,  .active .color_active_secondary {color: #1f73c9 !important;}
 a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {color: #1c65b1 !important;}
 
 /* Color & Background */
 .bg_hover_white_color_primary:focus, .bg_hover_white_color_primary:hover {color: #36863d !important; background-color: white;}
 .bg_hover_white_color_secondary:focus, .bg_hover_white_color_secondary:hover {color: #1c65b1 !important; background-color: white;}
 
-.bg_primary, .btn_primary, .btn_hover_primary.uk-active, .btn_hover_primary:hover, .bg_hover_primary:hover, .hover_primary li>a:hover, .hover_primary li.uk-active>a, ul.bg_hover_primary>li>a:focus, ul.bg_hover_primary>li>a:hover, ol.listDecimalRow.listBadge>li:before {color: white !important;background-color: #36863d !important;}
+.bg_primary, .btn_primary, .btn_hover_primary.uk-active, .btn_hover_primary:hover, .bg_hover_primary:hover, .hover_primary li>a:hover, .hover_primary li.uk-active>a, ul.bg_hover_primary>li>a:focus, ul.bg_hover_primary>li>a:hover, ol.listDecimalRow.listBadgePrimary>li:before {color: white !important;background-color: #36863d !important;}
 .bg_primary_dark {color: white !important;background-color: #2d6f32 !important;}
 
 .bg_secondary, .btn_secondary, .btn_hover_secondary.uk-active, .btn_hover_secondary:hover, .hover_bg_secondary:hover, .hover_secondary li>a:hover, .hover_secondary li.uk-active>a, ul.hover_bg_secondary>li>a:focus, ul.hover_bg_secondary>li>a:hover, ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {color: white !important;background-color: #1f73c9 !important;}
@@ -24,6 +24,7 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 /* Button & Background */
 .btn_primary:focus, .btn_primary:hover, .btn_primary.selected, .bg_primary_hover:hover, .active .bg_primary_hover, a:hover .bg_primary_hover {background-color: #2d6f32 !important;}
 .btn_secondary:focus, .btn_secondary:hover, .btn_hover_secondary_dark:hover, .active.active_secondary .bg_primary, .active.active_secondary .bg_primary_hover {background-color: #1c65b1 !important;}
+.btn_primary:hover>*, .btn_secondary:hover>* {color: white !important;}
 
 .bg_darkGrey_dotPattern {background: #626262 !important; background: linear-gradient(90deg, #626262 10px, transparent 1%) center, linear-gradient(#626262 10px, transparent 1%) center, #b3b3b3 !important; background-size: 11px 11px !important;}
 
@@ -148,10 +149,11 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
   background: #1f73c9;
 }
 
-.bg_heart {background-image: url(../img/bg_heart.png);  background-position-y: -150px; background-size: 750px;}
-.bg_heart_index {background-size: 570px;}
-.circleTab img {width: 80px;}
-body#top>div:nth-child(2) {background-size: auto 75%;}
+.bg_index {background-image: url(../img/bg_index.png); background-position-x: calc(50% + 20px); background-position-y: -150px;}
+.bg_heart {background-image: url(../img/bg_heart.png); background-position-y: -80px; background-size: auto 75%;}
+.bg_heart_index {background-position-y: -150px; background-size: 570px;}
+
+/* body#top>div:nth-child(2) {background-size: auto 75%;} */
 
 /* footer, footer a {color: white !important;} */
 
@@ -170,7 +172,6 @@ body#top>div:nth-child(2) {background-size: auto 75%;}
 
 /* End Uikit 3 Style
 ---------------------------------------------------- */
-
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Style */
 
@@ -198,6 +199,7 @@ body#top>div:nth-child(2) {background-size: auto 75%;}
 
 /*uk-@l, bs-xl*/
 @media (min-width: 1200px) {
+.circleTab img {width: 80px;}
 }
 
 /*uk-@xl*/

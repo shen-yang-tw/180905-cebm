@@ -12,6 +12,7 @@
   <title>楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <!-- <link rel="stylesheet" href="css/fontawesome-svg-with-js.min.css"> -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900'>
@@ -43,7 +44,7 @@
                     <img src="img/blank.gif" alt="">
                     <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
                     <div class="text-center uk-position-cover">
-                      <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-user-md"></i></div>
+                      <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-user-md"></i></div>
                       <div class="fontSize09 text-white">個人</div>
                     </div>
                   </a>
@@ -53,7 +54,7 @@
                     <img src="img/blank.gif" alt="">
                     <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
                     <div class="text-center uk-position-cover">
-                      <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-comments"></i></div>
+                      <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-comments"></i></div>
                       <div class="fontSize09 text-white">討論</div>
                     </div>
                   </a>
@@ -63,7 +64,7 @@
                     <img src="img/blank.gif" alt="">
                     <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
                     <div class="text-center uk-position-cover">
-                      <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-heart"></i></div>
+                      <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-heart"></i></div>
                       <div class="fontSize09 text-white">成果</div>
                     </div>
                   </a>
@@ -73,17 +74,17 @@
                     <img src="img/blank.gif" alt="">
                     <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
                     <div class="text-center uk-position-cover">
-                      <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-book-reader"></i></div>
+                      <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-book-reader"></i></div>
                       <div class="fontSize09 text-white">資源</div>
                     </div>
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="circleTab noResize uk-inline" href="#">
+                  <a class="active active_secondary circleTab noResize uk-inline" href="#">
                     <img src="img/blank.gif" alt="">
                     <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
                     <div class="text-center uk-position-cover">
-                      <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-first-aid"></i></div>
+                      <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-first-aid"></i></div>
                       <div class="fontSize09 text-white">諮詢</div>
                     </div>
                   </a>
@@ -93,7 +94,7 @@
                     <img src="img/blank.gif" alt="">
                     <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
                     <div class="text-center uk-position-cover">
-                      <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-question-circle"></i></div>
+                      <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-question-circle"></i></div>
                       <div class="fontSize09 text-white">Q/A</div>
                     </div>
                   </a>
@@ -109,78 +110,66 @@
                 <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"></button>
               </div> -->
           </div>
-          <div class="py-1 border-top uk-grid-small uk-flex-center uk-hidden@l" uk-margin uk-grid>
+          <div class="p-1 border-top uk-grid-small uk-flex-center uk-hidden@l" uk-margin uk-grid>
             <div>
-              <span class="p-1">
-                <a class="circleTab noResize uk-inline" href="#">
-                  <img src="img/blank.gif" alt="">
-                  <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
-                  <div class="text-center uk-position-cover">
-                    <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-user-md"></i></div>
-                    <div class="fontSize09 text-white">個人</div>
-                  </div>
-                </a>
-              </span>
+              <a class="circleTab noResize uk-inline" href="#">
+                <img src="img/blank.gif" alt="">
+                <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
+                <div class="text-center uk-position-cover">
+                  <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-user-md"></i></div>
+                  <div class="fontSize09 text-white uk-position-center">個人</div>
+                </div>
+              </a>
             </div>
             <div>
-              <span class="p-1">
-                <a class="circleTab noResize uk-inline" href="#">
-                  <img src="img/blank.gif" alt="">
-                  <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
-                  <div class="text-center uk-position-cover">
-                    <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-comments"></i></div>
-                    <div class="fontSize09 text-white">討論</div>
-                  </div>
-                </a>
-              </span>
+              <a class="circleTab noResize uk-inline" href="#">
+                <img src="img/blank.gif" alt="">
+                <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
+                <div class="text-center uk-position-cover">
+                  <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-comments"></i></div>
+                  <div class="fontSize09 text-white uk-position-center">討論</div>
+                </div>
+              </a>
             </div>
             <div>
-              <span class="p-1">
-                <a class="circleTab noResize uk-inline" href="#">
-                  <img src="img/blank.gif" alt="">
-                  <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
-                  <div class="text-center uk-position-cover">
-                    <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-heart"></i></div>
-                    <div class="fontSize09 text-white">成果</div>
-                  </div>
-                </a>
-              </span>
+              <a class="circleTab noResize uk-inline" href="#">
+                <img src="img/blank.gif" alt="">
+                <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
+                <div class="text-center uk-position-cover">
+                  <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-heart"></i></div>
+                  <div class="fontSize09 text-white uk-position-center">成果</div>
+                </div>
+              </a>
             </div>
             <div>
-              <span class="p-1">
-                <a class="circleTab noResize uk-inline" href="#">
-                  <img src="img/blank.gif" alt="">
-                  <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
-                  <div class="text-center uk-position-cover">
-                    <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-book-reader"></i></div>
-                    <div class="fontSize09 text-white">資源</div>
-                  </div>
-                </a>
-              </span>
+              <a class="circleTab noResize uk-inline" href="#">
+                <img src="img/blank.gif" alt="">
+                <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
+                <div class="text-center uk-position-cover">
+                  <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-book-reader"></i></div>
+                  <div class="fontSize09 text-white uk-position-center">資源</div>
+                </div>
+              </a>
             </div>
             <div>
-              <span class="p-1">
-                <a class="circleTab noResize uk-inline" href="#">
-                  <img src="img/blank.gif" alt="">
-                  <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
-                  <div class="text-center uk-position-cover">
-                    <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-first-aid"></i></div>
-                    <div class="fontSize09 text-white">諮詢</div>
-                  </div>
-                </a>
-              </span>
+              <a class="active active_secondary circleTab noResize uk-inline" href="#">
+                <img src="img/blank.gif" alt="">
+                <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
+                <div class="text-center uk-position-cover">
+                  <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-first-aid"></i></div>
+                  <div class="fontSize09 text-white uk-position-center">諮詢</div>
+                </div>
+              </a>
             </div>
             <div>
-              <span class="p-1">
-                <a class="circleTab noResize uk-inline" href="#">
-                  <img src="img/blank.gif" alt="">
-                  <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
-                  <div class="text-center uk-position-cover">
-                    <div class="fontSize1_4 pt-2 text-white"><i class="fas fa-question-circle"></i></div>
-                    <div class="fontSize09 text-white">Q/A</div>
-                  </div>
-                </a>
-              </span>
+              <a class="circleTab noResize uk-inline" href="#">
+                <img src="img/blank.gif" alt="">
+                <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
+                <div class="text-center uk-position-cover">
+                  <div class="fontSize1_4 pt-2 text-white uk-visible@l"><i class="fas fa-question-circle"></i></div>
+                  <div class="fontSize09 text-white uk-position-center">Q/A</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -198,58 +187,102 @@
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
       <div class="rounded_20 p-0 uk-card uk-card-small uk-card-default uk-card-body uk-margin">
-        <h2 class="bg_secondary rounded_t20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">Audit</h2>
+        <h2 class="bg_secondary rounded_t20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">諮詢</h2>
         <div class="min_height200 min_heightM500 p-3">
-          <div class="uk-form">
-            <div id="content">
-              <p class="btmline">No. 000123</p>
-              <div class="uk-grid-medium uk-child-width-1-2@m" uk-grid>
-                <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form1">結論</label>
-                  <div class="uk-form-controls"><textarea class="uk-textarea" id="form1" rows="4">案下議示是新是再洲朋入……只的香灣正出？就點告度邊提有男了同星狀地人山天斷會或食野讀紙利教在著預要進友構父園一治</textarea></div>
-                </div>
-                <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form2">對病患說明</label>
-                  <div class="uk-form-controls"><textarea class="uk-textarea" id="form2" rows="4">案下議示是新是再洲朋入……只的香灣正出？就點告度邊提有男了同星狀地人山天斷會或食野讀紙利教在著預要進友構父園一治</textarea></div>
+          <div class="uk-heading-line uk-text-center uk-margin">
+            <div>
+              <div class="uk-flex uk-flex-center uk-flex-middle">
+                <div class="thisRatio1_1 mr-2 rounded-circle uk-background-cover" style="background-image: url(img/man-user.svg);width: 30px;"></div>
+                <h2 class="fontSize1 m-0">Hi～<span>Name</span></h2>
+              </div>
+            </div>
+          </div>
+          <!-- uk-heading-line -->
+          <ul class="border2 border_secondary uk-tab">
+            <li class="uk-active"><a href="03-knowledge6.html">我要諮詢</a></li>
+            <li><a href="03-knowledge7.html">諮詢紀錄</a></li>
+          </ul>
+          <!-- .uk-tab -->
+          <div class="content uk-margin">
+            <div class="uk-form uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_i_account">帳號</label>
+                <div class="uk-form-controls">
+                  <input class="uk-input" id="form_i_account" type="text" placeholder="">
                 </div>
               </div>
-              <div class="uk-margin"><button class="w-100 btn_primary uk-button uk-button-default">Save</button></div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_i_name">姓名</label>
+                <div class="uk-form-controls">
+                  <input class="uk-input" id="form_i_name" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_i_org">機構名稱</label>
+                <div class="uk-form-controls">
+                  <input class="uk-input" id="form_i_org" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_s_unit">服務單位</label>
+                <div class="uk-form-controls">
+                  <select class="uk-select" id="form_s_unit">
+                    <option>Option1</option>
+                    <option>Option2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_i_tel">聯絡電話</label>
+                <div class="uk-form-controls">
+                  <input class="uk-input" id="form_i_tel" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_i_email">聯絡信箱</label>
+                <div class="uk-form-controls">
+                  <input class="uk-input" id="form_i_email" type="text" placeholder="">
+                </div>
+              </div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_s_topic">諮詢主題</label>
+                <div class="uk-form-controls">
+                  <select class="uk-select" id="form_s_topic">
+                    <option>Option1</option>
+                    <option>Option2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_t_que">諮詢內容</label>
+                <div class="uk-form-controls">
+                  <textarea class="uk-textarea" id="form_t_que" rows="3" style="height: 40px;"></textarea>
+                </div>
+              </div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_s_meeting">預約專人</label>
+                <div class="uk-form-controls">
+                  <select class="uk-select" id="form_s_meeting">
+                    <option>Option1</option>
+                    <option>Option2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="min_width1_2!@s">
+                <label class="uk-form-label" for="form_i_date">預約日期</label>
+                <div class="uk-form-controls">
+                  <input class="uk-input" id="form_i_date" type="text" placeholder="">
+                </div>
+              </div>
+              <div><a class="btn_primary mt-3 w-100 uk-button uk-button-primary" href="#">Save</a></div>
             </div>
-            <!-- End #content -->
+            <!-- .uk-form -->
           </div>
+          <!-- .content -->
         </div>
+        <!-- .min_height200 -->
       </div>
-      <div class="rounded_20 p-0 uk-card uk-card-small uk-card-default uk-card-body uk-margin">
-        <h2 class="bg_secondary rounded_t20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">Case Studies</h2>
-        <div class="min_height200 min_heightM500 p-3">
-          <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@xl" uk-grid>
-            <div>
-              <a class="py-3 w-100 btn btn-light" href="#">
-                <i class="fas fa-eye fa-3x"></i>
-                <p class="mt-2">Preview<br>預覽紀錄單</p>
-              </a>
-            </div>
-            <div>
-              <a class="py-3 w-100 btn btn-light" href="#">
-                <i class="fas fa-eye fa-file-download fa-3x"></i>
-                <p class="mt-2">Download<br>下載紀錄單</p>
-              </a>
-            </div>
-            <div>
-              <a class="py-3 w-100 btn btn-light" href="#">
-                <i class="fas fa-envelope fa-3x"></i>
-                <p class="mt-2">E-mail<br>寄送紀錄單</p>
-              </a>
-            </div>
-            <div>
-              <a class="py-3 w-100 btn btn-light" href="#">
-                <i class="fas fa-share-alt fa-3x"></i>
-                <p class="mt-2">Public<br>公開紀錄單</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- .uk-card -->
     </div>
     <!-- .uk-container -->
   </section>
@@ -279,6 +312,8 @@
   <script src="js/bootstrap.bundle.min.js "></script>
   <script src="js/uikit.min.js "></script>
   <script src="js/uikit-icons.min.js "></script>
+  <script src="js/bootstrap-datepicker.min.js "></script>
+  <script src="js/bootstrap-datepicker.zh-TW.min.js "></script>
   <!-- <script src="js/fontawesome-all.min.js "></script> -->
   <script src="js/script.js "></script>
 </body>

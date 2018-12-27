@@ -69,7 +69,7 @@
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="circleTab noResize uk-inline" href="#">
+                  <a class="active active_secondary circleTab noResize uk-inline" href="#">
                     <img src="img/blank.gif" alt="">
                     <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
                     <div class="text-center uk-position-cover">
@@ -148,7 +148,7 @@
             </div>
             <div>
               <span class="p-1">
-                <a class="circleTab noResize uk-inline" href="#">
+                <a class="active active_secondary circleTab noResize uk-inline" href="#">
                   <img src="img/blank.gif" alt="">
                   <div class="bg_primary bg_primary_hover rounded-circle uk-position-cover"></div>
                   <div class="text-center uk-position-cover">
@@ -198,58 +198,92 @@
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
       <div class="rounded_20 p-0 uk-card uk-card-small uk-card-default uk-card-body uk-margin">
-        <h2 class="bg_secondary rounded_t20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">Audit</h2>
+        <h2 class="bg_secondary rounded_t20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">資源</h2>
         <div class="min_height200 min_heightM500 p-3">
-          <div class="uk-form">
-            <div id="content">
-              <p class="btmline">No. 000123</p>
-              <div class="uk-grid-medium uk-child-width-1-2@m" uk-grid>
-                <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form1">結論</label>
-                  <div class="uk-form-controls"><textarea class="uk-textarea" id="form1" rows="4">案下議示是新是再洲朋入……只的香灣正出？就點告度邊提有男了同星狀地人山天斷會或食野讀紙利教在著預要進友構父園一治</textarea></div>
-                </div>
-                <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form2">對病患說明</label>
-                  <div class="uk-form-controls"><textarea class="uk-textarea" id="form2" rows="4">案下議示是新是再洲朋入……只的香灣正出？就點告度邊提有男了同星狀地人山天斷會或食野讀紙利教在著預要進友構父園一治</textarea></div>
-                </div>
+          <div class="uk-heading-line uk-text-center uk-margin">
+            <div>
+              <div class="uk-flex uk-flex-center uk-flex-middle">
+                <div class="thisRatio1_1 mr-2 rounded-circle uk-background-cover" style="background-image: url(img/man-user.svg);width: 30px;"></div>
+                <h2 class="fontSize1 m-0">Hi～<span>Name</span></h2>
               </div>
-              <div class="uk-margin"><button class="w-100 btn_primary uk-button uk-button-default">Save</button></div>
-            </div>
-            <!-- End #content -->
-          </div>
-        </div>
-      </div>
-      <div class="rounded_20 p-0 uk-card uk-card-small uk-card-default uk-card-body uk-margin">
-        <h2 class="bg_secondary rounded_t20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">Case Studies</h2>
-        <div class="min_height200 min_heightM500 p-3">
-          <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@xl" uk-grid>
-            <div>
-              <a class="py-3 w-100 btn btn-light" href="#">
-                <i class="fas fa-eye fa-3x"></i>
-                <p class="mt-2">Preview<br>預覽紀錄單</p>
-              </a>
-            </div>
-            <div>
-              <a class="py-3 w-100 btn btn-light" href="#">
-                <i class="fas fa-eye fa-file-download fa-3x"></i>
-                <p class="mt-2">Download<br>下載紀錄單</p>
-              </a>
-            </div>
-            <div>
-              <a class="py-3 w-100 btn btn-light" href="#">
-                <i class="fas fa-envelope fa-3x"></i>
-                <p class="mt-2">E-mail<br>寄送紀錄單</p>
-              </a>
-            </div>
-            <div>
-              <a class="py-3 w-100 btn btn-light" href="#">
-                <i class="fas fa-share-alt fa-3x"></i>
-                <p class="mt-2">Public<br>公開紀錄單</p>
-              </a>
             </div>
           </div>
+          <!-- uk-heading-line -->
+          <ul class="border2 border_secondary uk-tab">
+            <li class="uk-active"><a href="03-knowledge4.html">推薦資源</a></li>
+            <li><a href="03-knowledge5.html">自建資源</a></li>
+          </ul>
+          <!-- .uk-tab -->
+          <div class="searchBar form_space_m uk-form uk-form-horizontal">
+            <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
+              <div>
+                <input class="uk-width-expand uk-input" id="form_i_keywords" type="text" placeholder="請輸入關鍵字詞" value="">
+              </div>
+              <div class="uk-width-1-6@m">
+                <select class="w-100 uk-select">
+                  <option>- 資源類別 -</option>
+                  <option>網站資源</option>
+                  <option>臨床指引</option>
+                </select>
+              </div>
+              <div class="uk-width-1-6@m"><a class="btn_primary w-100 uk-button uk-button-primary" href="#">搜　　尋</a></div>
+            </div>
+          </div>
+          <!-- .searchBar -->
+          <div class="content uk-margin">
+            <p class="btmline m-0">資源列表 / 搜尋結果：<strong class="color_secondary mr-3">77歲</strong></p>
+            <div class="uk-form uk-margin">
+              <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
+                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
+                <li class="uk-flex uk-flex-middle">
+                  <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                  <span class="uk-text-nowrap">/ <span class="sum">20</span></span>
+                </li>
+                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+              </ul>
+              <!-- uk-pagination / select -->
+              <ol class="listDecimalRow listBadge listBadgeWidthM listBadgeDivder uk-list uk-list-striped">
+                <li>
+                  <div class="uk-grid-small uk-grid-divider uk-child-width-expand@m" uk-grid>
+                    <div class="min_width2_3!@m">
+                      <h3 class="fontSizeH5"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">網站資源</span>象常以直再程而農明。<strong class="color_secondary mr-3">77歲</strong>數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</h3>
+                    </div>
+                    <div class="min_width1_3!@m"><a class="linkline d-inline uk-text-break" href="#">https://www.tebma.org.tw/</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-grid-small uk-grid-divider uk-child-width-expand@m" uk-grid>
+                    <div class="min_width2_3!@m">
+                      <h3 class="fontSizeH5"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">臨床指引</span>象常以直再程而農明。制實數人用路起百教<strong class="color_secondary mr-3">77歲</strong>味我各一院：和不民生投車氣、展機賣車外到。</h3>
+                    </div>
+                    <div class="min_width1_3!@m"><small>家急庭對關心有，年就身，你語問施簡所本寫眾別比的化顧約本治現生為型眾這對之近史懷</small></div>
+                  </div>
+                </li>
+              </ol>
+              <!-- .listDecimalRow listBadge listBadgeWidthM listBadgeDivder / uk-list-striped -->
+              <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
+                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
+                <li class="uk-flex uk-flex-middle">
+                  <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                  <span class="uk-text-nowrap">/ <span class="sum">20</span></span>
+                </li>
+                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+              </ul>
+              <!-- uk-pagination / select -->
+            </div>
+            <!-- .uk-form -->
+          </div>
+          <!-- .content -->
         </div>
+        <!-- .min_height200 -->
       </div>
+      <!-- .uk-card -->
     </div>
     <!-- .uk-container -->
   </section>
