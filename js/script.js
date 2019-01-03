@@ -182,21 +182,4 @@ $(window).on("resize load", function() {
   var h_middle = $(".heightJS").height() - $(".heightJS>div:nth-child(2)").height() - $(".heightJS>div:nth-child(4)").height();
   $(".heightJS").css("padding-bottom", $(".heightJS>div:nth-child(4)").height());
   $(".heightJS>div:nth-child(3)").css("height", h_middle);
-
-  //keep aspect ratio of image's height to width
-  $(".ratio3_4 li img, .thisRatio3_4").each(function() {
-    $(this).css({height: ($(this).width() * 4) / 3 }); //3/4 portrait
-  });
-  $(".ratio9_16 li img, .thisRatio9_16").each(function() {
-    $(this).css({height: ($(this).width() * 16) / 9}); //9/16 portrait
-  });
-  $(".ratio4_3 li img, .thisRatio4_3").each(function() {
-    $(this).css({height: ($(this).width() * 3) / 4}); //4/3 landscape
-  });
-  $(".ratio16_9 li img, .thisRatio16_9").each(function() {
-    $(this).css({height: ($(this).width() * 9) / 16}); //16/9 landscape
-  });
-  $(".ratio1_1 li img, .thisRatio1_1").each(function() {
-    $(this).css({height: $(this).width()});
-  });
 });

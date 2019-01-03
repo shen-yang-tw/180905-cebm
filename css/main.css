@@ -334,7 +334,7 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .truncate_striped>li:nth-of-type(odd) .truncate:after {width: 60%; background: linear-gradient(to right, rgba(250, 250, 250, 0), #fafafa 80%);}
 .remove_truncate {white-space: inherit;}
 
-.aspect {position: relative; display: block; width: 100%; padding: 0; overflow: hidden;}
+.aspect:not([class*="uk-width"]) {position: relative; display: block; width: 100%; padding: 0; overflow: hidden;}
 .aspect:before {display: block; content: ""; padding-top: calc(100% * 1/1);}
 /*** padding-top: calc(100% *height/width) ***/
 .aspect.ratio_3_4:before { padding-top: calc(100% * 4/3);}
