@@ -20,33 +20,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="top" class="uk-background-cover uk-background-top-center uk-position-relative" uk-height-viewport>
+<body id="top" class="index uk-background-cover uk-background-top-center uk-position-relative" uk-height-viewport>
   <div class="uk-position-cover uk-background-fixed uk-background-cover" style="background-image: url(img/bg_cloud.jpg);"></div>
-  <div class="bg_index opacity80 uk-position-cover uk-background-fixed uk-background-cover uk-background-top-center"></div>
+  <div class="bg_index opacity80 uk-position-cover uk-background-fixed uk-background-cover uk-background-top-center uk-visible@m"></div>
   <div class="bg_heart bg_heart_index uk-position-cover uk-background-fixed uk-background-contain uk-background-top-center"></div>
   <a class="bg_blackOpacity5 bg_hover_blackOpacity7 p-2 text-white rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" aria-label="Go to Top" uk-totop uk-scroll></a>
-  <header class="pt-3 uk-position-relative">
+  <header class="pt-lg-3 uk-position-relative">
     <div class="uk-position-cover uk-visible@m" style="background: linear-gradient(to bottom, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, 0) 100%);"></div>
-    <div class="px-2 px-lg-0" uk-sticky="media: (max-width: 959px); animation: uk-animation-slide-top; top: 200">
+    <div class="pt-2 pt-lg-0 uk-container">
       <div class="shadow-sm bg_white opacity90 uk-position-cover uk-hidden@m"></div>
-      <nav class="uk-navbar-container uk-navbar-transparent">
-        <div class="px-2 px-md-4 uk-container" uk-navbar>
-          <div class="uk-navbar-left uk-hidden@m">
-            <h1 class="pl-2 py-2 mr-4 uk-flex uk-flex-middle"><a class="px-0 uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="px-2 px-md-4 uk-container uk-hidden@m">
+          <div class="uk-navbar-center">
+            <h1 class="py-2"><a href="index.html" class="uk-logo" title="Logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
           </div>
-          <div class="uk-navbar-center uk-visible@m">
-            <h1 class="py-2 mr-4"><a class="px-0 uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
-          </div>
-          <div class="uk-navbar-right uk-position-relative">
-            <a class="remove_underline text-dark px-1 uk-position-center uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:-20px; margin-top:-2px;">:::</a>
-            <div class="h-100 uk-flex uk-flex-middle" uk-margin>
-              <span class="bgBlack"><a class="px-2 text-dark" href="#">English</a></span>
-              <div class="uk-visible@m">
-                <span class="btnFontSize btnFontSizeS bgBlack text-dark"><button class="uk-button" title="縮小字級">A-</button></span>
-                <span class="btnFontSize btnFontSizeM bgBlack text-dark active"><button class="uk-button" title="適中字級">A</button></span>
-                <span class="btnFontSize btnFontSizeL bgBlack text-dark"><button class="uk-button" title="加大字級">A+</button></span>
-              </div>
-            </div>
+        </div>
+        <div class="uk-navbar-center uk-visible@m">
+          <h1 class="py-2"><a class="px-0 uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+        </div>
+        <div class="uk-navbar-right uk-position-relative uk-visible@m">
+          <a class="remove_underline text-dark px-1 uk-position-center" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:-20px; margin-top:-2px;">:::</a>
+          <div class="h-100 uk-flex uk-flex-middle" uk-margin>
+            <!-- <span class="bgBlack"><a class="px-2 text-dark" href="#">English</a></span> -->
+            <span class="btnFontSize btnFontSizeS bgBlack text-dark"><button class="uk-button" title="縮小字級">A-</button></span>
+            <span class="btnFontSize btnFontSizeM bgBlack text-dark active"><button class="uk-button" title="適中字級">A</button></span>
+            <span class="btnFontSize btnFontSizeL bgBlack text-dark"><button class="uk-button" title="加大字級">A+</button></span>
           </div>
         </div>
       </nav>
@@ -54,9 +52,9 @@
   </header>
   <!-- header -->
   <div class="uk-visible@m" style="height: 200px;"></div>
-  <section class="p-3 p-sm-4 p-lg-5 mb-md-5 position-relative" uk-height-viewport="expand: true">
+  <section class="p-sm-4 p-lg-5 mb-md-5 position-relative" uk-height-viewport="expand: true">
     <div class="p-0 position-relative uk-container uk-container-large">
-      <div class="rounded_20_m rounded opacity70 bg_white uk-position-cover"></div>
+      <div class="rounded20@m rounded5 opacity70 bg_white uk-position-cover"></div>
       <div class="p-4 position-relative">
         <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-20px">:::</a></div>
         <form class="mb-3 uk-width-2-3@l uk-margin-auto">
@@ -73,23 +71,23 @@
         </form>
         <div class="uk-grid-small uk-child-width-1-3@m uk-text-center" uk-grid>
           <div>
-            <div class="bg_secondary rounded_20_m rounded">
+            <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
-                <a class="btn_secondary h1vw rounded_t20_m rounded p-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
+                <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
                   <div class="position-relative"><i class="toggle mr-1 text-white fas fa-hospital" hidden></i>實證醫學中心<span class="toggle text-white uk-position-center-right" uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
               </h2>
-              <div class="bg_secondary rounded_b20_m py-3">
+              <div class="bg_secondary roundedB5@s roundedB20@m py-3">
                 <div class="toggle text-white rounded-circle fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x"></i><i class="color_secondary fas fa-hospital fa-stack-1x fa-inverse"></i></div>
-                <div class="toggle px-3 text-white text-justify" hidden>
-                  <ul class="mb-2 uk-list uk-list-bullet uk-light">
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進一治</a></li>
+                <div class="toggle px-3 text-white text-justify position-relative" hidden>
+                  <ul class="mb-2 uk-list uk-list-bullet uk-light uk-overflow-hidden">
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進一治</a></li>
                   </ul>
                   <a class="text-white d-block text-right" href="#">more<span uk-icon="chevron-right"></span></a>
                 </div>
@@ -97,23 +95,23 @@
             </div>
           </div>
           <div>
-            <div class="bg_secondary rounded_20_m rounded">
+            <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
-                <a class="btn_secondary h1vw rounded_t20_m rounded p-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle1">
+                <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle1">
                   <div class="position-relative"><i class="toggle1 mr-1 text-white fas fa-list-alt" hidden></i>訊息公告<span class="toggle1 text-white uk-position-center-right" uk-icon="icon: plus"></span><span class="toggle1 text-white uk-position-center-right" hidden uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
               </h2>
-              <div class="bg_secondary rounded_b20_m py-3">
+              <div class="bg_secondary roundedB5@s roundedB20@m py-3">
                 <div class="toggle1 text-white rounded-circle fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x"></i><i class="color_secondary fas fa-list-alt fa-stack-1x fa-inverse"></i></div>
-                <div class="toggle1 px-3 text-white text-justify" hidden>
-                  <ul class="mb-2 uk-list uk-list-bullet uk-light">
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進一治</a></li>
+                <div class="toggle1 px-3 text-white text-justify position-relative" hidden>
+                  <ul class="mb-2 uk-list uk-list-bullet uk-light uk-overflow-hidden">
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進一治</a></li>
                   </ul>
                   <a class="text-white d-block text-right" href="#">more<span uk-icon="chevron-right"></span></a>
                 </div>
@@ -121,23 +119,23 @@
             </div>
           </div>
           <div>
-            <div class="bg_secondary rounded_20_m rounded">
+            <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
-                <a class="btn_secondary h1vw rounded_t20_m rounded p-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle2">
+                <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle2">
                   <div class="position-relative"><i class="toggle2 mr-1 text-white fas fa-dna" hidden></i>實證資源<span class="toggle2 text-white uk-position-center-right" uk-icon="icon: plus"></span><span class="toggle2 text-white uk-position-center-right" hidden uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
               </h2>
-              <div class="bg_secondary rounded_b20_m py-3">
+              <div class="bg_secondary roundedB5@s roundedB20@m py-3">
                 <div class="toggle2 text-white rounded-circle fa-stack fa-4x"><i class="fas fa-circle fa-stack-2x"></i><i class="color_secondary fas fa-dna fa-stack-1x fa-inverse"></i></div>
-                <div class="toggle2 px-3 text-white text-justify" hidden>
-                  <ul class="mb-2 uk-list uk-list-bullet uk-light">
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙進友構父園一治</a></li>
-                    <li><a class="text-white" href="#">斷會或食野讀紙利教在著預要進一治</a></li>
+                <div class="toggle2 px-3 text-white text-justify position-relative" hidden>
+                  <ul class="mb-2 uk-list uk-list-bullet uk-light uk-overflow-hidden">
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙進友構父園一治</a></li>
+                    <li><a class="text-white uk-text-truncate" href="#">斷會或食野讀紙利教在著預要進一治</a></li>
                   </ul>
                   <a class="text-white d-block text-right" href="#">more<span uk-icon="chevron-right"></span></a>
                 </div>

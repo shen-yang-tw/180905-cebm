@@ -168,13 +168,6 @@ $(window).on("load", function() {
     }
   });
 
-  //datepicker
-  $('#form_i_date').datepicker({
-    language: "zh-TW",
-    autoclose: true,
-    todayHighlight: true
-  });
-
 });
 
 $(window).on("resize load", function() {
@@ -183,3 +176,14 @@ $(window).on("resize load", function() {
   $(".heightJS").css("padding-bottom", $(".heightJS>div:nth-child(4)").height());
   $(".heightJS>div:nth-child(3)").css("height", h_middle);
 });
+
+//(02-empirical2) add class .fav 
+function toggleFav(thisBtn, cls) {
+  el = $(thisBtn).parent().parent();
+  $(el).toggleClass(cls);
+  // location.reload();
+}
+//(02-empirical6) search PICO 
+function clickShow(el, cls) {
+  $(el).removeClass(cls);
+}

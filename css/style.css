@@ -23,7 +23,7 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 
 /* Button & Background */
 .btn_primary:focus, .btn_primary:hover, .btn_primary.selected, .bg_primary_hover:hover, .active .bg_primary_hover, a:hover .bg_primary_hover {background-color: #2d6f32 !important;}
-.btn_secondary:focus, .btn_secondary:hover, .btn_hover_secondary_dark:hover, .active.active_secondary .bg_primary, .active.active_secondary .bg_primary_hover {background-color: #1c65b1 !important;}
+.btn_secondary:focus, .btn_secondary:hover, .btn_hover_secondary_dark:hover, .active.active_secondary.btn_primary, .active.active_secondary .bg_primary, .active.active_secondary .bg_primary_hover {background-color: #1c65b1 !important;}
 .btn_primary:hover>*, .btn_secondary:hover>* {color: white !important;}
 
 .bg_darkGrey_dotPattern {background: #626262 !important; background: linear-gradient(90deg, #626262 10px, transparent 1%) center, linear-gradient(#626262 10px, transparent 1%) center, #b3b3b3 !important; background-size: 11px 11px !important;}
@@ -153,7 +153,18 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 .bg_heart {background-image: url(../img/bg_heart.png); background-position-y: -80px; background-size: auto 75%;}
 .bg_heart_index {background-position-y: -150px; background-size: 570px;}
 
-/* body#top>div:nth-child(2) {background-size: auto 75%;} */
+/* .circleTab {background-image: url("data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjaXJjbGUiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWNpcmNsZSBmYS13LTE2IGZhLTN4Ij48cGF0aCBmaWxsPSIjMzY4NjNkIiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiPjwvcGF0aD48L3N2Zz4=");} */
+.circleTab>img {width: 45px;}
+.circleTab {border-radius: 50%!important;}
+.eng .circleTab {border-radius: .25rem!important;}
+.uk-hidden\@l>div {height: 45px;}
+.uk-hidden\@l .circleTab {width: 45px; height: 45px;}
+
+.max_h:after {background: linear-gradient(to top, rgb(31, 115, 201) 50%, rgba(255, 255, 255, 0) 100%); height: 30px;}
+.index .uk-overflow-hidden {max-height: 200px;}
+.afterArrow:not(:last-child):after {padding-right: 0;}
+
+/* .index header .uk-navbar {min-height: 40px;} */
 
 /* footer, footer a {color: white !important;} */
 
@@ -182,6 +193,8 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 
 /*uk-@s*/
 @media (min-width:640px) {
+.uk-hidden\@l>div {height: 54px;}
+.uk-hidden\@l .circleTab {width: 54px; height: 54px;}
 }
 
 /*bs-md*/
@@ -191,6 +204,7 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 /*uk-@m*/
 @media (min-width:960px) {
 .uk-navbar-center {margin-top: 50px;}
+.index .uk-overflow-hidden {max-height: 160px;}
 }
 
 /*bs-lg*/
@@ -200,10 +214,12 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 /*uk-@l, bs-xl*/
 @media (min-width: 1200px) {
 .circleTab img {width: 80px;}
+.index .uk-overflow-hidden {max-height: 160px;}
 }
 
 /*uk-@xl*/
 @media (min-width:1600px) {
+/* .index .uk-overflow-hidden {max-height: 140px;} */
 }
 
 /* Portrait */

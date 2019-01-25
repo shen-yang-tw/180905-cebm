@@ -31,6 +31,7 @@ q {font-style: normal; padding: 0 5px;}
 /*---------- Link ------------------------------*/
 a, a:visited, a:focus {color: #6f6f6f;}
 a:hover, a:hover>span, a:hover>strong, a:hover>small, a:hover>*>span, a:hover>*>strong {color: #000; text-decoration: underline;}
+/* a:hover, a:hover>span, a:hover>strong, a:hover>small, a:hover>*>span, a:hover>*>strong {text-decoration: underline;} */
 a:hover, a:hover>* {transition: all 500ms ease;}
 .notransition, [class*=btn]:hover *, [class*=uk-card]:hover, [class*=uk-button]:hover *, [class*=uk-slidenav]:hover *, [class*=uk-nav]:hover a, [class*=uk-tab]:hover a, [class*=list]:hover a {transition: none;}
 a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px solid rgba(30, 135, 240, 0.85) !important; -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; outline-color: rgba(30, 135, 240, 0.85);}
@@ -46,7 +47,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px so
 /*---------- Font Size ------------------------------*/
 .fontSize07 {font-size: 0.7rem !important;}
 .fontSize08 {font-size: 0.8rem !important;}
-.fontSize09 [class*=fontSize_small] {font-size: 0.9rem !important;}
+.fontSize09 {font-size: 0.9rem !important;}
 .fontSize1 {font-size: 1rem !important;}
 .fontSize1_2 {font-size: 1.2rem !important;}
 .fontSize1_4 {font-size: 1.4rem !important;}
@@ -57,7 +58,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px so
 
 /*---------- Font Weight ------------------------------*/
 .font_weight_900 {font-weight: 900 !important;}
-.hover_bold {font-weight: bolder;}
+.hover_bold:hover {font-weight: bolder;}
 
 /*---------- Line Height ------------------------------*/
 .lineHeight_normal {line-height: normal !important;}
@@ -73,6 +74,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px so
 .vertical_align20 {vertical-align: 20%;}
 
 /*---------- Text Shadow ------------------------------*/
+.hover_textShadow:hover {text-shadow: 0 0 #000000 !important;}
 .text_stroke10 {
     text-shadow: rgb(255, 255, 255) 10px 0px 0px, rgb(255, 255, 255) 9.95004px 0.998334px 0px, rgb(255, 255, 255) 9.80067px 1.98669px 0px, rgb(255, 255, 255) 9.55336px 2.9552px 0px, rgb(255, 255, 255) 9.21061px 3.89418px 0px, rgb(255, 255, 255) 8.77583px 4.79426px 0px, rgb(255, 255, 255) 8.25336px 5.64642px 0px, rgb(255, 255, 255) 7.64842px 6.44218px 0px, rgb(255, 255, 255) 6.96707px 7.17356px 0px, rgb(255, 255, 255) 6.2161px 7.83327px 0px, rgb(255, 255, 255) 5.40302px 8.41471px 0px, rgb(255, 255, 255) 4.53596px 8.91207px 0px, rgb(255, 255, 255) 3.62358px 9.32039px 0px, rgb(255, 255, 255) 2.67499px 9.63558px 0px, rgb(255, 255, 255) 1.69967px 9.8545px 0px, rgb(255, 255, 255) 0.707372px 9.97495px 0px, rgb(255, 255, 255) -0.291995px 9.99574px 0px, rgb(255, 255, 255) -1.28844px 9.91665px 0px, rgb(255, 255, 255) -2.27202px 9.73848px 0px, rgb(255, 255, 255) -3.2329px 9.463px 0px, rgb(255, 255, 255) -4.16147px 9.09297px 0px, rgb(255, 255, 255) -5.04846px 8.63209px 0px, rgb(255, 255, 255) -5.88501px 8.08496px 0px, rgb(255, 255, 255) -6.66276px 7.45705px 0px, rgb(255, 255, 255) -7.37394px 6.75463px 0px, rgb(255, 255, 255) -8.01144px 5.98472px 0px, rgb(255, 255, 255) -8.56889px 5.15501px 0px, rgb(255, 255, 255) -9.04072px 4.2738px 0px, rgb(255, 255, 255) -9.42222px 3.34988px 0px, rgb(255, 255, 255) -9.70958px 2.39249px 0px, rgb(255, 255, 255) -9.89993px 1.4112px 0px, rgb(255, 255, 255) -9.99135px 0.415807px 0px, rgb(255, 255, 255) -9.98295px -0.583741px 0px, rgb(255, 255, 255) -9.8748px -1.57746px 0px, rgb(255, 255, 255) -9.66798px -2.55541px 0px, rgb(255, 255, 255) -9.36457px -3.50783px 0px, rgb(255, 255, 255) -8.96758px -4.4252px 0px, rgb(255, 255, 255) -8.481px -5.29836px 0px, rgb(255, 255, 255) -7.90968px -6.11858px 0px, rgb(255, 255, 255) -7.25932px -6.87766px 0px, rgb(255, 255, 255) -6.53644px -7.56803px 0px, rgb(255, 255, 255) -5.74824px -8.18277px 0px, rgb(255, 255, 255) -4.90261px -8.71576px 0px, rgb(255, 255, 255) -4.00799px -9.16166px 0px, rgb(255, 255, 255) -3.07333px -9.51602px 0px, rgb(255, 255, 255) -2.10796px -9.7753px 0px, rgb(255, 255, 255) -1.12153px -9.93691px 0px, rgb(255, 255, 255) -0.123887px -9.99923px 0px, rgb(255, 255, 255) 0.87499px -9.96165px 0px, rgb(255, 255, 255) 1.86512px -9.82453px 0px, rgb(255, 255, 255) 2.83662px -9.58924px 0px, rgb(255, 255, 255) 3.77978px -9.25815px 0px, rgb(255, 255, 255) 4.68517px -8.83455px 0px, rgb(255, 255, 255) 5.54374px -8.32267px 0px, rgb(255, 255, 255) 6.34693px -7.72764px 0px, rgb(255, 255, 255) 7.0867px -7.0554px 0px, rgb(255, 255, 255) 7.75566px -6.31267px 0px, rgb(255, 255, 255) 8.34713px -5.50686px 0px, rgb(255, 255, 255) 8.8552px -4.64602px 0px, rgb(255, 255, 255) 9.27478px -3.73877px 0px, rgb(255, 255, 255) 9.6017px -2.79415px 0px, rgb(255, 255, 255) 9.83268px -1.82162px 0px, rgb(255, 255, 255) 9.96542px -0.830894px 0px !important;
 }
@@ -85,7 +87,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px so
 .underline {text-decoration: underline;}
 .hover_remove_underline:hover, .remove_underline, .remove_underline:hover, .remove_underline:hover>*, .remove_underline:hover>*>* [class*="btn"]>* [class*=tab]>li>a:hover {text-decoration: none !important;}
 .linkline, .linkline>*, .hover_linkline:hover, .hover_linkline:hover>*, .hover_alllinkline:hover * {text-decoration: underline !important;}
-.linkline:hover, .linkline:hover>*, [class*=btn], [class*=btn]>* {text-decoration: none !important;}
+.linkline:hover, .linkline:hover>*, [class*=btn], [class*=btn]>*, [class*=btn]:hover, [class*=btn]:hover>*, [class*=button], [class*=button]>*, [class*=button]:hover, [class*=button]:hover>* {text-decoration: none !important;}
 
 /*---------- Color ------------------------------*/
 .color_white, .hover_color_white:focus, .hover_color_white:hover, a.color_white, .color_white>a, ul.color_white>li>a .bg_primary>a, .bg_secondary>a, .bg_primary>ul a, .bg_secondary>ul a {color: white !important;}
@@ -178,20 +180,22 @@ img[src=""], .ifEmpty:empty, .removeSelf:last-child:only-child {display: none;}
 .borderB1 {border-bottom: 1px solid !important;}
 .borderB2 {border-bottom: 2px solid !important;}
 .borderB4 {border-bottom: 4px solid !important;}
-.rounded-t-0 {border-top-left-radius:0; border-top-right-radius:0;}
-.rounded-b-0 {border-bottom-left-radius:0; border-bottom-right-radius:0;}
-.rounded-l-0 {border-top-left-radius:0; border-bottom-left-radius:0;}
-.rounded-r-0 {border-top-right-radius:0; border-bottom-right-radius:0;}
+
+.roundedT0 {border-top-left-radius:0; border-top-right-radius:0;}
+.roundedB0 {border-bottom-left-radius:0; border-bottom-right-radius:0;}
+.roundedL0 {border-top-left-radius:0; border-bottom-left-radius:0;}
+.roundedR0 {border-top-right-radius:0; border-bottom-right-radius:0;}
+.rounded5 {border-radius: 5px;}
 .rounded10 {border-radius: 10px;}
-.roundedTL10 {border-top-left-radius: 10px;}
-.roundedTR10 {border-top-right-radius: 10px;}
-.roundedBL10 {border-bottom-left-radius: 10px;}
-.roundedBR10 {border-bottom-right-radius: 10px;}
-.rounded_20 {border-radius: 20px;}
-.rounded_t20 {border-radius: 20px 20px 0 0 !important;}
-.rounded_r20 {border-radius: 0 20px 20px 0 !important;}
-.rounded_b20 {border-radius: 0 0 20px 20px !important;}
-.rounded_l20 {border-radius: 20px 0 0 20px !important;}
+.roundedT10 {border-radius: 10px 10px 0 0 !important;}
+.roundedR10 {border-radius: 0 10px 10px 0 !important;}
+.roundedB10 {border-radius: 0 0 10px 10px !important;}
+.roundedL10 {border-radius: 10px 0 0 10px !important;}
+.rounded20 {border-radius: 20px;}
+.roundedT20 {border-radius: 20px 20px 0 0 !important;}
+.roundedR20 {border-radius: 0 20px 20px 0 !important;}
+.roundedB20 {border-radius: 0 0 20px 20px !important;}
+.roundedL20 {border-radius: 20px 0 0 20px !important;}
 
 .border_grey, .border_hover_grey:focus, .border_hover_grey:hover {border-color: #ddd !important;}
 .border_transparent {border-color: transparent !important;}
@@ -227,7 +231,7 @@ img[src=""], .ifEmpty:empty, .removeSelf:last-child:only-child {display: none;}
 /*---------- Margin ------------------------------*/
 a:not(:last-child):not(:only-of-type):not([class*=uk-position-]):not([class*=uk-slidenav]), span:not(:last-child):not(:only-of-type):not([class*=uk-position-]), .child_margin a:not(:last-child):not([class*=uk-position-]) {margin-right: 5px;}
 a:not([class*="mr"]):not([class*="-margin"]):not([class*=uk-slidenav]):last-child, span:not([class*="mr"]):not([class*="-margin"]):last-child {margin-right: 0 !important;}
-*:last-child:not([class*=mb-]):not([class*=uk-position-]) {margin-bottom: 0 !important;}
+*:last-child:not([class*=mb-]):not([class*=uk-position-]):not([class*=uk-margin]) {margin-bottom: 0 !important;}
 [class*=mr]:not(:only-child):last-child {margin-right: 0 !important;}
 
 .margin_child_even_s>:nth-child(even) {margin-bottom: 10px;}
@@ -278,6 +282,7 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 /*---------- Width & Height & Scroll ------------------------------*/
 .fullWidth {width: 100%;}
 .min_width50 {min-width: 50px;}
+.min_width70 {min-width: 70px;}
 .min_width100 {min-width: 100px;}
 .min_width130 {min-width: 130px;}
 .min_width150 {min-width: 150px;}
@@ -314,15 +319,15 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 
 .max_h {overflow: hidden; position: relative; min-height: 150px; max-height: 150px;}
 .max_h:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(to top, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%); pointer-events: none;}
-.max_h200 {min-height: 200px; max-height: 200px;}
-.max_h250 {min-height: 250px; max-height: 250px;}
-.max_h300 {min-height: 300px; max-height: 300px;}
-.max_h350 {min-height: 350px; max-height: 350px;}
-.max_h400 {min-height: 400px; max-height: 400px;}
-.max_h450 {min-height: 450px; max-height: 450px;}
-.max_h500 {min-height: 500px; max-height: 500px;}
-.max_h550 {min-height: 550px; max-height: 550px;}
-.max_h600 {min-height: 600px; max-height: 600px;}
+.max_h200 {max-height: 200px;}
+.max_h250 {max-height: 250px;}
+.max_h300 {max-height: 300px;}
+.max_h350 {max-height: 350px;}
+.max_h400 {max-height: 400px;}
+.max_h450 {max-height: 450px;}
+.max_h500 {max-height: 500px;}
+.max_h550 {max-height: 550px;}
+.max_h600 {max-height: 600px;}
 
 .scroll200 {max-height: 200px; overflow-y: auto;}
 
@@ -368,12 +373,15 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .item_circle:before {content: "○"; margin-right: -1px; -moz-transform: scale(0.6) translate(-5px, 1px); -o-transform: scale(0.6) translate(-5px, 1px); -webkit-transform: scale(0.6) translate(-5px, 1px); display: inline-block; transform: scale(0.6) translate(-5px, 1px); display: inline-block;}
 .item_dot {padding-left: 17px;}
 .item_dot:before {content: "·"; margin-left: -17px; margin-right: 12px; -moz-transform: scale(3) translate(1px, -1px); -o-transform: scale(3) translate(1px, -1px); -webkit-transform: scale(3) translate(1px, -1px); transform: scale(3) translate(1px, -1px); display: inline-block;}
- /* works with <q> */
 .parentheses:before {content: "("; padding-left: 1px; margin-left: 3px;}
 .parentheses:after {content: ")"; padding-right: 1px;}
 .parentheses:last-child:after {padding-right: 0;}
+.afterArrow:not(:last-child):after {content: "→"; padding-right: 10px;}
+.plus:not(:last-child):after {content: "+"; padding-left: 5px; padding-right: 5px;}
+ /* works with <q> */
 .quotesCH {quotes: "「" "」";}
 .dashes {quotes: "- " " -";}
+q.parentheses {quotes: "(" ")";}
  /* works with <q> */
 
 .arrow, .arrow>.svg-inline--fa {width: 1.25em; display: inline-block;}
@@ -429,7 +437,7 @@ textarea.noresize {resize: none;}
 [class*="bg-*"]:not(.bg-light):not(.bg-warning) { color: white;}
 .btn {white-space: normal !important; word-wrap: break-word;}
 .text-dark, .text-dark a {color: #343a40!important;}
-.text-white, .text-white *:not([class*=uk-slidenav]) {color: #ffffff!important;}
+.text-white, .text-white *:not([class*=uk-slidenav]):not([class*=color_]) {color: #ffffff!important;}
 
 .list-group-item>ul a, .list-group-item>ul span {background: white;}
 .list-group-item.uk-parent.uk-open>a, .list-group-item.active, .list-group-item .active>a, .list-group-item a:hover {background-color: #f5f5f5; border-color: rgba(0,0,0,.125);}
@@ -444,6 +452,11 @@ label {margin: inherit;}
 ---------------------------------------------------------------------------------- */
 
 [class*=uk-] * {text-transform: inherit !important;}
+
+.grid_xsmall {margin-left: -10px;}
+.grid_xxsmall {margin-left: -5px;}
+.grid_xsmall>* {padding-left: 10px;}
+.grid_xxsmall>* {padding-left: 5px;}
 
 .uk-navbar-toggle-icon {min-width: 50px;}
 
@@ -559,6 +572,22 @@ label {margin: inherit;}
 .fontSizeM .h1vw {font-size: 3.3vw !important;}
 .fontSizeL .h1vw {font-size: 3.4vw !important;}
 
+.rounded5\@s {border-radius: 5px;}
+.rounded10\@s {border-radius: 10px;}
+.roundedT5\@s {border-radius: 5px 5px 0 0 !important;}
+.roundedR5\@s {border-radius: 0 5px 5px 0 !important;}
+.roundedB5\@s {border-radius: 0 0 5px 5px !important;}
+.roundedL5\@s {border-radius: 5px 0 0 5px !important;}
+.roundedT10\@s {border-radius: 10px 10px 0 0 !important;}
+.roundedR10\@s {border-radius: 0 10px 10px 0 !important;}
+.roundedB10\@s {border-radius: 0 0 10px 10px !important;}
+.roundedL10\@s {border-radius: 10px 0 0 10px !important;}
+.rounded20\@s {border-radius: 20px;}
+.roundedT20\@s {border-radius: 20px 20px 0 0 !important;}
+.roundedR20\@s {border-radius: 0 20px 20px 0 !important;}
+.roundedB20\@s {border-radius: 0 0 20px 20px !important;}
+.roundedL20\@s {border-radius: 20px 0 0 20px !important;}
+
 .min_width250\!\@s {min-width: 250px !important;}
 .min_width300\!\@s {min-width: 300px !important;}
 .min_width350\!\@s {min-width: 350px !important;}
@@ -610,6 +639,28 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 
 .bg_primary .max_height:after {background: linear-gradient(to top, #009dd8 85%, rgba(255, 255, 255, 0) 100%);}
 .bg_secondary .max_height:after {background: linear-gradient(to top, #82bb42 85%, rgba(255, 255, 255, 0) 100%);}
+
+.rounded_20_m {border-radius: 20px !important;}
+.rounded_t20_m {border-radius: 20px 20px 0 0 !important;}
+.rounded_r20_m {border-radius: 0 20px 20px 0 !important;}
+.rounded_b20_m {border-radius: 0 0 20px 20px !important;}
+.rounded_l20_m {border-radius: 20px 0 0 20px !important;}
+.rounded5\@m {border-radius: 5px;}
+.rounded10\@m {border-radius: 10px;}
+.roundedT5\@m {border-radius: 5px 5px 0 0 !important;}
+.roundedR5\@m {border-radius: 0 5px 5px 0 !important;}
+.roundedB5\@m {border-radius: 0 0 5px 5px !important;}
+.roundedL5\@m {border-radius: 5px 0 0 5px !important;}
+.roundedT10\@m {border-radius: 10px 10px 0 0 !important;}
+.roundedR10\@m {border-radius: 0 10px 10px 0 !important;}
+.roundedB10\@m {border-radius: 0 0 10px 10px !important;}
+.roundedL10\@m {border-radius: 10px 0 0 10px !important;}
+.rounded20\@m {border-radius: 20px;}
+.roundedT20\@m {border-radius: 20px 20px 0 0 !important;}
+.roundedR20\@m {border-radius: 0 20px 20px 0 !important;}
+.roundedB20\@m {border-radius: 0 0 20px 20px !important;}
+.roundedL20\@m {border-radius: 20px 0 0 20px !important;}
+
 
 .min_width100\@m {min-width: 100px;}
 .min_width250\!\@m {min-width: 250px !important;}
@@ -687,12 +738,6 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 .table_responsive_m thead {display: block;}
 .table_responsive_m tr {display: flex; align-items: center;}
 
-.rounded_20_m {border-radius: 20px !important;}
-.rounded_t20_m {border-radius: 20px 20px 0 0 !important;}
-.rounded_r20_m {border-radius: 0 20px 20px 0 !important;}
-.rounded_b20_m {border-radius: 0 0 20px 20px !important;}
-.rounded_l20_m {border-radius: 20px 0 0 20px !important;}
-
 .form_space_s.uk-form-horizontal .uk-form-label {width: 50px;}
 .form_space_s.uk-form-horizontal .uk-form-controls {margin-left: calc(50px + 15px);}
 .form_space_m.uk-form-horizontal .uk-form-label {width: 80px;}
@@ -711,6 +756,22 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 .h1vw {font-size: 2.2vw !important;}
 .fontSizeM .h1vw {font-size: 2.3vw !important;}
 .fontSizeL .h1vw {font-size: 2.4vw !important;}
+
+.rounded5\@l {border-radius: 5px;}
+.rounded10\@l {border-radius: 10px;}
+.roundedT5\@l {border-radius: 5px 5px 0 0 !important;}
+.roundedR5\@l {border-radius: 0 5px 5px 0 !important;}
+.roundedB5\@l {border-radius: 0 0 5px 5px !important;}
+.roundedL5\@l {border-radius: 5px 0 0 5px !important;}
+.roundedT10\@l {border-radius: 10px 10px 0 0 !important;}
+.roundedR10\@l {border-radius: 0 10px 10px 0 !important;}
+.roundedB10\@l {border-radius: 0 0 10px 10px !important;}
+.roundedL10\@l {border-radius: 10px 0 0 10px !important;}
+.rounded20\@l {border-radius: 20px;}
+.roundedT20\@l {border-radius: 20px 20px 0 0 !important;}
+.roundedR20\@l {border-radius: 0 20px 20px 0 !important;}
+.roundedB20\@l {border-radius: 0 0 20px 20px !important;}
+.roundedL20\@l {border-radius: 20px 0 0 20px !important;}
 
 .min_width250\!\@l {min-width: 250px !important;}
 .min_width300\!\@l {min-width: 300px !important;}
