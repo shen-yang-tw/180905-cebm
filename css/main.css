@@ -87,7 +87,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px so
 .underline {text-decoration: underline;}
 .hover_remove_underline:hover, .remove_underline, .remove_underline:hover, .remove_underline:hover>*, .remove_underline:hover>*>* [class*="btn"]>* [class*=tab]>li>a:hover {text-decoration: none !important;}
 .linkline, .linkline>*, .hover_linkline:hover, .hover_linkline:hover>*, .hover_alllinkline:hover * {text-decoration: underline !important;}
-.linkline:hover, .linkline:hover>*, [class*=btn], [class*=btn]>*, [class*=btn]:hover, [class*=btn]:hover>*, [class*=button], [class*=button]>*, [class*=button]:hover, [class*=button]:hover>* {text-decoration: none !important;}
+.linkline:hover, .linkline:hover>*, [class*=btn], [class*=btn]>*, [class*=btn]:hover, [class*=btn]:hover>*, [class*=button], [class*=button]>*, [class*=button]:hover, [class*=button]:hover>*, .uk-tab>*>a:hover>* {text-decoration: none !important;}
 
 /*---------- Color ------------------------------*/
 .color_white, .hover_color_white:focus, .hover_color_white:hover, a.color_white, .color_white>a, ul.color_white>li>a .bg_primary>a, .bg_secondary>a, .bg_primary>ul a, .bg_secondary>ul a {color: white !important;}
