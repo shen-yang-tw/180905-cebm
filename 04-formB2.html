@@ -124,7 +124,7 @@
   </header>
   <!-- header -->
   <section class="position-relative uk-margin" uk-height-viewport="expand: true">
-    <div class="uk-container uk-container-large">
+    <div class="uk-container">
       <ul class="text-dark uk-breadcrumb uk-visible@m">
         <li><a class="linkline" href="#">首頁</a></li>
         <li><a class="linkline" href="#">Link</a></li>
@@ -133,96 +133,155 @@
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
       <div class="rounded20 p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">諮詢</h2>
+        <h2 class="bg_secondary roundedT20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">教學組諮詢預約單</h2>
         <div class="min_height200 min_heightM500 p-3">
-          <div class="uk-heading-line uk-text-center uk-margin">
-            <div>
-              <div class="uk-flex uk-flex-center uk-flex-middle">
-                <div class="aspect mr-2 rounded-circle uk-background-cover" style="background-image: url(img/man-user.svg);width: 30px;"></div>
-                <h2 class="fontSize1 m-0">Hi～<span>Name</span></h2>
+          <div class="content uk-margin" uk-margin>
+            <form>
+              <div class="uk-flex uk-flex-right uk-flex-middle uk-grid-small uk-child-width-auto uk-grid">
+                <div><label class="w-100 font-weight-bold" for="form_date">填表日期</label></div>
+                <div><input class="uk-input" id="form_date" type="text" placeholder=""></div>
               </div>
-            </div>
-          </div>
-          <!-- uk-heading-line -->
-          <ul class="border2 border_secondary uk-tab">
-            <li class="uk-active"><a href="03-knowledge6.html">我要諮詢</a></li>
-            <li><a href="03-knowledge7.html">諮詢紀錄</a></li>
-          </ul>
-          <!-- .uk-tab -->
-          <div class="content uk-margin">
-            <div class="uk-form uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_i_account">帳號</label>
-                <div class="uk-form-controls">
-                  <input class="uk-input" id="form_i_account" type="text" placeholder="">
+              <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
+                <div class="uk-width-1-1">
+                  <h2 class="fontSize1 bg_grey p-2 uk-margin-top">基本資料</h2>
+                </div>
+                <div class="uk-width-1-1">
+                  <label class="w-100 font-weight-bold" for="i_name">申請人姓名</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_name" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s min_width1_4!@l">
+                  <label class="w-100 font-weight-bold" for="i_dep">單位</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_dep" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s min_width1_4!@l">
+                  <label class="w-100 font-weight-bold" for="i_title">職稱</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_title" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s min_width1_4!@l">
+                  <label class="w-100 font-weight-bold" for="i_tel">連絡電話</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_tel" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s min_width1_4!@l">
+                  <label class="w-100 font-weight-bold" for="i_mail">電子信箱</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_mail" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <h2 class="fontSize1 bg_grey p-2 uk-margin-top">研究相關資訊</h2>
+                </div>
+                <div class="uk-width-1-1">
+                  <label class="w-100 font-weight-bold" for="i_project">研究名稱</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_project" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s min_width1_4!@l">
+                  <label class="w-100 font-weight-bold" for="i_p">Patient (P)</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_p" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s min_width1_4!@l">
+                  <label class="w-100 font-weight-bold" for="i_i">Intervention (I)</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_i" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s min_width1_4!@l">
+                  <label class="w-100 font-weight-bold" for="i_c">Comparison (C)</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_c" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s min_width1_4!@l">
+                  <label class="w-100 font-weight-bold" for="i_o">Outcome (O)</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_o" type="text" placeholder="">
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <label class="my-1 w-100 font-weight-bold">是否為補助計畫？</label>
+                  <div class="uk-form-controls">
+                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1" checked>科技部</label>
+                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1">衛生福利部</label>
+                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1">本院</label>
+                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1">產學合作</label>
+                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1">無</label>
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <label class="my-1 w-100 font-weight-bold">分析用途？</label>
+                  <div class="uk-form-controls">
+                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">投稿中文期刊</label>
+                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">投稿英文期刊</label>
+                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">學會報告</label>
+                    <label class="min_width1_3!@s"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">其他<input class="m-1 mb-2 uk-input uk-width-auto" type="text" placeholder=""></label>
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <label class="my-1 w-100 font-weight-bold">是否有特殊期限？</label>
+                  <div class="uk-form-controls">
+                    <label class="min_width1_3!@s"><input class="mr-1 uk-radio" type="radio" name="radio3" checked>有<input id="i_deadline" class="m-1 mb-2 uk-input uk-width-auto" type="text" placeholder="">前完成</label>
+                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio3">無</label>
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <h2 class="fontSize1 bg_grey p-2 uk-margin-top">諮詢內容</h2>
+                </div>
+                <div class="uk-width-1-1">
+                  <label class="my-1 w-100 font-weight-bold">欲諮詢項目<input id="checkAll1" class="mx-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="toggleCheckAll(this, '.check1')"></label>
+                  <div class="uk-form-controls">
+                    <label class="mr-4"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">研究主題之建議</label>
+                    <label class="mr-4"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">資料整理、轉檔、輸入</label>
+                    <label class="min_width1_3!@s"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">文獻搜尋策略與醫學資料庫使用(請填寫連結)<input class="m-1 mb-2 uk-input uk-width-auto" type="text" placeholder=""></label>
+                    <label class="mr-4"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">統合分析方法之選用</label>
+                    <label class="mr-4"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">資料分析與結果判讀</label>
+                    <label class="min_width1_3!@s"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">統合分析軟體之使用與操作(請填寫軟體名稱)<input class="m-1 mb-2 uk-input uk-width-auto" type="text" placeholder=""></label>
+                    <label class="mr-4"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">結果之呈現（圖、表）</label>
+                    <label class="mr-4"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">論文寫作建議</label>
+                    <label class="mr-4"><input class="check1 mr-1 uk-checkbox" type="checkbox" name="checkbox1" onchange="inputCheck(this,'.check1','#checkAll1')">投稿雜誌選擇</label>
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <label class="my-1 w-100 font-weight-bold">希望預約之日期(請儘量複選)<input id="checkAll2" class="mx-1 uk-checkbox" type="checkbox" name="checkbox2" onchange="toggleCheckAll(this, '.check2')"></label>
+                  <div class="uk-form-controls">
+                    <label class="mr-4"><input class="check2 mr-1 uk-checkbox" type="checkbox" name="checkbox2" onchange="inputCheck(this,'.check2','#checkAll2')">星期一(上/中/下午)</label>
+                    <label class="mr-4"><input class="check2 mr-1 uk-checkbox" type="checkbox" name="checkbox2" onchange="inputCheck(this,'.check2','#checkAll2')">星期二(上/中/下午)</label>
+                    <label class="mr-4"><input class="check2 mr-1 uk-checkbox" type="checkbox" name="checkbox2" onchange="inputCheck(this,'.check2','#checkAll2')">星期三(上/中/下午)</label>
+                    <label class="mr-4"><input class="check2 mr-1 uk-checkbox" type="checkbox" name="checkbox2" onchange="inputCheck(this,'.check2','#checkAll2')">星期四(上/中/下午)</label>
+                    <label class="mr-4"><input class="check2 mr-1 uk-checkbox" type="checkbox" name="checkbox2" onchange="inputCheck(this,'.check2','#checkAll2')">星期五(上/中/下午)</label>
+                  </div>
+                </div>
+                <div class="min_width1_2!@s">
+                  <label class="w-100 font-weight-bold" for="i_purpose">諮詢之目的</label>
+                  <div class="uk-form-controls">
+                    <textarea id="i_purpose" class="uk-textarea" rows="5" placeholder=""></textarea>
+                  </div>
+                </div>
+                <div class="min_width1_2!@s">
+                  <label class="w-100 font-weight-bold" for="i_learning">期望諮詢後之成效</label>
+                  <div class="uk-form-controls">
+                    <textarea id="i_learning" class="uk-textarea" rows="5" placeholder=""></textarea>
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <p class="m-0">備註</p>
+                  <ol class="m-0">
+                    <li>每次諮詢服務以一小時為限，填妥資料後請mail至實證醫學中心信箱<a class="linkline ml-1" href="mailto:d2-ebm@vghtpe.gov.tw">d2-ebm@vghtpe.gov.tw</a>。</li>
+                    <li>經協助後發表之學術論文，敬請於文章中致謝諮詢老師或由通訊作者決定是否列名共同作者。</li>
+                  </ol>
                 </div>
               </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_i_name">姓名</label>
-                <div class="uk-form-controls">
-                  <input class="uk-input" id="form_i_name" type="text" placeholder="">
-                </div>
-              </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_i_org">機構名稱</label>
-                <div class="uk-form-controls">
-                  <input class="uk-input" id="form_i_org" type="text" placeholder="">
-                </div>
-              </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_s_unit">服務單位</label>
-                <div class="uk-form-controls">
-                  <select class="uk-select" id="form_s_unit">
-                    <option>Option1</option>
-                    <option>Option2</option>
-                  </select>
-                </div>
-              </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_i_tel">聯絡電話</label>
-                <div class="uk-form-controls">
-                  <input class="uk-input" id="form_i_tel" type="text" placeholder="">
-                </div>
-              </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_i_email">聯絡信箱</label>
-                <div class="uk-form-controls">
-                  <input class="uk-input" id="form_i_email" type="text" placeholder="">
-                </div>
-              </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_s_topic">諮詢主題</label>
-                <div class="uk-form-controls">
-                  <select class="uk-select" id="form_s_topic">
-                    <option>Option1</option>
-                    <option>Option2</option>
-                  </select>
-                </div>
-              </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_t_que">諮詢內容</label>
-                <div class="uk-form-controls">
-                  <textarea class="uk-textarea" id="form_t_que" rows="3" style="height: 40px;"></textarea>
-                </div>
-              </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_s_meeting">預約專人</label>
-                <div class="uk-form-controls">
-                  <select class="uk-select" id="form_s_meeting">
-                    <option>Option1</option>
-                    <option>Option2</option>
-                  </select>
-                </div>
-              </div>
-              <div class="min_width1_2!@s">
-                <label class="uk-form-label" for="form_i_date">預約日期</label>
-                <div class="uk-form-controls">
-                  <input class="uk-input" id="form_i_date" type="text" placeholder="">
-                </div>
-              </div>
-              <div><a class="btn_primary mt-3 w-100 uk-button uk-button-primary" href="#">Save</a></div>
-            </div>
-            <!-- .uk-form -->
+            </form>
           </div>
           <!-- .content -->
         </div>
@@ -264,7 +323,7 @@
   <script src="js/script.js"></script>
   <script>
     //datepicker
-    $('#form_i_date').datepicker({
+    $('#form_date, #i_deadline').datepicker({
       language: "zh-TW",
       autoclose: true,
       todayHighlight: true

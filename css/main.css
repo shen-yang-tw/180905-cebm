@@ -237,7 +237,6 @@ a:not([class*="mr"]):not([class*="-margin"]):not([class*=uk-slidenav]):last-chil
 .margin_child_even_s>:nth-child(even) {margin-bottom: 10px;}
 
 /*---------- List ------------------------------*/
-ol, ul {padding-left: 1em;}
 ul.listNoStyle {padding: 0; list-style: none;}
 ul.list_horizontal {display: block; list-style: none; margin: 0; padding: 2px 0;}
 ul.list_horizontal li {display: inline-block; float: none; margin-left: -4px;}
@@ -288,9 +287,9 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .min_width150 {min-width: 150px;}
 .min_width200 {min-width: 200px;}
 .min_width250 {min-width: 250px;}
-.min_width08\!\ {min-width: calc(100% * 0.8) !important;}
-.min_width07\!\ {min-width: calc(100% * 0.7) !important;}
-.min_width06\!\ {min-width: calc(100% * 0.6) !important;}
+.min_width08\! {min-width: calc(100% * 0.8) !important;}
+.min_width07\! {min-width: calc(100% * 0.7) !important;}
+.min_width06\! {min-width: calc(100% * 0.6) !important;}
 .min_width1_2\! {min-width: calc(100% / 2) !important;}
 .min_width1_3\! {min-width: calc(100% / 3) !important;}
 .min_width1_4\! {min-width: calc(100% / 4) !important;}
