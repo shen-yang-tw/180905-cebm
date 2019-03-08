@@ -82,6 +82,16 @@ function addCloneBlock(cloneBlock) {
   document.querySelector(cloneBlock).appendChild(cln);
 }
 
+//select onchange Event - <select onchange="showOption()">
+function showOption(thisSelect, index, cls) {
+  var showDiv = document.querySelector(cls);
+  if (thisSelect.selectedIndex == index) {
+    showDiv.style.setProperty("display", "block", "important");
+  } else {
+    showDiv.style.setProperty("display", "none", "important");
+  }
+}
+
 //--------------- end js ----------------------------------------------------------//
 
 //Gototop fadeIn & fadeOut on scrollTop / scroll

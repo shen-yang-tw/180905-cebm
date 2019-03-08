@@ -12,7 +12,6 @@
   <title>楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/uikit.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <!-- <link rel="stylesheet" href="css/fontawesome-svg-with-js.min.css"> -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900'>
@@ -64,7 +63,7 @@
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="active active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
+                  <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-first-aid"></i></div>
                     <div class="fontSize09 pb-2 text-white">諮詢<span class="eng fontSize07 remove_underline d-block">Consult</span></div>
                   </a>
@@ -83,7 +82,7 @@
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入</a></span>
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出</a></span>
               </div>
-              </div>
+            </div>
             <div class="uk-hidden@m uk-navbar-right">
               <a class="min_width50 text-dark text-right" href="#login" uk-toggle hidden>登入</a>
               <a class="min_width50 text-dark text-right" href="#">登出</a>
@@ -111,7 +110,7 @@
               </a>
             </div>
             <div>
-              <a class="active active_secondary btn_primary circleTab noResize text-center" href="#">
+              <a class="active_secondary btn_primary circleTab noResize text-center" href="#">
                 <div class="fontSize1_4 text-white h-100 position-relative"><i class="fas fa-first-aid uk-position-center"></i></div>
               </a>
             </div>
@@ -127,7 +126,7 @@
   </header>
   <!-- header -->
   <section class="position-relative" uk-height-viewport="expand: true">
-    <div class="containerExpand uk-container">
+    <div class="containerExpand uk-container uk-container-large">
       <ul class="text-dark uk-breadcrumb uk-visible@m">
         <li><a class="linkline" href="#">首頁</a></li>
         <li><a class="linkline" href="#">Link</a></li>
@@ -136,138 +135,91 @@
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
       <div class="rounded20@s p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">教學組諮詢預約單</h2>
+        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">&nbsp;</h2>
         <div class="min_height200 min_heightM500 p-3">
-          <div class="content uk-margin" uk-margin>
-            <form>
-              <div class="uk-flex uk-flex-right uk-flex-middle uk-grid-small uk-child-width-auto uk-grid">
-                <div><label class="w-100 font-weight-bold" for="form_date">填表日期</label></div>
-                <div><input class="uk-input" id="form_date" type="text" placeholder=""></div>
+          <div class="uk-grid-medium" uk-grid>
+            <div class="uk-width-1-3@m uk-width-1-4@l">
+              <div class="max_h200 max_h700M uk-overflow-auto">
+                <ul class="list-group uk-nav-parent-icon" uk-nav="multiple: true">
+                  <li class="p-0 rounded-0 list-group-item list-group-item-action uk-parent">
+                    <a class="p-2 fontSize09 color_black font-weight-bold" href="#content">實證醫學中心</a>
+                    <ul>
+                      <li><a class="px-3 py-2" href="#content">關於實證醫學中心</a></li>
+                      <li><a class="px-3 py-2" href="#content">組織人員</a></li>
+                      <li><a class="px-3 py-2" href="#content">轉譯組</a></li>
+                    </ul>
+                  </li>
+                  <li class="p-0 rounded-0 list-group-item list-group-item-action active">
+                    <a class="p-2 fontSize09 color_black font-weight-bold" href="#content">訊息公告</a>
+                  </li>
+                  <li class="p-0 rounded-0 list-group-item list-group-item-action">
+                    <a class="p-2 fontSize09 color_black font-weight-bold" href="#content">實證資源</a>
+                  </li>
+                </ul>
               </div>
-              <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
-                <div class="uk-width-1-1">
-                  <h2 class="fontSize1 bg_grey p-2 uk-margin-top">基本資料</h2>
-                </div>
-                <div class="uk-width-1-1">
-                  <label class="w-100 font-weight-bold" for="i_name">申請人姓名</label>
-                  <div class="uk-form-controls">
-                    <input class="uk-input" id="i_name" type="text" placeholder="">
+            </div>
+            <div class="uk-width-expand@m">
+              <div class="uk-form">
+                <div id="content" uk-margin>
+                  <h3 class="btmline">全部</h3>
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="uk-width-2-3@s uk-width-3-4@m">
+                      <input class="uk-input" type="text" placeholder="請輸入內容">
+                    </div>
+                    <div class="uk-width-expand"><button class="btn_secondary w-100 uk-button uk-button-primary">搜尋</button></div>
+                    <div class="uk-width-1-1">
+                      <ul class="uk-pagination uk-flex-center" uk-margin>
+                        <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
+                        <li class="uk-width-1-3 uk-width-1-4@s uk-width-1-6@m">
+                          <select class="uk-select uk-form-small">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                        </li>
+                        <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                      </ul>
+                      <table class="uk-table uk-table-small uk-table-striped uk-table-responsive">
+                        <thead>
+                          <tr>
+                            <th class="uk-width-1-4@s">日期</th>
+                            <th class="uk-width-3-4@s">主題</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2018-10-1</td>
+                            <td><a class="font-weight-bold hover_linkline" href="01-page3.html">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                          </tr>
+                          <tr>
+                            <td>2018-10-1</td>
+                            <td><a class="font-weight-bold hover_linkline" href="01-page3.html">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                          </tr>
+                          <tr>
+                            <td>2018-10-1</td>
+                            <td><a class="font-weight-bold hover_linkline" href="01-page3.html">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <ul class="uk-pagination uk-flex-center" uk-margin>
+                        <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
+                        <li class="uk-width-1-3 uk-width-1-4@s uk-width-1-6@m">
+                          <select class="uk-select uk-form-small">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                        </li>
+                        <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="min_width1_2!@s min_width1_4!@l">
-                  <label class="w-100 font-weight-bold" for="i_dep">單位</label>
-                  <div class="uk-form-controls">
-                    <input class="uk-input" id="i_dep" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="min_width1_2!@s min_width1_4!@l">
-                  <label class="w-100 font-weight-bold" for="i_title">職稱</label>
-                  <div class="uk-form-controls">
-                    <input class="uk-input" id="i_title" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="min_width1_2!@s min_width1_4!@l">
-                  <label class="w-100 font-weight-bold" for="i_tel">連絡電話</label>
-                  <div class="uk-form-controls">
-                    <input class="uk-input" id="i_tel" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="min_width1_2!@s min_width1_4!@l">
-                  <label class="w-100 font-weight-bold" for="i_mail">電子信箱</label>
-                  <div class="uk-form-controls">
-                    <input class="uk-input" id="i_mail" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="uk-width-1-1">
-                  <h2 class="fontSize1 bg_grey p-2 uk-margin-top">諮詢內容</h2>
-                </div>
-                <div class="min_width1_2!@s">
-                  <label class="w-100 font-weight-bold" for="class_date">開課日期</label>
-                  <div class="uk-form-controls">
-                    <input class="uk-input" id="class_date" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="uk-width-1-1">
-                  <p class="font-weight-bold uk-margin-top">申請課程</p>
-                </div>
-                <div class="uk-width-1-1">
-                  <label class="my-1 w-100 font-weight-bold">1.基礎實證核心課程</label>
-                  <div class="uk-form-controls">
-                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">實證醫學簡介（含SR簡介）</label>
-                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">實證健康照護資料庫及文獻搜尋策略簡介</label>
-                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">診斷類文獻評讀</label>
-                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">治療類文獻評讀</label>
-                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">預後類文獻評讀</label>
-                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">危害類文獻評讀</label>
-                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">系統性文獻回顧(Systematic Review)</label>
-                    <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="checkbox1">知識轉譯-以SDM應用為例</label>
-                  </div>
-                </div>
-                <div class="uk-width-1-1">
-                  <label class="my-1 w-100 font-weight-bold">2.基礎實證師資培育工作坊</label>
-                  <div class="uk-form-controls">
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1" checked>實證系統性回顧工作坊</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1">實證醫學教學技巧工作坊</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1">其他</label>
-                  </div>
-                </div>
-                <div class="uk-width-1-1">
-                  <label class="my-1 w-100 font-weight-bold">3.實證照護相關演講</label>
-                </div>
-                <div class="min_width1_2!@s">
-                  <label class="w-100 m-0 font-weight-bold" for="i_sub">演講題目</label>
-                  <div class="uk-form-controls">
-                    <input class="uk-input" id="i_sub" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="uk-width-auto">
-                  <label class="w-100 m-0 font-weight-bold" for="i_time">演講時間</label>
-                  <div class="uk-form-controls">
-                    <input class="mr-1 uk-input uk-width-auto" type="number" id="i_time" min="1" max="10" value="1">小時
-                  </div>
-                </div>
-                <div class="uk-width-1-1">
-                  <label class="my-1 w-100 font-weight-bold">授課講師</label>
-                  <div class="uk-form-controls">
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2" checked>鄭浩民</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2">曹彥博</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2">林小玲</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2">徐德福</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2">鄒樂起</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2">陳威志</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2">楊仁鄰</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2">徐嘉僑</label>
-                    <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio2">不指定</label>
-                    <label class="min_width1_3!@s"><input class="mr-1 uk-radio" type="radio" name="radio2">指定<input class="ml-1 uk-input uk-width-auto" type="text" placeholder=""></label>
-                  </div>
-                </div>
-                <div class="min_width1_2!@s">
-                  <label class="w-100 font-weight-bold" for="i_purpose">申請目的</label>
-                  <div class="uk-form-controls">
-                    <textarea id="i_purpose" class="uk-textarea" rows="5" placeholder=""></textarea>
-                  </div>
-                </div>
-                <div class="min_width1_2!@s">
-                  <label class="w-100 font-weight-bold" for="i_learning">預期學習內容</label>
-                  <div class="uk-form-controls">
-                    <textarea id="i_learning" class="uk-textarea" rows="5" placeholder=""></textarea>
-                  </div>
-                </div>
-                <div class="min_width1_2!@s">
-                  <label class="w-100 font-weight-bold" for="i_remarks">備註</label>
-                  <div class="uk-form-controls">
-                    <textarea id="i_remarks" class="uk-textarea" rows="2" placeholder=""></textarea>
-                  </div>
-                </div>
-                <div class="uk-width-1-1"><small>填妥諮詢預約單後請mail至實證醫學中心信箱<a class="linkline ml-1" href="mailto:d2-ebm@vghtpe.gov.tw">d2-ebm@vghtpe.gov.tw</a>，謝謝。</small></div>
+                <!-- End #content -->
               </div>
-            </form>
+            </div>
           </div>
-          <!-- .content -->
+          <!-- End uk-grid -->
         </div>
-        <!-- .min_height200 -->
       </div>
-      <!-- .uk-card -->
     </div>
     <!-- .containerExpand uk-container -->
   </section>
@@ -297,18 +249,8 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/bootstrap-datepicker.zh-TW.min.js"></script>
   <!-- <script src="js/fontawesome-all.min.js"></script> -->
   <script src="js/script.js"></script>
-  <script>
-    //datepicker
-    $('#form_date, #i_deadline').datepicker({
-      language: "zh-TW",
-      autoclose: true,
-      todayHighlight: true
-    });
-  </script>
 </body>
 
 </html>

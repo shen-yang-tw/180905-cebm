@@ -85,7 +85,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px so
 /*---------- Underline ------------------------------*/
 .btmline {border-bottom: 1px solid #e5e5e5; padding-bottom: 5px;}
 .underline {text-decoration: underline;}
-.hover_remove_underline:hover, .remove_underline, .remove_underline:hover, .remove_underline:hover>*, .remove_underline:hover>*>* [class*="btn"]>* [class*=tab]>li>a:hover {text-decoration: none !important;}
+.hover_remove_underline:hover, .remove_underline, .remove_underline:hover, .remove_underline:hover>*, .remove_underline:hover>*>*, a.hover_remove_underline:hover, a.remove_underline, a.remove_underline:hover, a.remove_underline:hover>*, a.remove_underline:hover>*>* [class*="btn"]>* [class*=tab]>li>a:hover {text-decoration: none !important;}
 .linkline, .linkline>*, .hover_linkline:hover, .hover_linkline:hover>*, .hover_alllinkline:hover * {text-decoration: underline !important;}
 .linkline:hover, .linkline:hover>*, [class*=btn], [class*=btn]>*, [class*=btn]:hover, [class*=btn]:hover>*, [class*=button], [class*=button]>*, [class*=button]:hover, [class*=button]:hover>*, .uk-tab>*>a:hover>* {text-decoration: none !important;}
 
@@ -391,6 +391,7 @@ q.parentheses {quotes: "(" ")";}
 
 /*---------- Cursor Type ------------------------------*/
 .cursor_pointer {cursor: pointer;}
+[disabled]:hover {cursor: default;}
 
 /*---------- Form ------------------------------*/
 textarea.noresize {resize: none;}
@@ -441,7 +442,7 @@ textarea.noresize {resize: none;}
 .list-group-item>ul a, .list-group-item>ul span {background: white;}
 .list-group-item.uk-parent.uk-open>a, .list-group-item.active, .list-group-item .active>a, .list-group-item a:hover {background-color: #f5f5f5; border-color: rgba(0,0,0,.125);}
 
-label {margin: inherit;}
+label {margin-bottom: inherit;}
 
 /*---------- End Bootstrap 4 Style
 ---------------------------------------------------------------------------------- */
@@ -539,11 +540,19 @@ label {margin: inherit;}
 
 .uk-grid-divider.grid_divider_stack_remove.uk-grid-stack>.uk-grid-margin::before {border: none;}
 
+.containerExpand.uk-container {padding: 0;}
+
+.uk-alert.badge {margin-top:0; padding: 7px 29px 7px 10px;}
+.uk-alert.badge .uk-alert-close {top: calc(14px / 2); right: 7px; opacity: .7;}
+.uk-alert.badge-secondary {color: #fff; background-color: #6c757d;}
+
 @media (min-width:640px) {
 .uk-width-auto\@s {flex: inherit;}
+.containerExpand.uk-container {padding: 30px;}
 }
 @media (min-width:960px) {
 .uk-width-auto\@m {flex: inherit;}
+.containerExpand.uk-container {padding: 40px;}
 }
 @media (min-width:1200px) {
 .uk-width-auto\@l {flex: inherit;}
@@ -570,6 +579,7 @@ label {margin: inherit;}
 .h1vw {font-size: 3.2vw !important;}
 .fontSizeM .h1vw {font-size: 3.3vw !important;}
 .fontSizeL .h1vw {font-size: 3.4vw !important;}
+.fontSize1_2\@s {font-size: 1.2rem !important;}
 
 .rounded5\@s {border-radius: 5px;}
 .rounded10\@s {border-radius: 10px;}
@@ -787,13 +797,35 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 .min_width900\!\@l {min-width: 900px !important;}
 .min_width1_2\!\@l {min-width: calc(100% / 2) !important;}
 .min_width1_3\!\@l {min-width: calc(100% / 3) !important;}
+.min_width2_3\!\@l {min-width: calc(100% * 2 / 3) !important;}
 .min_width1_4\!\@l {min-width: calc(100% / 4) !important;}
+.min_width3_4\!\@l {min-width: calc(100% * 3 / 4) !important;}
 .min_width1_5\!\@l {min-width: calc(100% / 5) !important;}
+.min_width2_5\!\@l {min-width: calc(100% * 2 / 5) !important;}
+.min_width3_5\!\@l {min-width: calc(100% * 3 / 5) !important;}
+.min_width4_5\!\@l {min-width: calc(100% * 4 / 5) !important;}
 .min_width1_6\!\@l {min-width: calc(100% / 6) !important;}
+.min_width5_6\!\@l {min-width: calc(100% * 5 / 6) !important;}
 .min_width1_7\!\@l {min-width: calc(100% / 7) !important;}
+.min_width2_7\!\@l {min-width: calc(100% * 2 / 7) !important;}
+.min_width3_7\!\@l {min-width: calc(100% * 3 / 7) !important;}
+.min_width4_7\!\@l {min-width: calc(100% * 4 / 7) !important;}
+.min_width5_7\!\@l {min-width: calc(100% * 5 / 7) !important;}
+.min_width6_7\!\@l {min-width: calc(100% * 6 / 7) !important;}
 .min_width1_8\!\@l {min-width: calc(100% / 8) !important;}
+.min_width3_8\!\@l {min-width: calc(100% * 3 / 8) !important;}
+.min_width5_8\!\@l {min-width: calc(100% * 5 / 8) !important;}
+.min_width7_8\!\@l {min-width: calc(100% * 7 / 8) !important;}
 .min_width1_9\!\@l {min-width: calc(100% / 9) !important;}
+.min_width2_9\!\@l {min-width: calc(100% * 2 / 9) !important;}
+.min_width4_9\!\@l {min-width: calc(100% * 4 / 9) !important;}
+.min_width5_9\!\@l {min-width: calc(100% * 5 / 9) !important;}
+.min_width7_9\!\@l {min-width: calc(100% * 7 / 9) !important;}
+.min_width8_9\!\@l {min-width: calc(100% * 8 / 9) !important;}
 .min_width1_10\!\@l {min-width: calc(100% / 10) !important;}
+.min_width3_10\!\@l {min-width: calc(100% * 3 / 10) !important;}
+.min_width7_10\!\@l {min-width: calc(100% * 7 / 10) !important;}
+.min_width9_10\!\@l {min-width: calc(100% * 9 / 10) !important;}
 .h_auto_l {height: auto;}
 
 .table_responsive_l thead {display: block;}
@@ -826,13 +858,35 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 .min_width06\!\@xl {min-width: calc(100% * 0.6) !important;}
 .min_width1_2\!\@xl {min-width: calc(100% / 2) !important;}
 .min_width1_3\!\@xl {min-width: calc(100% / 3) !important;}
+.min_width2_3\!\@xl {min-width: calc(100% * 2 / 3) !important;}
 .min_width1_4\!\@xl {min-width: calc(100% / 4) !important;}
+.min_width3_4\!\@xl {min-width: calc(100% * 3 / 4) !important;}
 .min_width1_5\!\@xl {min-width: calc(100% / 5) !important;}
+.min_width2_5\!\@xl {min-width: calc(100% * 2 / 5) !important;}
+.min_width3_5\!\@xl {min-width: calc(100% * 3 / 5) !important;}
+.min_width4_5\!\@xl {min-width: calc(100% * 4 / 5) !important;}
 .min_width1_6\!\@xl {min-width: calc(100% / 6) !important;}
+.min_width5_6\!\@xl {min-width: calc(100% * 5 / 6) !important;}
 .min_width1_7\!\@xl {min-width: calc(100% / 7) !important;}
+.min_width2_7\!\@xl {min-width: calc(100% * 2 / 7) !important;}
+.min_width3_7\!\@xl {min-width: calc(100% * 3 / 7) !important;}
+.min_width4_7\!\@xl {min-width: calc(100% * 4 / 7) !important;}
+.min_width5_7\!\@xl {min-width: calc(100% * 5 / 7) !important;}
+.min_width6_7\!\@xl {min-width: calc(100% * 6 / 7) !important;}
 .min_width1_8\!\@xl {min-width: calc(100% / 8) !important;}
+.min_width3_8\!\@xl {min-width: calc(100% * 3 / 8) !important;}
+.min_width5_8\!\@xl {min-width: calc(100% * 5 / 8) !important;}
+.min_width7_8\!\@xl {min-width: calc(100% * 7 / 8) !important;}
 .min_width1_9\!\@xl {min-width: calc(100% / 9) !important;}
+.min_width2_9\!\@xl {min-width: calc(100% * 2 / 9) !important;}
+.min_width4_9\!\@xl {min-width: calc(100% * 4 / 9) !important;}
+.min_width5_9\!\@xl {min-width: calc(100% * 5 / 9) !important;}
+.min_width7_9\!\@xl {min-width: calc(100% * 7 / 9) !important;}
+.min_width8_9\!\@xl {min-width: calc(100% * 8 / 9) !important;}
 .min_width1_10\!\@xl {min-width: calc(100% / 10) !important;}
+.min_width3_10\!\@xl {min-width: calc(100% * 3 / 10) !important;}
+.min_width7_10\!\@xl {min-width: calc(100% * 7 / 10) !important;}
+.min_width9_10\!\@xl {min-width: calc(100% * 9 / 10) !important;}
 .h_auto_xl {height: auto;}
 
 .table_responsive_xl thead {display: block;}

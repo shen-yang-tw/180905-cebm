@@ -154,15 +154,22 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 .bg_heart_index {background-position-y: -150px; background-size: 570px;}
 
 /* .circleTab {background-image: url("data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjaXJjbGUiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWNpcmNsZSBmYS13LTE2IGZhLTN4Ij48cGF0aCBmaWxsPSIjMzY4NjNkIiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiPjwvcGF0aD48L3N2Zz4=");} */
+header .uk-navbar-right>.uk-flex>span:nth-child(6)>.circleTab {min-height: 83px;}
+header .uk-navbar-right>.uk-flex>span:nth-child(6)>.circleTab>.pb-2 {margin-top: 7px;}
 .circleTab>img {width: 45px;}
 .circleTab {border-radius: 50%!important;}
 .eng .circleTab {border-radius: .25rem!important;}
+.circleTab>div>.eng {margin-top: -5px;}
 .uk-hidden\@l>div {height: 45px;}
 .uk-hidden\@l .circleTab {width: 45px; height: 45px;}
 
 .max_h:after {background: linear-gradient(to top, rgb(31, 115, 201) 50%, rgba(255, 255, 255, 0) 100%); height: 30px;}
 .index .uk-overflow-hidden {max-height: 200px;}
 .afterArrow:not(:last-child):after {padding-right: 0;}
+.afterArrow:not([disabled]):hover i.color_grey {color: #2d6f32 !important;}
+.afterArrow:hover>span>span {color: #ffffff !important;}
+.afterArrow:hover::after {color: #6f6f6f !important;}
+h2.roundedT20 {min-height: 46px;}
 
 /* .index header .uk-navbar {min-height: 40px;} */
 
@@ -171,7 +178,7 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 /* Bootstrap 4 Style
 ---------------------------------------------------- */
 
-.list-group-item.active, .list-group-item.active>a, .list-group-item .active>a, .list-group-item .uk-active>a {background-color: #36863d; border-color: #36863d; color: white !important;}
+.list-group-item.active, .list-group-item.active>a, .list-group-item.active>a>*, .list-group-item .active>a, .list-group-item .uk-active>a {background-color: #36863d; border-color: #36863d; color: white !important;}
 
 /* End Bootstrap 4 Style
 ---------------------------------------------------- */

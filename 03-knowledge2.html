@@ -39,37 +39,37 @@
             <div class="uk-navbar-right">
               <div class="h-100 py-1 uk-flex uk-flex-middle" uk-margin>
                 <span class="p-1 uk-visible@l">
-                  <a class="active active_secondary btn_primary circleTab noResize min_width70 text-center" href="#">
+                  <a class="active active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-user-md"></i></div>
-                    <div class="fontSize09 pb-2 text-white">個人</div>
+                    <div class="fontSize09 pb-2 text-white">個人<span class="eng fontSize07 remove_underline d-block">Personal</span></div>
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="active_secondary btn_primary circleTab noResize min_width70 text-center" href="#">
+                  <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-comments"></i></div>
-                    <div class="fontSize09 pb-2 text-white">討論</div>
+                    <div class="fontSize09 pb-2 text-white">討論<span class="eng fontSize07 remove_underline d-block">Discuss</span></div>
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="active_secondary btn_primary circleTab noResize min_width70 text-center" href="#">
+                  <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-heart"></i></div>
-                    <div class="fontSize09 pb-2 text-white">成果</div>
+                    <div class="fontSize09 pb-2 text-white">成果<span class="eng fontSize07 remove_underline d-block">Output</span></div>
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="active_secondary btn_primary circleTab noResize min_width70 text-center" href="#">
+                  <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-book-reader"></i></div>
-                    <div class="fontSize09 pb-2 text-white">資源</div>
+                    <div class="fontSize09 pb-2 text-white">資源<span class="eng fontSize07 remove_underline d-block">Resource</span></div>
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="active_secondary btn_primary circleTab noResize min_width70 text-center" href="#">
+                  <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-first-aid"></i></div>
-                    <div class="fontSize09 pb-2 text-white">諮詢</div>
+                    <div class="fontSize09 pb-2 text-white">諮詢<span class="eng fontSize07 remove_underline d-block">Consult</span></div>
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="active_secondary btn_primary circleTab noResize min_width70 text-center" href="#">
+                  <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-question-circle"></i></div>
                     <div class="fontSize09 pb-2 text-white">Q/A</div>
                   </a>
@@ -79,10 +79,13 @@
                 <span class="btnFontSize btnFontSizeS bgBlack uk-visible@m"><button class="uk-button" title="縮小字級">A-</button></span>
                 <span class="btnFontSize btnFontSizeM bgBlack active uk-visible@m"><button class="uk-button" title="適中字級">A</button></span>
                 <span class="btnFontSize btnFontSizeL bgBlack uk-visible@m"><button class="uk-button" title="加大字級">A+</button></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入</a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出</a></span>
               </div>
-              <!-- <div class="uk-hidden@m uk-navbar-right">
-                <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"></button>
-              </div> -->
+              </div>
+            <div class="uk-hidden@m uk-navbar-right">
+              <a class="min_width50 text-dark text-right" href="#login" uk-toggle hidden>登入</a>
+              <a class="min_width50 text-dark text-right" href="#">登出</a>
             </div>
           </div>
           <div class="py-1 border-top grid_xxsmall uk-grid-small uk-flex-center uk-hidden@l" uk-margin uk-grid>
@@ -122,8 +125,8 @@
     </div>
   </header>
   <!-- header -->
-  <section class="position-relative uk-margin" uk-height-viewport="expand: true">
-    <div class="uk-container uk-container-large">
+  <section class="position-relative" uk-height-viewport="expand: true">
+    <div class="containerExpand uk-container uk-container-large">
       <ul class="text-dark uk-breadcrumb uk-visible@m">
         <li><a class="linkline" href="#">首頁</a></li>
         <li><a class="linkline" href="#">Link</a></li>
@@ -131,8 +134,8 @@
       </ul>
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
-      <div class="rounded20 p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20 fontSizeH4 text-white m-0 px-3 py-2 position-relative">主題搜尋</h2>
+      <div class="rounded20@s p-0 uk-card uk-card-small uk-card-default uk-card-body">
+        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">主題搜尋</h2>
         <div class="min_height200 min_heightM500 p-3">
           <div class="uk-heading-line uk-text-center uk-margin">
             <div>
@@ -162,7 +165,7 @@
                   <div>
                     <label class="fontSize1 font-weight-bold uk-form-label" for="form_i_keywords">關鍵字</label>
                     <div class="uk-form-controls">
-                      <input class="uk-width-expand uk-input" id="form_i_keywords" type="text" placeholder="請輸入關鍵字" value="">
+                      <input class="uk-width-expand uk-input" id="form_i_keywords" type="text" placeholder="Please enter keywords" value="">
                     </div>
                   </div>
                 </div>
@@ -381,11 +384,11 @@
         </div>
       </div>
     </div>
-    <!-- .uk-container -->
+    <!-- .containerExpand uk-container -->
   </section>
   <!-- page main content -->
   <div id="footer" class="p-3 text-dark position-relative">
-    <div class="uk-container uk-container-large position-relative">
+    <div class="containerExpand uk-container uk-container-large position-relative">
       <div class="position-relative"><a class="remove_underline text-dark px-1 uk-position-absolute uk-visible@m" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z" style="left:-30px">:::</a></div>
       <footer class="uk-grid-small" uk-grid uk-margin>
         <!-- <div class="uk-width-1-4@m uk-width-1-5@l uk-width-1-6@xl"><img class="uk-width-1-2 uk-width-1-1@m" data-src="img/logo_white.svg" alt="logo" uk-img></div> -->
@@ -401,7 +404,7 @@
         <div>版權所有 © <span class="year"></span> 臺北榮民總醫院 教學部實證醫學中心</div>
       </footer>
     </div>
-    <!-- End uk-container -->
+    <!-- End containerExpand uk-container -->
   </div>
   <!-- End footer -->
 

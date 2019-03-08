@@ -82,7 +82,7 @@
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入</a></span>
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出</a></span>
               </div>
-              </div>
+            </div>
             <div class="uk-hidden@m uk-navbar-right">
               <a class="min_width50 text-dark text-right" href="#login" uk-toggle hidden>登入</a>
               <a class="min_width50 text-dark text-right" href="#">登出</a>
@@ -152,14 +152,14 @@
           </a>
           <a class="afterArrow remove_underline m-0" href="02-empirical3.html" title="步驟3">
             <span class="fontSize07 fontSize1_2@s fa-stack">
-              <i class="color_grey fas fa-circle fa-stack-2x"></i>
+              <i class="color_primary fas fa-circle fa-stack-2x"></i>
               <span class="font_default google_roboto font-weight-bold fa-stack-1x fa-inverse">3</span>
             </span>
             <span class="uk-visible@m">Appriase</span>
           </a>
-          <a class="afterArrow remove_underline m-0" href="02-empirical4.html" title="步驟4">
+          <a class="afterArrow remove_underline m-0" href="02-empirical4.html" title="步驟4" disabled>
             <span class="fontSize07 fontSize1_2@s fa-stack">
-              <i class="color_primary fas fa-circle fa-stack-2x"></i>
+              <i class="color_grey fas fa-circle fa-stack-2x"></i>
               <span class="font_default google_roboto font-weight-bold fa-stack-1x fa-inverse">4</span>
             </span>
             <span class="uk-visible@m">Apply</span>
@@ -174,7 +174,7 @@
         </div>
       </div>
       <div class="rounded20@s p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">Apply</h2>
+        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">Appraise</h2>
         <div class="min_height200 min_heightM500 p-3">
           <div class="uk-grid-medium" uk-grid>
             <div class="uk-width-1-3@m uk-width-1-4@l">
@@ -200,100 +200,134 @@
             <div class="uk-width-expand@m">
               <div class="uk-form">
                 <div id="content">
-                  <ul uk-accordion>
-                    <li class="uk-open">
-                      <a class="fontSize09 remove_underline bg-light px-2 py-1 uk-accordion-title" href="#">Note</a>
-                      <div class="border_black_opacity05 border border-top-0 m-0 p-2 uk-accordion-content">
-                        <p class="urlFix">This set of eight critical appraisal tools are designed to be used when reading research, these include tools for Systematic Reviews, Randomised Controlled Trials, Cohort Studies, Case Control Studies, Economic Evaluations, Diagnostic Studies, Qualitative studies and Clinical Prediction Rule.</p>
-                        <p class="urlFix uk-flex uk-flex-row">
-                          <i class="mr-4 fas fa-link"></i><a class="linkline" href="#">https://casp-uk.net/casp-tools-checklists/</a>
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
+                  <div class="uk-card uk-card-default uk-margin">
+                    <dl class="p-3">
+                      <dt class="color_secondary"><a href="#">Description term</a></dt>
+                      <dd class="m-0"><strong>Name</strong></dd>
+                      <dd class="m-0">Data - Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi</dd>
+                      <dd class="m-0"><a class="linkline mr-3" href="#">Source</a><a class="linkline mr-3" href="#">Source</a></dd>
+                      <dd class="m-0"><small class="color_secondary mr-3">Tag</small><small class="color_secondary mr-3">Tag</small></dd>
+                    </dl>
+                  </div>
                   <div class="btmline uk-flex uk-flex-bottom uk-margin">
                     <div class="uk-width-expand">
                       <p>No. 000123</p>
                     </div>
-                    <!-- <div><a class="w-100 btn_primary uk-button uk-button-default" href="#"><i class="mr-1 fas fa-pen"></i>Add</a></div> -->
+                    <!-- <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#"><i class="mr-1 fas fa-pen"></i>Add</a></div> -->
                   </div>
-                  <div class="uk-grid-collapse uk-flex-right uk-flex-middle" uk-margin uk-grid>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form1">科別</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <input id="form1" class="uk-input" type="text" placeholder="內科" value="內科" disabled>
+                  <div class="margin_child_even_s margin_child_s@m uk-grid-collapse uk-flex-right uk-flex-middle" uk-grid>
+                    <div class="uk-width-1-3@m"><label class="fontSize1 font-weight-bold uk-form-label" for="form_type">Research Design</label></div>
+                    <div class="uk-width-2-3@m">
+                      <select class="uk-select" id="form_type">
+                        <option>系統性文獻回顧(SR)</option>
+                        <option>隨機對照型研究(RCT)</option>
+                        <option>診斷型研究(DTA)</option>
+                        <option>觀察型研究(Observational Study)</option>
+                      </select>
                     </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label">決策類型</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <!-- <input class="uk-input" type="text" placeholder="診斷" value="診斷" disabled> -->
-                      <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1" disabled>診斷</label>
-                      <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1" disabled>篩檢</label>
-                      <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1" checked>治療</label>
-                      <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="radio1" disabled>其他</label>
+                    <div class="uk-width-1-3@m"><label class="fontSize1 font-weight-bold uk-form-label" for="form_tool">Tools</label></div>
+                    <div class="uk-width-2-3@m">
+                      <select class="uk-select" id="form_tool">
+                        <option>CASP</option>
+                        <option>Option 02</option>
+                      </select>
                     </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form3">關鍵字</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <input class="uk-input" id="form3" type="text" placeholder="" value="心肌梗塞; 心臟病" disabled>
-                    </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form4">工具標題</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <div class="uk-grid-small" uk-grid>
-                        <div class="uk-width-expand@s"><input class="uk-input" id="form4" type="text" placeholder="" value=""></div>
-                        <div class="text-center uk-flex uk-flex-center uk-flex-middle uk-width-auto@s"><i class="fas fa-plus" title="+"></i></div>
-                        <div class="uk-width-expand@s"><input class="uk-input" type="text" placeholder="" value="data" disabled></div>
+                    <div class="uk-width-1-3@m"><label class="fontSize1 font-weight-bold uk-form-label">Apprise Files</label></div>
+                    <div class="uk-width-2-3@m">
+                      <div class="cloneGroup uk-flex">
+                        <div class="cloneBlock mr-2 uk-width-expand uk-grid-small uk-child-width-1-2@s uk-child-width-1-1@m uk-child-width-1-2@l" uk-grid>
+                          <div class="clone" uk-form-custom="target: true">
+                            <input type="file">
+                            <input class="w-100 uk-input" type="text" placeholder="選擇檔案" disabled>
+                          </div>
+                        </div>
+                        <div><button class="addClone w-100 uk-button uk-button-default" title="增加檔案"><i class="fas fa-plus"></i></button></div>
                       </div>
                     </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form5">適用對象/狀況</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <input class="uk-input" id="form5" type="text" placeholder="" value="breast cancer patients" disabled>
+                    <div class="uk-width-1-3@m"><label class="fontSize1 mr-1 font-weight-bold uk-form-label" for="form_se">Level of Evidence</label><a href="#viewFile" title="檔案下載" uk-toggle><i class="fontSize1_4 color_secondary fas fa-info-circle"></i></a></div>
+                    <div class="uk-width-2-3@m">
+                      <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                        <div class="min_width1_2!@m">
+                          <select class="uk-select" id="form_se" onchange="showOption(this,1,'#otherInput')">
+                            <option>-Option-</option>
+                            <option>Level 1</option>
+                            <option>Level 2</option>
+                            <option>Level 3</option>
+                            <option>Level 4</option>
+                            <option>Level 5</option>
+                          </select>
+                        </div>
+                        <div id="otherInput" class="min_width1_2!@m" hidden>
+                          <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                            <div class="uk-width-auto uk-flex uk-flex-middle">
+                              <label class="w-100 font-weight-bold" for="i_other">Other</label>
+                            </div>
+                            <div class="uk-width-expand">
+                              <input class="uk-input" id="i_other" type="text" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form6">疾病介紹</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <input class="uk-input" id="form6" type="text" placeholder="" value="">
+                    <div id="viewFile" class="uk-modal-container uk-flex-top" uk-modal>
+                      <div class="uk-modal-dialog uk-margin-auto-vertical">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                          <h2 class="uk-modal-title">檔案瀏覽</h2>
+                        </div>
+                        <div class="uk-modal-body">
+                          <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-small uk-table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="uk-table-expand uk-width-1-6">Ques</th>
+                                  <th class="uk-table-expand uk-width-1-6">Step 1</th>
+                                  <th class="uk-table-expand uk-width-1-6">Step 2</th>
+                                  <th class="uk-table-expand uk-width-1-6">Step 3</th>
+                                  <th class="uk-table-expand uk-width-1-6">Step 4</th>
+                                  <th class="uk-table-expand uk-width-1-6">Step 5</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                </tr>
+                                <tr>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                  <td>Lorem ipsum dolor sit amet</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <!-- responsive table -->
+                        </div>
+                        <div class="uk-modal-footer uk-text-right">
+                          <!-- <a href="#" class="btn_secondary uk-button uk-button-primary">下　　載</a> -->
+                          <button class="uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
+                        </div>
+                      </div>
                     </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form7">治療方式</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <input class="uk-input" id="form7" type="text" placeholder="" value="Chinese medicinal herbs" disabled>
+                    <!-- uk-modal-viewFile -->
+                    <div class="uk-width-1-3@m"><label class="fontSize1 font-weight-bold uk-form-label" for="form_note">Study Conclusion</label></div>
+                    <div class="uk-width-2-3@m">
+                      <textarea class="uk-textarea" id="form_note" rows="3"></textarea>
                     </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label">四步驟決策</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <ul uk-accordion="multiple: true">
-                        <li>
-                          <a class="remove_underline fontSize1 uk-accordion-title" href="#">Step 1:比較每一項選擇的優點、風險、副作用(併發率)、費用、替代方案</a>
-                          <div class="mt-2 uk-accordion-content"><textarea class="uk-textarea" rows="2">案下議示是新是再洲朋入……只的香灣正出？就點告度邊提有男了同星狀地人山天斷會或食野讀紙利教在著預要進友構父園一治</textarea></div>
-                        </li>
-                        <li>
-                          <a class="remove_underline fontSize1 uk-accordion-title" href="#">Step 2:您選擇治療方式會在意的因素有什麼?以及在意的程度</a>
-                          <div class="mt-2 uk-accordion-content"><textarea class="uk-textarea" rows="2">案下議示是新是再洲朋入……只的香灣正出？就點告度邊提有男了同星狀地人山天斷會或食野讀紙利教在著預要進友構父園一治</textarea></div>
-                        </li>
-                        <li>
-                          <a class="remove_underline fontSize1 uk-accordion-title" href="#">Step 3:您對治療方式的認知有多少？</a>
-                          <div class="mt-2 uk-accordion-content"><textarea class="uk-textarea" rows="2">案下議示是新是再洲朋入……只的香灣正出？就點告度邊提有男了同星狀地人山天斷會或食野讀紙利教在著預要進友構父園一治</textarea></div>
-                        </li>
-                        <li>
-                          <a class="remove_underline fontSize1 uk-accordion-title" href="#">Step 4:您現在確認好治療方式了嗎？</a>
-                          <div class="mt-2 uk-accordion-content"><textarea class="uk-textarea" rows="2">我已經確認好想要的治療方式，我決定選擇確認好想要的治療方式:心導管檢查，必要時放置裸支架+藥物治療</textarea></div>
-                        </li>
-                      </ul>
+                    <div class="uk-width-1-3@m"><label class="fontSize1 font-weight-bold uk-form-label" for="form_note">Your comment</label></div>
+                    <div class="uk-width-2-3@m">
+                      <textarea class="uk-textarea" id="form_note" rows="3"></textarea>
                     </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form9">專家怎麼說</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <textarea class="uk-textarea" id="form9" rows="3">Effect of  Losmapimod on Cardiovascular Outcomes in Patients Hospitalized With Acute Myocardial Infarction: A Randomized Clinical Trial.</textarea>
-                    </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form10">證據怎麼說</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <textarea class="uk-textarea" id="form10" rows="3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</textarea>
-                    </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form11">病人的想法</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <textarea class="uk-textarea" id="form11" rows="3">Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</textarea>
-                    </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form12">環境可執行性評估</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <textarea class="uk-textarea" id="form12" rows="3">Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</textarea>
-                    </div>
-                    <div class="uk-width-1-3@m uk-width-1-4@l"><label class="fontSize1 font-weight-bold uk-form-label" for="form13">綜合上述,您如何建議病人?</label></div>
-                    <div class="uk-width-2-3@m uk-width-3-4@l">
-                      <textarea class="uk-textarea" id="form13" rows="3"></textarea>
+                    <div class="uk-width-1-3@m"><label class="fontSize1 font-weight-bold uk-form-label" for="form_note">Note</label></div>
+                    <div class="uk-width-2-3@m">
+                      <textarea class="uk-textarea" id="form_note" rows="3">Effect of Losmapimod on Cardiovascular Outcomes in Patients Hospitalized With Acute Myocardial Infarction:</textarea>
                     </div>
                   </div>
                   <div class="uk-margin"><button class="w-100 btn_secondary uk-button uk-button-default">Save</button></div>
