@@ -1,6 +1,7 @@
 //Input Check with Check All - <input type="checkbox" onchange="inputCheck(this,'.listCheck','.checkAll')">
 function inputCheck(thisCheck, thisClass, selectorCheckAll) {
-  var i, n = 0,
+  var i,
+    n = 0,
     inputClass = document.querySelectorAll(thisClass),
     checkAll = document.querySelector(selectorCheckAll);
   for (i = 0; i < inputClass.length; i++) {
@@ -26,7 +27,8 @@ function inputCheck(thisCheck, thisClass, selectorCheckAll) {
 function toggleCheckAll(thisClick, inputClass) {
   //thisClick means the "owner" and CANNOT use "this" that means the Global object "Window"
   thisClick.classList.toggle("checked");
-  var i, el = document.querySelectorAll(inputClass);
+  var i,
+    el = document.querySelectorAll(inputClass);
   //--set all input checked & unchecked--
   if (thisClick.classList.contains("checked")) {
     //if 'select all' checked
@@ -48,7 +50,7 @@ function toggleCheckAll(thisClick, inputClass) {
 //Remove all checked
 function removeAll(parent) {
   var Parent = document.querySelector(parent);
-  var Children = Parent.querySelectorAll('.checked'); //not working on "var Children = Parent.children;"
+  var Children = Parent.querySelectorAll(".checked"); //not working on "var Children = Parent.children;"
   for (i = 0; i < Children.length; i++) {
     Parent.removeChild(Children[i]);
   }
@@ -57,7 +59,8 @@ function removeAll(parent) {
 //Toggle Input Type (Password Visibility) with onclick="togglePassword('>input')"
 function togglePassword(cs) {
   //cs means CSS selectors
-  var i, el = document.querySelectorAll(cs);
+  var i,
+    el = document.querySelectorAll(cs);
   for (i = 0; i < el.length; i++) {
     if (el[i].type === "password") {
       el[i].type = "text";
@@ -69,13 +72,14 @@ function togglePassword(cs) {
 
 //Input Value Reset empty
 function inputReset(cs) {
-  var i, el = document.querySelectorAll(cs);
+  var i,
+    el = document.querySelectorAll(cs);
   for (i = 0; i < el.length; i++) {
     el[i].value = "";
   }
 }
 
-//Clone
+//Clone child
 function addCloneBlock(cloneBlock) {
   var cln = document.querySelector(cloneBlock).firstElementChild.cloneNode(true);
   cln.classList.remove("uk-hidden");
@@ -91,6 +95,104 @@ function showOption(thisSelect, index, cls) {
     showDiv.style.setProperty("display", "none", "important");
   }
 }
+
+
+//--------------Mesh-------------------------------------//
+//Trim space text
+function trimTxt(inputtx) {
+  return inputtx.replace(/^\s+|\s+$/gm, "");
+}
+
+//Clone
+function cloneBlock(cloneDiv, el) {
+  var clnParent = document.querySelector(cloneDiv);
+  var cln = el.cloneNode(true);
+  cln.classList.remove("uk-hidden");
+  clnParent.appendChild(cln);
+  // document.querySelector(cloneDiv).appendChild(cln);
+}
+
+//Remove child by class
+function remove(cls){
+  var el = document.getElementsByClassName(cls);
+  while(el[0]) {
+    el[0].parentNode.removeChild(el[0]);
+  }
+}
+
+//Form Reset
+function resetForm(sl) {
+  document.querySelector(sl).reset();
+}
+
+//----Mesh----
+//Click del button to fire unchecking
+function unCheck(thisClick, modalSelector) {
+  var modalDiv = document.querySelector(modalSelector);
+  var meshCheck = modalDiv.querySelectorAll(".uk-modal-body>form>label>input[type=checkbox]:checked");
+  var thisMeshTxt = thisClick.parentElement.querySelector("span").innerHTML;
+  var i;
+  //uncheck if the value is the same as this mesh tag
+  for (i = 0; i < meshCheck.length; i++) {
+    if (meshCheck[i].parentElement.textContent == thisMeshTxt) {
+      meshCheck[i].checked = false;
+      UIkit.alert(thisClick.parentElement).close();
+    }
+  }
+}
+
+//Add new tag
+function inputMesh(modalSelector, inputKey, tag, classKey, classMesh) {
+  var modalDiv = document.querySelector(modalSelector);
+  var modalKeyword = modalDiv.querySelector(".uk-modal-body>form>p");
+  var keywordTxt = document.querySelector(inputKey).value;
+  var keys = trimTxt(keywordTxt).split(",");
+  var tagBlock = document.querySelector(tag);
+  var key = tagBlock.querySelector("small:nth-child(1)");
+  var mesh = tagBlock.querySelector("small:nth-child(2)");
+  var i;
+
+  //Trim input keywords and set into modal
+  if (trimTxt(keywordTxt).length > 0) {
+    modalKeyword.innerHTML = trimTxt(keywordTxt);
+  } else {
+    modalKeyword.innerHTML = "(未輸入任何關鍵字)";
+  }
+  
+  //Click button to add new tag
+  modalDiv.querySelector("#btnSave").addEventListener("click", newTag);
+
+  //Add new tag
+  function newTag() {
+    var meshChecked = modalDiv.querySelectorAll(".uk-modal-body>form>label>input[type=checkbox]:checked");
+
+    remove(classKey);
+
+    //Add tag KEY if keywords not empty
+    if (trimTxt(keywordTxt).length > 0) {
+      for (i = 0; i < keys.length; i++) {
+        cloneBlock(tag, key);
+        tagBlock.querySelector("small:last-child").classList.add(classKey);
+        // tagBlock.querySelector("small:last-child>span").innerHTML = trimTxt(keywordTxt);
+        tagBlock.querySelector("small:last-child>span").innerHTML = keys[i];
+      }
+    }
+
+    remove(classMesh);
+
+    //Add tag MESH if checked
+    if (meshChecked.length > 0) {
+      for (i = 0; i < meshChecked.length; i++) {
+        cloneBlock(tag, mesh);
+        tagBlock.querySelector("small:last-child").classList.add(classMesh);
+        tagBlock.querySelector("small:last-child>span").innerHTML = meshChecked[i].parentElement.textContent;
+      }
+    }
+    UIkit.modal(modalSelector).hide();
+  }
+}
+//--------------End Mesh-------------------------------------//
+
 
 //--------------- end js ----------------------------------------------------------//
 
@@ -109,19 +211,27 @@ $(window).on("load", function() {
   $(".year").text(new Date().getFullYear());
 
   //Remove parent if child empty
-  $("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty").parent(":empty").remove();
+  $("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty")
+    .parent(":empty")
+    .remove();
   //Remove if empty
-  $("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty, .ifonlychild:only-child:last").remove();
+  $(
+    "p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty, .ifonlychild:only-child:last"
+  ).remove();
 
   //font resize
   if ($(".btnFontSizeS").is(".active")) {
     $("html").removeClass("fontSizeM fontSizeL");
   }
   if ($(".btnFontSizeM").is(".active")) {
-    $("html").removeClass("fontSizeL").addClass("fontSizeM");
+    $("html")
+      .removeClass("fontSizeL")
+      .addClass("fontSizeM");
   }
   if ($(".btnFontSizeL").is(".active")) {
-    $("html").removeClass("fontSizeM").addClass("fontSizeL");
+    $("html")
+      .removeClass("fontSizeM")
+      .addClass("fontSizeL");
   }
   $(".btnFontSize").click(function() {
     $(".btnFontSize").removeClass("active");
@@ -129,11 +239,15 @@ $(window).on("load", function() {
   });
   $(".btnFontSizeL>:only-child").click(function() {
     // $('.font_resize').removeClass('font_.btnFontSizeM').addClass('font_large');
-    $("html").removeClass("fontSizeM").addClass("fontSizeL");
+    $("html")
+      .removeClass("fontSizeM")
+      .addClass("fontSizeL");
   });
   $(".btnFontSizeM>:only-child").click(function() {
     // $('.font_resize').removeClass('font_large').addClass('font_.btnFontSizeM');
-    $("html").removeClass("fontSizeL").addClass("fontSizeM");
+    $("html")
+      .removeClass("fontSizeL")
+      .addClass("fontSizeM");
   });
   $(".btnFontSizeS>:only-child").click(function() {
     // $('.font_resize').removeClass('font_.btnFontSizeM font_large');
@@ -143,21 +257,39 @@ $(window).on("load", function() {
   //(02-empirical2) Search input & two levels of select - change parent select option to display & enable child select option
   $("#select_dep").change(function() {
     //parent select
-    $(".select_div").prop("disabled", "disabled").prop("hidden", "hidden"); //all child select hidden
-    if ($(this).children(":first-child").is(":selected")) {
+    $(".select_div")
+      .prop("disabled", "disabled")
+      .prop("hidden", "hidden"); //all child select hidden
+    if (
+      $(this)
+        .children(":first-child")
+        .is(":selected")
+    ) {
       //if 1st option selected
-      $(".select_div:first").prop("disabled", "disabled").prop("hidden", false); //default first child select show & disabled
+      $(".select_div:first")
+        .prop("disabled", "disabled")
+        .prop("hidden", false); //default first child select show & disabled
       $("#search_input").val(""); //empty input text
     } else {
-      $('.select_div[data-div="' + $(this).val() + '"]').prop("disabled", false).prop("hidden", false); //child select show & enabled
+      $('.select_div[data-div="' + $(this).val() + '"]')
+        .prop("disabled", false)
+        .prop("hidden", false); //child select show & enabled
       $("#search_input").val($(this).val()); //option text selected placeed into input
     }
   });
   $(".select_div").change(function() {
     //child select
-    if ($(this).children(":first-child").is(":selected")) {
+    if (
+      $(this)
+        .children(":first-child")
+        .is(":selected")
+    ) {
       //if 1st option selected
-      if ($("#select_dep").children(":first-child").is(":selected")) {
+      if (
+        $("#select_dep")
+          .children(":first-child")
+          .is(":selected")
+      ) {
         //and if 1st option of parent select selected
         $("#search_input").val(""); //empty input text
       } else {
@@ -169,31 +301,50 @@ $(window).on("load", function() {
   });
 
   //(02-empirical3, 03-knowledge2) for Add clone - button #add cannot place in <form> or not working
-  $(".clone:first").before($(".clone:first").clone().addClass("uk-hidden"));
+  $(".clone:first").before(
+    $(".clone:first")
+      .clone()
+      .addClass("uk-hidden")
+  );
   $(".addClone").click(function() {
-    var clone = $(this).parent().parent(".cloneGroup").children(".cloneBlock").children(".clone");
+    var clone = $(this)
+      .parent()
+      .parent(".cloneGroup")
+      .children(".cloneBlock")
+      .children(".clone");
     var counter = clone.not(".uk-hidden").length;
     if (counter < 4) {
-      clone.last().after($(".clone.uk-hidden").clone().removeClass("uk-hidden"));
+      clone.last().after(
+        $(".clone.uk-hidden")
+          .clone()
+          .removeClass("uk-hidden")
+      );
     }
   });
-
 });
 
 $(window).on("resize load", function() {
   //Match height
-  var h_middle = $(".heightJS").height() - $(".heightJS>div:nth-child(2)").height() - $(".heightJS>div:nth-child(4)").height();
-  $(".heightJS").css("padding-bottom", $(".heightJS>div:nth-child(4)").height());
+  var h_middle =
+    $(".heightJS").height() -
+    $(".heightJS>div:nth-child(2)").height() -
+    $(".heightJS>div:nth-child(4)").height();
+  $(".heightJS").css(
+    "padding-bottom",
+    $(".heightJS>div:nth-child(4)").height()
+  );
   $(".heightJS>div:nth-child(3)").css("height", h_middle);
 });
 
-//(02-empirical2) add class .fav 
+//(02-empirical2) add class .fav
 function toggleFav(thisBtn, cls) {
-  el = $(thisBtn).parent().parent();
+  el = $(thisBtn)
+    .parent()
+    .parent();
   $(el).toggleClass(cls);
   // location.reload();
 }
-//(02-empirical6) search PICO 
+//(02-empirical6) search PICO
 function clickShow(el, cls) {
   $(el).removeClass(cls);
 }

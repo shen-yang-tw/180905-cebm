@@ -82,7 +82,7 @@
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入</a></span>
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出</a></span>
               </div>
-              </div>
+            </div>
             <div class="uk-hidden@m uk-navbar-right">
               <a class="min_width50 text-dark text-right" href="#login" uk-toggle hidden>登入</a>
               <a class="min_width50 text-dark text-right" href="#">登出</a>
@@ -166,21 +166,89 @@
                 <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
               </ul>
               <!-- uk-pagination / select -->
-              <ol class="listDecimalRow listBadge listBadgeWidthM listBadgeDivder uk-list uk-list-striped">
-                <li>
-                  <div class="uk-grid-small uk-grid-divider uk-child-width-expand@m" uk-grid>
-                    <div class="min_width2_3!@m">
-                      <h3 class="fontSizeH5"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">網站資源</span>象常以直再程而農明。制實數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</h3>
+              <!-- <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                <div class="uk-width uk-visible@m" style="width: 115px;"></div>
+                <div>
+                  <div class="uk-grid-small uk-child-width-expand" uk-grid>
+                    <div class="min_width1_6!@m uk-width-auto">
+                      <a class="active px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle">類型<span class="toggle ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
                     </div>
-                    <div class="min_width1_3!@m"><a class="linkline d-inline uk-text-break" href="#">https://www.tebma.org.tw/</a></div>
+                    <div class="min_width1_2!@m uk-width-auto">
+                      <a class="px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle1">簡介<span class="toggle1 ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle1 ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
+                    </div>
+                    <div class="min_width1_3!@m uk-width-auto">
+                      <a class="px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle2">網址<span class="toggle2 ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle2 ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width uk-visible@m" style="width: 64px;"></div>
+              </div> -->
+              <ol class="listDecimalRow listBadge listBadgeWidthM listBadgeDivder uk-list uk-list-striped">
+                <li class="uk-hidden" uk-alert>
+                  <a class="p-2 uk-position-right uk-alert-close" title="刪除"><i class="fontSize1_4 fas fa-times"></i></a>
+                  <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                        <div class="min_width1_6!@m">
+                          <select class="uk-select">
+                            <option selected>-資源類別-</option>
+                            <option>網站資源</option>
+                            <option>臨床指引</option>
+                          </select>
+                        </div>
+                        <div class="min_width1_2!@m">
+                          <textarea class="uk-textarea" rows="3" style="height: 40px;"></textarea>
+                        </div>
+                        <div class="min_width1_3!@m">
+                          <input class="uk-input" type="text" placeholder="" value="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-4 uk-width uk-visible@m" style="width: 54px;"></div>
                   </div>
                 </li>
-                <li>
-                  <div class="uk-grid-small uk-grid-divider uk-child-width-expand@m" uk-grid>
-                    <div class="min_width2_3!@m">
-                      <h3 class="fontSizeH5"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">臨床指引</span>象常以直再程而農明。制實數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。</h3>
+                <li uk-alert>
+                  <a class="p-2 uk-position-right uk-alert-close" title="刪除"><i class="fontSize1_4 fas fa-times"></i></a>
+                  <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                        <div class="min_width1_6!@m">
+                          <select class="uk-select">
+                            <option selected>網站資源</option>
+                            <option>臨床指引</option>
+                          </select>
+                        </div>
+                        <div class="min_width1_2!@m">
+                          <textarea class="uk-textarea" rows="3" style="height: 40px;">中票向裡就白資相全光現甚根較太元精地要票。數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</textarea>
+                        </div>
+                        <div class="min_width1_3!@m">
+                          <input class="uk-input" type="text" placeholder="" value="https://www.tebma.org.tw/">
+                        </div>
+                      </div>
                     </div>
-                    <div class="min_width1_3!@m"><small>家急庭對關心有，年就身，你語問施簡所本寫眾別比的化顧約本治現生為型眾這對之近史懷</small></div>
+                    <div class="px-4 uk-width uk-visible@m" style="width: 54px;"></div>
+                  </div>
+                </li>
+                <li uk-alert>
+                  <a class="p-2 uk-position-right uk-alert-close" title="刪除"><i class="fontSize1_4 fas fa-times"></i></a>
+                  <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                    <div class="uk-width-expand">
+                      <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                        <div class="min_width1_6!@m">
+                          <select class="uk-select">
+                            <option>網站資源</option>
+                            <option selected>臨床指引</option>
+                          </select>
+                        </div>
+                        <div class="min_width1_2!@m">
+                          <textarea class="uk-textarea" rows="3" style="height: 40px;">象常以直再程而農明。制實數人用路起百教味我各一院：和不民生投車氣、展機賣車外到。</textarea>
+                        </div>
+                        <div class="min_width1_3!@m">
+                          <input class="uk-input" type="text" placeholder="" value="https://www.google.tw/">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-4 uk-width uk-visible@m" style="width: 54px;"></div>
                   </div>
                 </li>
               </ol>
@@ -198,7 +266,7 @@
               </ul>
               <!-- uk-pagination / select -->
               <hr>
-              <div class="cloneBlock uk-margin" uk-margin>
+              <!-- <div class="cloneBlock uk-margin" uk-margin>
                 <div class="uk-grid-small uk-child-width-expand@s uk-hidden" uk-margin uk-grid>
                   <div>
                     <label class="w-100 uk-form-label">資源類型
@@ -251,11 +319,12 @@
                     </label>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="uk-grid-small uk-child-width-1-2" uk-margin uk-grid>
-                <div><button class="btn_primary w-100 uk-button uk-button-primary" onclick="addCloneBlock('.cloneBlock')">Add</button></div>
-                <div><a class="btn_secondary w-100 uk-button uk-button-primary" href="#">Save</a></div>
+                <div><button class="btn_primary w-100 uk-button uk-button-primary" onclick="addCloneBlock('.listDecimalRow')">Add</button></div>
+                <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#">Save</a></div>
               </div>
+              <a class="btn_secondary mt-2 w-100 uk-button uk-button-primary" href="#">Output</a>
             </div>
             <!-- .uk-form -->
           </div>

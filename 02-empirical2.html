@@ -188,12 +188,13 @@
             </div>
             <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
               <div class="min_width1_2!@s uk-width-auto@s">
-                <label class="uk-form-label"><input class="uk-input" type="text" placeholder="Keyword"></label>
+                <label class="uk-form-label"><input id="keyP" class="uk-input" type="text" placeholder="Use &quot;,&quot; for multimple keywords"></label>
+                <small class="d-block"></small>
               </div>
               <div class="min_width1_2!@s min_width1_8!@m uk-width-auto@s">
-                <a class="btn_primary w-100 uk-button uk-button-primary" href="#meshModal" uk-toggle>MeSH</a>
+                <a class="btn_primary w-100 uk-button uk-button-primary" href="#meshModalP" uk-toggle onclick="inputMesh('#meshModalP', '#keyP', '#tagP', 'keyP', 'meshP')">MeSH</a>
               </div>
-              <div><small class="mr-2 badge badge-secondary" uk-alert>Keyword Text<a class="uk-alert-close" uk-close></a></small><small class="mr-2 bg_black badge badge-secondary" uk-alert>Mesh Text<a class="uk-alert-close" uk-close></a></small></div>
+              <div id="tagP"><small class="mr-2 badge badge-secondary uk-hidden" uk-alert><span>Keyword Text</span><a class="uk-alert-close" title="刪除" uk-close></a></small><small class="mr-2 bg_black badge badge-secondary uk-hidden" uk-alert><span>Mesh Text</span><a class="uk-alert-close" title="刪除" uk-close onclick="unCheck(this, '#meshModalP')"></a></small></div>
             </div>
             <div class="uk-flex uk-margin">
               <div class="align-self-sm-center">
@@ -206,12 +207,12 @@
             </div>
             <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
               <div class="min_width1_2!@s uk-width-auto@s">
-                <label class="uk-form-label"><input class="uk-input" type="text" placeholder="Keyword"></label>
+                <label class="uk-form-label"><input id="keyI" class="uk-input" type="text" placeholder="Use &quot;,&quot; for multimple keywords"></label>
               </div>
               <div class="min_width1_2!@s min_width1_8!@m uk-width-auto@s">
-                <a class="btn_primary w-100 uk-button uk-button-primary" href="#meshModal" uk-toggle>MeSH</a>
+                <a class="btn_primary w-100 uk-button uk-button-primary" href="#meshModalI" uk-toggle onclick="inputMesh('#meshModalI', '#keyI', '#tagI', 'keyI', 'meshI')">MeSH</a>
               </div>
-              <div><small class="mr-2 badge badge-secondary" uk-alert>Keyword Text<a class="uk-alert-close" uk-close></a></small><small class="mr-2 bg_black badge badge-secondary" uk-alert>Mesh Text<a class="uk-alert-close" uk-close></a></small></div>
+              <div id="tagI"><small class="mr-2 badge badge-secondary uk-hidden" uk-alert><span>Keyword Text</span><a class="uk-alert-close" title="刪除" uk-close></a></small><small class="mr-2 bg_black badge badge-secondary uk-hidden" uk-alert><span>Mesh Text</span><a class="uk-alert-close" title="刪除" uk-close onclick="unCheck(this, '#meshModalI')"></a></small></div>
             </div>
             <div class="uk-flex uk-margin">
               <div class="align-self-sm-center">
@@ -224,12 +225,12 @@
             </div>
             <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
               <div class="min_width1_2!@s uk-width-auto@s">
-                <label class="uk-form-label"><input class="uk-input" type="text" placeholder="Keyword"></label>
+                <label class="uk-form-label"><input id="keyC" class="uk-input" type="text" placeholder="Use &quot;,&quot; for multimple keywords"></label>
               </div>
               <div class="min_width1_2!@s min_width1_8!@m uk-width-auto@s">
-                <a class="btn_primary w-100 uk-button uk-button-primary" href="#meshModal" uk-toggle>MeSH</a>
+                <a class="btn_primary w-100 uk-button uk-button-primary" href="#meshModalC" uk-toggle onclick="inputMesh('#meshModalC', '#keyC', '#tagC', 'keyC', 'meshC')">MeSH</a>
               </div>
-              <div><small class="mr-2 badge badge-secondary" uk-alert>Keyword Text<a class="uk-alert-close" uk-close></a></small><small class="mr-2 bg_black badge badge-secondary" uk-alert>Mesh Text<a class="uk-alert-close" uk-close></a></small></div>
+              <div id="tagC"><small class="mr-2 badge badge-secondary uk-hidden" uk-alert><span>Keyword Text</span><a class="uk-alert-close" title="刪除" uk-close></a></small><small class="mr-2 bg_black badge badge-secondary uk-hidden" uk-alert><span>Mesh Text</span><a class="uk-alert-close" title="刪除" uk-close onclick="unCheck(this, '#meshModalC')"></a></small></div>
             </div>
             <div class="uk-flex uk-margin">
               <div class="align-self-sm-center">
@@ -242,12 +243,12 @@
             </div>
             <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
               <div class="min_width1_2!@s uk-width-auto@s">
-                <label class="uk-form-label"><input class="uk-input" type="text" placeholder="Keyword"></label>
+                <label class="uk-form-label"><input id="keyO" class="uk-input" type="text" placeholder="Use &quot;,&quot; for multimple keywords"></label>
               </div>
               <div class="min_width1_2!@s min_width1_8!@m uk-width-auto@s">
-                <a class="btn_primary w-100 uk-button uk-button-primary" href="#meshModal" uk-toggle>MeSH</a>
+                <a class="btn_primary w-100 uk-button uk-button-primary" href="#meshModalO" uk-toggle onclick="inputMesh('#meshModalO', '#keyO', '#tagO', 'keyO', 'meshO')">MeSH</a>
               </div>
-              <div><small class="mr-2 badge badge-secondary" uk-alert>Keyword Text<a class="uk-alert-close" uk-close></a></small><small class="mr-2 bg_black badge badge-secondary" uk-alert>Mesh Text<a class="uk-alert-close" uk-close></a></small></div>
+              <div id="tagO"><small class="mr-2 badge badge-secondary uk-hidden" uk-alert><span>Keyword Text</span><a class="uk-alert-close" title="刪除" uk-close></a></small><small class="mr-2 bg_black badge badge-secondary uk-hidden" uk-alert><span>Mesh Text</span><a class="uk-alert-close" title="刪除" uk-close onclick="unCheck(this, '#meshModalO')"></a></small></div>
             </div>
             <div class="uk-grid-small uk-child-width-expand" uk-grid>
               <div><a class="btn_secondary w-100 uk-button uk-button-primary" href="#searchResult" uk-toggle>搜　　尋</a></div>
@@ -370,23 +371,90 @@
     <!-- .containerExpand uk-container -->
   </section>
   <!-- page main content -->
-  <div id="meshModal" class="uk-flex-top" uk-modal>
+  <div id="meshModalP" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
-      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
       <div class="uk-modal-header">
         <h2 class="uk-modal-title">Patient, Problem MeSH Mapping</h2>
       </div>
       <div class="uk-modal-body">
         <p>Mapped MeSH terms for cancer</p>
         <form>
-          <p class="bg_grey p-2">cancer</p>
-          <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt">Text</label>
-          <label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt">Text</label>
+          <p class="bg_grey p-2">(未輸入任何關鍵字)</p>
+          <label class="labelP mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt" value="Mesh Text1">Mesh P1</label>
+          <label class="labelP mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt" value="Mesh Text2">Mesh P2</label>
         </form>
       </div>
       <div class="uk-modal-footer uk-text-right">
         <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-        <button class="btn_secondary uk-button uk-button-primary" type="button">Save</button>
+        <button id="btnReset" class="uk-button uk-button-default" type="button" onclick="resetForm('#meshModalP .uk-modal-body>form')">Reset</button>
+        <button id="btnSave" class="btn_secondary uk-button uk-button-primary" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal -->
+  <div id="meshModalI" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">Patient, Problem MeSH Mapping</h2>
+      </div>
+      <div class="uk-modal-body">
+        <p>Mapped MeSH terms for cancer</p>
+        <form>
+          <p class="bg_grey p-2">(未輸入任何關鍵字)</p>
+          <label class="labelI mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt" value="Mesh Text1">Mesh I1</label>
+          <label class="labelI mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt" value="Mesh Text2">Mesh I2</label>
+        </form>
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+        <button id="btnReset" class="uk-button uk-button-default" type="button" onclick="resetForm('#meshModalI .uk-modal-body>form')">Reset</button>
+        <button id="btnSave" class="btn_secondary uk-button uk-button-primary" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal -->
+  <div id="meshModalC" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">Patient, Problem MeSH Mapping</h2>
+      </div>
+      <div class="uk-modal-body">
+        <p>Mapped MeSH terms for cancer</p>
+        <form>
+          <p class="bg_grey p-2">(未輸入任何關鍵字)</p>
+          <label class="labelC mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt" value="Mesh Text1">Mesh C1</label>
+          <label class="labelC mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt" value="Mesh Text2">Mesh C2</label>
+        </form>
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+        <button id="btnReset" class="uk-button uk-button-default" type="button" onclick="resetForm('#meshModalC .uk-modal-body>form')">Reset</button>
+        <button id="btnSave" class="btn_secondary uk-button uk-button-primary" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal -->
+  <div id="meshModalO" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">Patient, Problem MeSH Mapping</h2>
+      </div>
+      <div class="uk-modal-body">
+        <p>Mapped MeSH terms for cancer</p>
+        <form>
+          <p class="bg_grey p-2">(未輸入任何關鍵字)</p>
+          <label class="labelO mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt" value="Mesh Text1">Mesh O1</label>
+          <label class="labelO mr-4"><input class="mr-1 uk-checkbox" type="checkbox" name="c_txt" value="Mesh Text2">Mesh O2</label>
+        </form>
+      </div>
+      <div class="uk-modal-footer uk-text-right">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+        <button id="btnReset" class="uk-button uk-button-default" type="button" onclick="resetForm('#meshModalO .uk-modal-body>form')">Reset</button>
+        <button id="btnSave" class="btn_secondary uk-button uk-button-primary" type="button">Save</button>
       </div>
     </div>
   </div>
