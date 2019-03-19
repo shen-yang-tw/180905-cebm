@@ -530,6 +530,7 @@ label {margin-bottom: inherit;}
 
 .uk-checkbox.form_white, .uk-radio.form_white {background-color: white;}
 .uk-checkbox.form_white:checked, .uk-checkbox.form_white:indeterminate, .uk-radio.form_white:checked {background-color: #1e87f0;}
+.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled {background-color: #fcfcfc;}
 
 .uk-button {padding: 0 10px;}
 [class*=uk-button].btn-secondary {color: #fff; background-color: #6c757d;}
@@ -550,6 +551,8 @@ label {margin-bottom: inherit;}
 .uk-alert.badge {margin-top:0; margin-bottom: 5px; padding: 7px 29px 7px 10px;}
 .uk-alert.badge .uk-alert-close {top: calc(14px / 2); right: 7px; opacity: .7;}
 .uk-alert.badge-secondary {color: #fff; background-color: #6c757d;}
+
+.uk-dropdown-nav>li.uk-active>a, .uk-dropdown-nav>li>a:focus, .uk-dropdown-nav>li>a:hover {border-bottom: 1px dotted lightgrey; padding-bottom: 3px; margin-bottom: 2px !important;}
 
 @media (min-width:640px) {
 .uk-width-auto\@s {flex: inherit;}
@@ -602,6 +605,27 @@ label {margin-bottom: inherit;}
 .roundedB20\@s {border-radius: 0 0 20px 20px !important;}
 .roundedL20\@s {border-radius: 20px 0 0 20px !important;}
 
+.min_width100\@s {min-width: 100px;}
+.min_width250\@s {min-width: 250px;}
+.min_width300\@s {min-width: 300px;}
+.min_width350\@s {min-width: 350px;}
+.min_width400\@s {min-width: 400px;}
+.min_width450\@s {min-width: 450px;}
+.min_width500\@s {min-width: 500px;}
+.min_width550\@s {min-width: 550px;}
+.min_width600\@s {min-width: 600px;}
+.min_width08\@s {min-width: calc(100% * 0.8);}
+.min_width07\@s {min-width: calc(100% * 0.7);}
+.min_width06\@s {min-width: calc(100% * 0.6);}
+.min_width1_2\@s {min-width: calc(100% / 2);}
+.min_width1_3\@s {min-width: calc(100% / 3);}
+.min_width1_4\@s {min-width: calc(100% / 4);}
+.min_width1_5\@s {min-width: calc(100% / 5);}
+.min_width1_6\@s {min-width: calc(100% / 6);}
+.min_width1_7\@s {min-width: calc(100% / 7);}
+.min_width1_8\@s {min-width: calc(100% / 8);}
+.min_width1_9\@s {min-width: calc(100% / 9);}
+.min_width1_10\@s {min-width: calc(100% / 10);}
 .min_width250\!\@s {min-width: 250px !important;}
 .min_width300\!\@s {min-width: 300px !important;}
 .min_width350\!\@s {min-width: 350px !important;}
@@ -677,6 +701,26 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 
 
 .min_width100\@m {min-width: 100px;}
+.min_width250\@m {min-width: 250px;}
+.min_width300\@m {min-width: 300px;}
+.min_width350\@m {min-width: 350px;}
+.min_width400\@m {min-width: 400px;}
+.min_width450\@m {min-width: 450px;}
+.min_width500\@m {min-width: 500px;}
+.min_width550\@m {min-width: 550px;}
+.min_width600\@m {min-width: 600px;}
+.min_width08\@m {min-width: calc(100% * 0.8);}
+.min_width07\@m {min-width: calc(100% * 0.7);}
+.min_width06\@m {min-width: calc(100% * 0.6);}
+.min_width1_2\@m {min-width: calc(100% / 2);}
+.min_width1_3\@m {min-width: calc(100% / 3);}
+.min_width1_4\@m {min-width: calc(100% / 4);}
+.min_width1_5\@m {min-width: calc(100% / 5);}
+.min_width1_6\@m {min-width: calc(100% / 6);}
+.min_width1_7\@m {min-width: calc(100% / 7);}
+.min_width1_8\@m {min-width: calc(100% / 8);}
+.min_width1_9\@m {min-width: calc(100% / 9);}
+.min_width1_10\@m {min-width: calc(100% / 10);}
 .min_width250\!\@m {min-width: 250px !important;}
 .min_width300\!\@m {min-width: 300px !important;}
 .min_width350\!\@m {min-width: 350px !important;}
@@ -787,6 +831,27 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 .roundedB20\@l {border-radius: 0 0 20px 20px !important;}
 .roundedL20\@l {border-radius: 20px 0 0 20px !important;}
 
+.min_width100\@l {min-width: 100px;}
+.min_width250\@l {min-width: 250px;}
+.min_width300\@l {min-width: 300px;}
+.min_width350\@l {min-width: 350px;}
+.min_width400\@l {min-width: 400px;}
+.min_width450\@l {min-width: 450px;}
+.min_width500\@l {min-width: 500px;}
+.min_width550\@l {min-width: 550px;}
+.min_width600\@l {min-width: 600px;}
+.min_width08\@l {min-width: calc(100% * 0.8);}
+.min_width07\@l {min-width: calc(100% * 0.7);}
+.min_width06\@l {min-width: calc(100% * 0.6);}
+.min_width1_2\@l {min-width: calc(100% / 2);}
+.min_width1_3\@l {min-width: calc(100% / 3);}
+.min_width1_4\@l {min-width: calc(100% / 4);}
+.min_width1_5\@l {min-width: calc(100% / 5);}
+.min_width1_6\@l {min-width: calc(100% / 6);}
+.min_width1_7\@l {min-width: calc(100% / 7);}
+.min_width1_8\@l {min-width: calc(100% / 8);}
+.min_width1_9\@l {min-width: calc(100% / 9);}
+.min_width1_10\@l {min-width: calc(100% / 10);}
 .min_width250\!\@l {min-width: 250px !important;}
 .min_width300\!\@l {min-width: 300px !important;}
 .min_width350\!\@l {min-width: 350px !important;}
@@ -831,6 +896,8 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 .min_width3_10\!\@l {min-width: calc(100% * 3 / 10) !important;}
 .min_width7_10\!\@l {min-width: calc(100% * 7 / 10) !important;}
 .min_width9_10\!\@l {min-width: calc(100% * 9 / 10) !important;}
+.min_width_auto\!\@l {min-width: auto !important;}
+.w_auto_l {width: auto;}
 .h_auto_l {height: auto;}
 
 .table_responsive_l thead {display: block;}
@@ -844,6 +911,27 @@ ol.listDecimalRow.listBadge.listBadgeDivder>li:after {margin: 0; top: 5px; botto
 .fontSizeM .h1vw {font-size: 1.6vw !important;}
 .fontSizeL .h1vw {font-size: 1.7vw !important;}
 
+.min_width100\@xl {min-width: 100px;}
+.min_width250\@xl {min-width: 250px;}
+.min_width300\@xl {min-width: 300px;}
+.min_width350\@xl {min-width: 350px;}
+.min_width400\@xl {min-width: 400px;}
+.min_width450\@xl {min-width: 450px;}
+.min_width500\@xl {min-width: 500px;}
+.min_width550\@xl {min-width: 550px;}
+.min_width600\@xl {min-width: 600px;}
+.min_width08\@xl {min-width: calc(100% * 0.8);}
+.min_width07\@xl {min-width: calc(100% * 0.7);}
+.min_width06\@xl {min-width: calc(100% * 0.6);}
+.min_width1_2\@xl {min-width: calc(100% / 2);}
+.min_width1_3\@xl {min-width: calc(100% / 3);}
+.min_width1_4\@xl {min-width: calc(100% / 4);}
+.min_width1_5\@xl {min-width: calc(100% / 5);}
+.min_width1_6\@xl {min-width: calc(100% / 6);}
+.min_width1_7\@xl {min-width: calc(100% / 7);}
+.min_width1_8\@xl {min-width: calc(100% / 8);}
+.min_width1_9\@xl {min-width: calc(100% / 9);}
+.min_width1_10\@xl {min-width: calc(100% / 10);}
 .min_width250\!\@xl {min-width: 250px !important;}
 .min_width300\!\@xl {min-width: 300px !important;}
 .min_width350\!\@xl {min-width: 350px !important;}

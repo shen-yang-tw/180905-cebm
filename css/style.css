@@ -178,7 +178,7 @@ h2.roundedT20 {min-height: 46px;}
 /* Bootstrap 4 Style
 ---------------------------------------------------- */
 
-.list-group-item.active, .list-group-item.active>a, .list-group-item.active>a>*, .list-group-item .active>a, .list-group-item .uk-active>a {background-color: #36863d; border-color: #36863d; color: white !important;}
+.list-group-item.active, .list-group-item.active>a, .list-group-item.active>a>*, .list-group-item .active, .list-group-item .active>a, .list-group-item .uk-active>a {background-color: #36863d; border-color: #36863d; color: white !important;}
 
 /* End Bootstrap 4 Style
 ---------------------------------------------------- */
