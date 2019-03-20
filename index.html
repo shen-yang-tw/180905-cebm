@@ -27,10 +27,10 @@
   <a class="bg_blackOpacity5 bg_hover_blackOpacity7 p-2 text-white rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" aria-label="Go to Top" uk-totop uk-scroll></a>
   <header class="pt-lg-3 uk-position-relative">
     <div class="uk-position-cover uk-visible@m" style="background: linear-gradient(to bottom, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, 0) 100%);"></div>
-    <div class="pt-2 pt-lg-0 containerExpand uk-container">
+    <div class="p-2 pt-lg-0 containerExpand uk-container">
       <div class="shadow-sm bg_white opacity90 uk-position-cover uk-hidden@m"></div>
       <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-        <div class="px-2 px-md-4 containerExpand uk-container uk-hidden@m">
+        <div class="px-2 px-md-4 py-0 containerExpand uk-container uk-hidden@m">
           <div class="uk-navbar-center">
             <h1 class="py-2"><a href="index.html" class="uk-logo" title="Logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
           </div>
@@ -45,10 +45,11 @@
             <span class="btnFontSize btnFontSizeS bgBlack text-dark"><button class="uk-button" title="縮小字級">A-</button></span>
             <span class="btnFontSize btnFontSizeM bgBlack text-dark active"><button class="uk-button" title="適中字級">A</button></span>
             <span class="btnFontSize btnFontSizeL bgBlack text-dark"><button class="uk-button" title="加大字級">A+</button></span>
-            <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle>登入</a></span>
-            <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#" hidden>登出</a></span>
+            <span class="bgBlack"><a class="min_width50 text-dark text-center" href="#login" uk-toggle>登入</a></span>
+            <span class="bgBlack"><a class="min_width50 text-dark text-center" href="#" hidden>登出</a></span>
           </div>
         </div>
+        <div class="uk-navbar-right uk-position-relative uk-hidden@m"><span class="bg_black"><a class="min_width50 text-white text-center" href="#login" uk-toggle>登入</a></span></div>
       </nav>
     </div>
   </header>
@@ -56,7 +57,7 @@
   <div class="uk-visible@m" style="height: 200px;"></div>
   <section class="p-sm-4 p-lg-5 mb-md-5 position-relative" uk-height-viewport="expand: true">
     <div class="p-0 position-relative containerExpand uk-container uk-container-large">
-      <div class="rounded20@s@m rounded5 opacity70 bg_white uk-position-cover"></div>
+      <div class="rounded20@m rounded5 opacity70 bg_white uk-position-cover"></div>
       <div class="p-4 position-relative">
         <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-20px">:::</a></div>
         <!-- <form class="mb-3 uk-width-2-3@l uk-margin-auto">
@@ -73,9 +74,9 @@
         </form> -->
         <div class="uk-grid-small uk-child-width-1-3@m uk-text-center" uk-grid>
           <div>
-            <div class="bg_secondary rounded5@s rounded20@s@m">
+            <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
-                <a class="btn_secondary h1vw roundedT20@s@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
+                <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
                   <div class="position-relative"><i class="toggle mr-1 text-white fas fa-hospital"></i>實證醫學中心<span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
@@ -97,9 +98,9 @@
             </div>
           </div>
           <div>
-            <div class="bg_secondary rounded5@s rounded20@s@m">
+            <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
-                <a class="btn_secondary h1vw roundedT20@s@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
+                <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
                   <div class="position-relative"><i class="toggle mr-1 text-white fas fa-list-alt"></i>訊息公告<span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
@@ -121,9 +122,9 @@
             </div>
           </div>
           <div>
-            <div class="bg_secondary rounded5@s rounded20@s@m">
+            <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
-                <a class="btn_secondary h1vw roundedT20@s@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
+                <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
                   <div class="position-relative"><i class="toggle mr-1 text-white fas fa-dna"></i>實證資源<span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
