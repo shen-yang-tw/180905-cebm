@@ -282,7 +282,11 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 
 /*---------- Width & Height & Scroll ------------------------------*/
 .fullWidth {width: 100%;}
+.min_width20 {min-width: 20px;}
+.min_width30 {min-width: 30px;}
+.min_width40 {min-width: 40px;}
 .min_width50 {min-width: 50px;}
+.min_width60 {min-width: 60px;}
 .min_width70 {min-width: 70px;}
 .min_width100 {min-width: 100px;}
 .min_width130 {min-width: 130px;}
