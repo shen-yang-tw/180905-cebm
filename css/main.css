@@ -19,9 +19,9 @@ footer, small {font-size: 0.875rem !important;} /* 14px */
 p:not([class*=bg_]), h1:not([class*=bg_]), h2:not([class*=bg_]), h3:not([class*=bg_]), h4:not([class*=bg_]), h5:not([class*=bg_]), h6:not([class*=bg_]) {line-height: 1.5;}
 q {font-style: normal; padding: 0 5px;}
 
-.h1vw {font-size: 6vw !important;}
-.fontSizeM .h1vw {font-size: 6.1vw !important;}
-.fontSizeL .h1vw {font-size: 6.2vw !important;}
+.h1vw {font-size: 5vw !important;}
+.fontSizeM .h1vw {font-size: 5.1vw !important;}
+.fontSizeL .h1vw {font-size: 5.2vw !important;}
 /*---------- End Font
 ---------------------------------------------------------------------------------- */
 
@@ -36,6 +36,7 @@ a:hover, a:hover>* {transition: all 500ms ease;}
 .notransition, [class*=btn]:hover *, [class*=uk-card]:hover, [class*=uk-button]:hover *, [class*=uk-slidenav]:hover *, [class*=uk-nav]:hover a, [class*=uk-tab]:hover a, [class*=list]:hover a {transition: none;}
 a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px solid rgba(30, 135, 240, 0.85) !important; -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; outline-color: rgba(30, 135, 240, 0.85);}
 /* *:focus {-webkit-box-shadow: 0 0 0 3px #1e87f0 !important; box-shadow: 0 0 0 3px #1e87f0 !important;} */
+a.disabled, fieldset:disabled a {pointer-events: none; opacity: .65;}
 
 /*---------- Google Fonts ------------------------------*/
 /*** @import not working on IE, must use <link> in <head> ***/
@@ -84,6 +85,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px so
 
 /*---------- Underline ------------------------------*/
 .btmline {border-bottom: 1px solid #e5e5e5; padding-bottom: 5px;}
+.btmlinedot {border-bottom: 1px dotted #e5e5e5; padding-bottom: 5px;}
 .underline {text-decoration: underline;}
 .hover_remove_underline:hover, .remove_underline, .remove_underline:hover, .remove_underline:hover>*, .remove_underline:hover>*>*, a.hover_remove_underline:hover, a.remove_underline, a.remove_underline:hover, a.remove_underline:hover>*, a.remove_underline:hover>*>* [class*="btn"]>* [class*=tab]>li>a:hover {text-decoration: none !important;}
 .linkline, .linkline>*, .hover_linkline:hover, .hover_linkline:hover>*, .hover_alllinkline:hover * {text-decoration: underline !important;}

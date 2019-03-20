@@ -52,7 +52,7 @@
                 </span>
                 <span class="p-1 uk-visible@l">
                   <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
-                    <div class="fontSize1_4 text-white"><i class="fas fa-heart"></i></div>
+                    <div class="fontSize1_4 text-white"><i class="fas fa-heart" title="可收藏"></i></div>
                     <div class="fontSize09 pb-2 text-white">成果<span class="eng fontSize07 remove_underline d-block">Output</span></div>
                   </a>
                 </span>
@@ -213,8 +213,8 @@
                   <div class="position-relative" uk-filter="target: .list">
                     <ul class="border2 border_secondary uk-tab">
                       <li class="uk-active" uk-filter-control><a href="#">All<small class="parentheses">1</small></a></li>
-                      <li uk-filter-control=".com"><a href="#">評讀<small class="parentheses">1</small></a></li>
                       <li uk-filter-control=".fav"><a href="#">收藏<small class="parentheses">1</small></a></li>
+                      <li uk-filter-control=".com"><a href="#">評讀<small class="parentheses">1</small></a></li>
                     </ul>
                     <div class="uk-position-right">
                       <div class="uk-hidden@s" style="height: 55px;"></div>
@@ -245,12 +245,29 @@
                     </ul>
                     <!-- uk-pagination / select -->
                     <ol class="list uk-list-divider">
-                      <li class="position-relative" data-year="2014" data-source="SourceB" data-title="Title2" data-writer="Writer2">
-                        <h3 class="fontSizeH5 m-0 font-weight-bold"><a class="color_secondary remove_underline hover_textShadow" href="#">Title2</a></h3>
-                        <small class="d-block"><strong>Writer2</strong></small>
-                        <small class="bg_grey px-2 d-block uk-margin-small">Leukemia. <strong>2014</strong> Feb;28(2):302-10.</small>
+                      <li class="position-relative" data-year="2014" data-source="SourceB" data-title="Title2" data-writer="Writer2" uk-margin>
+                        <h3 class="btmlinedot color_secondary fontSizeH5 m-0 font-weight-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</h3>
+                        <div class="uk-flex uk-flex-between" uk-margin>
+                          <div><strong>Writer2</strong></div>
+                          <div class="uk-flex uk-flex-between uk-flex-middle">
+                            <div class="mr-1">
+                              <button class="min_width50 btn btn-light btn-sm uk-flex uk-flex-between uk-flex-center" type="button" title="收藏" uk-toggle="target: >.toggle" onclick="toggleFav(this, 'fav')"><div class="toggle"><i class="fas fa-heart" title="可收藏"></i></div><div class="toggle" hidden><i class="color_primary fas fa-heart" title="已收藏"></i></div><div><small class="google_roboto" title="收藏數">0</small></div></button>
+                            </div>
+                            <div class="mr-1">
+                              <a href="#" target="_blank" title="新增評讀">
+                                <div class="fa-lg">
+                                  <span class="fa-layers fa-fw">
+                                    <i class="fas fa-file" data-fa-transform="grow-6 down-1"></i>
+                                    <i class="fas fa-pen-alt fa-inverse" data-fa-transform="shrink-6 down-3"></i>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <small class="d-block">Leukemia. <strong>2014</strong> Feb;28(2):302-10.</small>
                         <p class="m-0"><small class="color_secondary mr-3">CINAHL</small><small class="color_secondary mr-3">CDSR</small></p>
-                        <p class="m-0 uk-flex uk-flex-middle"><a class="btn_primary mt-2 mr-2 uk-button uk-button-primary uk-button-small" href="02-empirical3.html">新增評讀</a><button class="btn_secondary mt-2 mr-2 uk-button uk-button-secondary uk-button-small" type="button" uk-toggle="target: >.toggle" onclick="toggleFav(this, 'fav')"><span class="toggle">收藏</span><span class="toggle" hidden>已收藏</span></button><a class="mt-2 mr-2" href="#" target="_blank" title="SFX"><img width="77" height="19" alt="SFX" src="img/sfx.gif"></a><button class="btn_secondary mt-2 mr-2 uk-button uk-button-secondary uk-button-small" uk-toggle="target: .deltails" type="button">Details</button></p>
+                        <p class="m-0 uk-flex uk-flex-middle"><button class="btn-light mr-2 uk-button uk-button-small" uk-toggle="target: .deltails" type="button">Details</button><a class="mr-2" href="#" target="_blank" title="SFX"><img width="77" height="19" alt="SFX" src="img/sfx.gif"></a></p>
                         <div class="deltails w-100" hidden>
                           <div class="w-100 border uk-card uk-card-body">
                             <h3 class="font-weight-bold">Title2</h3>
@@ -263,12 +280,41 @@
                           </div>
                         </div>
                       </li>
-                      <li class="com position-relative" data-year="2017" data-source="SourceA" data-title="Title1" data-writer="Writer1">
-                        <h3 class="fontSizeH5 m-0 font-weight-bold"><a class="color_secondary remove_underline hover_textShadow" href="#">Title1</a></h3>
-                        <small class="d-block"><strong>Writer1</strong></small>
-                        <small class="bg_grey px-2 d-block uk-margin-small">Leukemia. <strong>2017</strong> Jan 23:302-10.</small>
+                      <li class="com position-relative" data-year="2017" data-source="SourceA" data-title="Title1" data-writer="Writer1" uk-margin>
+                        <h3 class="btmlinedot color_secondary fontSizeH5 m-0 font-weight-bold">Title1</h3>
+                        <div class="uk-flex uk-flex-between" uk-margin>
+                          <div><strong>Writer1</strong></div>
+                          <div class="uk-flex uk-flex-between uk-flex-middle">
+                            <div class="mr-1">
+                              <button class="min_width50 btn btn-light btn-sm uk-flex uk-flex-between uk-flex-center" type="button" title="收藏" uk-toggle="target: >.toggle" onclick="toggleFav(this, 'fav')"><div class="toggle"><i class="fas fa-heart" title="可收藏"></i></div><div class="toggle" hidden><i class="color_primary fas fa-heart" title="已收藏"></i></div><div><small class="google_roboto" title="收藏數">0</small></div></button>
+                            </div>
+                            <div class="mr-1">
+                              <a href="#" target="_blank" title="評讀1">
+                                <div class="fa-lg">
+                                  <span class="fa-layers fa-fw">
+                                    <i class="color_primary fas fa-file" data-fa-transform="grow-6 down-1"></i>
+                                    <i class="fas fa-pen-alt fa-inverse" data-fa-transform="shrink-6 down-3"></i>
+                                    <i class="text-body fas fa-circle fa-inverse" data-fa-transform="shrink-6 down-7 right-5"></i>
+                                    <span class="google_roboto fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-7 right-5">1</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="mr-1">
+                              <a href="#" target="_blank" title="新增評讀">
+                                <div class="fa-lg">
+                                  <span class="fa-layers fa-fw">
+                                    <i class="fas fa-file" data-fa-transform="grow-6 down-1"></i>
+                                    <i class="fas fa-pen-alt fa-inverse" data-fa-transform="shrink-6 down-3"></i>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <small class="d-block">Leukemia. <strong>2017</strong> Jan 23:302-10.</small>
                         <p class="m-0"><small class="color_secondary mr-3">Tag</small><small class="color_secondary mr-3">Tag</small></p>
-                        <p class="m-0 uk-flex uk-flex-middle"><a class="btn_primary mt-2 mr-2 uk-button uk-button-primary uk-button-small" href="02-empirical3.html">新增評讀</a><a class="btn_primary mt-2 mr-2 uk-button uk-button-primary uk-button-small" href="02-empirical3.html">評讀<small class="parentheses">1</small></a><button class="btn_secondary mt-2 mr-2 uk-button uk-button-secondary uk-button-small" type="button" uk-toggle="target: >.toggle" onclick="toggleFav(this, 'fav')"><span class="toggle">收藏</span><span class="toggle" hidden>已收藏</span></button><a class="mt-2 mr-2" href="#" target="_blank" title="SFX"><img width="77" height="19" alt="SFX" src="img/sfx.gif"></a><button class="btn_secondary mt-2 mr-2 uk-button uk-button-secondary uk-button-small" uk-toggle="target: .deltails" type="button">Details</button></p>
+                        <p class="m-0 uk-flex uk-flex-middle"><button class="btn-light mr-2 uk-button uk-button-small" uk-toggle="target: .deltails" type="button">Details</button><a class="mr-2" href="#" target="_blank" title="SFX"><img width="77" height="19" alt="SFX" src="img/sfx.gif"></a></p>
                         <div class="deltails w-100" hidden>
                           <div class="w-100 border uk-card uk-card-body">
                             <h3 class="font-weight-bold">Title1</h3>
@@ -281,12 +327,79 @@
                           </div>
                         </div>
                       </li>
-                      <li class="com fav position-relative" data-year="2018" data-source="SourceC" data-title="Title3" data-writer="Writer3">
-                        <h3 class="fontSizeH5 m-0 font-weight-bold"><a class="color_secondary remove_underline hover_textShadow" href="#">Title3</a></h3>
-                        <small class="d-block"><strong>Writer3</strong></small>
-                        <small class="bg_grey px-2 d-block uk-margin-small">Leukemia. <strong>2018</strong> Jan 23:302-10.</small>
+                      <li class="com fav position-relative" data-year="2018" data-source="SourceC" data-title="Title3" data-writer="Writer3" uk-margin>
+                        <h3 class="btmlinedot color_secondary fontSizeH5 m-0 font-weight-bold"><a class="color_secondary remove_underline hover_textShadow" href="#">Title3</a></h3>
+                        <div class="uk-flex uk-flex-between" uk-margin>
+                          <div><strong>Writer3</strong></div>
+                          <div class="uk-flex uk-flex-between uk-flex-middle">
+                            <div class="mr-1">
+                              <button class="min_width50 btn btn-light btn-sm uk-flex uk-flex-between uk-flex-center" type="button" title="收藏" uk-toggle="target: >.toggle" onclick="toggleFav(this, 'fav')"><div class="toggle" hidden><i class="fas fa-heart" title="可收藏"></i></div><div class="toggle"><i class="color_primary fas fa-heart" title="已收藏"></i></div><div><small class="google_roboto" title="收藏數">1</small></div></button>
+                            </div>
+                            <div class="mr-1">
+                              <a href="#" target="_blank" title="評讀1">
+                                <div class="fa-lg">
+                                  <span class="fa-layers fa-fw">
+                                    <i class="color_primary fas fa-file" data-fa-transform="grow-6 down-1"></i>
+                                    <i class="fas fa-pen-alt fa-inverse" data-fa-transform="shrink-6 down-3"></i>
+                                    <i class="text-body fas fa-circle fa-inverse" data-fa-transform="shrink-6 down-7 right-5"></i>
+                                    <span class="google_roboto fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-7 right-5">1</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="mr-1">
+                              <a href="#" target="_blank" title="評讀2">
+                                <div class="fa-lg">
+                                  <span class="fa-layers fa-fw">
+                                    <i class="color_primary fas fa-file" data-fa-transform="grow-6 down-1"></i>
+                                    <i class="fas fa-pen-alt fa-inverse" data-fa-transform="shrink-6 down-3"></i>
+                                    <i class="text-body fas fa-circle fa-inverse" data-fa-transform="shrink-6 down-7 right-5"></i>
+                                    <span class="google_roboto fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-7 right-5">2</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="mr-1">
+                              <a href="#" target="_blank" title="評讀3">
+                                <div class="fa-lg">
+                                  <span class="fa-layers fa-fw">
+                                    <i class="color_primary fas fa-file" data-fa-transform="grow-6 down-1"></i>
+                                    <i class="fas fa-pen-alt fa-inverse" data-fa-transform="shrink-6 down-3"></i>
+                                    <i class="text-body fas fa-circle fa-inverse" data-fa-transform="shrink-6 down-7 right-5"></i>
+                                    <span class="google_roboto fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-7 right-5">3</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="mr-1">
+                              <a href="#" target="_blank" title="評讀4">
+                                <div class="fa-lg">
+                                  <span class="fa-layers fa-fw">
+                                    <i class="color_primary fas fa-file" data-fa-transform="grow-6 down-1"></i>
+                                    <i class="fas fa-pen-alt fa-inverse" data-fa-transform="shrink-6 down-3"></i>
+                                    <i class="text-body fas fa-circle fa-inverse" data-fa-transform="shrink-6 down-7 right-5"></i>
+                                    <span class="google_roboto fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-7 right-5">4</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="mr-1">
+                              <a href="#" target="_blank" title="評讀5">
+                                <div class="fa-lg">
+                                  <span class="fa-layers fa-fw">
+                                    <i class="color_primary fas fa-file" data-fa-transform="grow-6 down-1"></i>
+                                    <i class="fas fa-pen-alt fa-inverse" data-fa-transform="shrink-6 down-3"></i>
+                                    <i class="text-body fas fa-circle fa-inverse" data-fa-transform="shrink-6 down-7 right-5"></i>
+                                    <span class="google_roboto fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-7 right-5">5</span>
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <small class="d-block">Leukemia. <strong>2018</strong> Jan 23:302-10.</small>
                         <p class="m-0"><small class="color_secondary mr-3">Tag</small><small class="color_secondary mr-3">Tag</small></p>
-                        <p class="m-0 uk-flex uk-flex-middle"><a class="btn_primary mt-2 mr-2 uk-button uk-button-primary uk-button-small" href="02-empirical3.html">新增評讀</a><a class="btn_primary mt-2 mr-2 uk-button uk-button-primary uk-button-small" href="02-empirical3.html">評讀<small class="parentheses">1</small></a><button class="btn_secondary mt-2 mr-2 uk-button uk-button-secondary uk-button-small" type="button" uk-toggle="target: >.toggle" onclick="toggleFav(this, 'fav')"><span class="toggle" hidden>收藏</span><span class="toggle">已收藏</span></button><a class="mt-2 mr-2" href="#" target="_blank" title="SFX"><img width="77" height="19" alt="SFX" src="img/sfx.gif"></a><button class="btn_secondary mt-2 mr-2 uk-button uk-button-secondary uk-button-small" uk-toggle="target: .deltails" type="button">Details</button></p>
+                        <p class="m-0 uk-flex uk-flex-middle"><button class="btn-light mr-2 uk-button uk-button-small" uk-toggle="target: .deltails" type="button">Details</button><a class="mr-2" href="#" target="_blank" title="SFX"><img width="77" height="19" alt="SFX" src="img/sfx.gif"></a></p>
                         <div class="deltails w-100" hidden>
                           <div class="w-100 border uk-card uk-card-body">
                             <h3 class="font-weight-bold">Title3</h3>
