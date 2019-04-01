@@ -34,7 +34,7 @@
           <div class="px-2 px-md-4 uk-container uk-container-large" uk-navbar>
             <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
             <div class="uk-navbar-left">
-              <h1 class="pl-2 py-2 mr-4 uk-flex uk-flex-middle"><a class="px-0 uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+              <h1 class="pl-2 p-lg-2 py-2 uk-flex uk-flex-middle"><a class="uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
             </div>
             <div class="uk-navbar-right">
               <div class="h-100 py-1 uk-flex uk-flex-middle" uk-margin>
@@ -79,13 +79,13 @@
                 <span class="btnFontSize btnFontSizeS bgBlack uk-visible@m"><button class="uk-button" title="縮小字級">A-</button></span>
                 <span class="btnFontSize btnFontSizeM bgBlack active uk-visible@m"><button class="uk-button" title="適中字級">A</button></span>
                 <span class="btnFontSize btnFontSizeL bgBlack uk-visible@m"><button class="uk-button" title="加大字級">A+</button></span>
-                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入</a></span>
-                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出</a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a></span>
               </div>
             </div>
             <div class="uk-hidden@m uk-navbar-right">
-              <a class="min_width50 text-dark text-right" href="#login" uk-toggle hidden>登入</a>
-              <a class="min_width50 text-dark text-right" href="#">登出</a>
+              <a class="min_width50 line_height1 text-dark text-right" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a>
+              <a class="min_width50 line_height1 text-dark text-right" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a>
             </div>
           </div>
           <div class="py-1 border-top grid_xxsmall uk-grid-small uk-flex-center uk-hidden@l" uk-margin uk-grid>
@@ -135,7 +135,7 @@
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
       <div class="rounded20@s p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">資源</h2>
+        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 uk-text-break position-relative">資源</h2>
         <div class="min_height200 min_heightM500 p-3">
           <div class="uk-heading-line uk-text-center uk-margin">
             <div>
@@ -147,8 +147,8 @@
           </div>
           <!-- uk-heading-line -->
           <ul class="border2 border_secondary uk-tab">
-            <li class="uk-active"><a href="03-knowledge4.html">推薦資源</a></li>
-            <li><a href="03-knowledge5.html">自建資源</a></li>
+            <li class="uk-active"><a href="03-knowledge4.html">推薦資源<small class="eng fontSize07 ml-1">Recommendation</small></a></li>
+            <li><a href="03-knowledge5.html">自建資源<small class="eng fontSize07 ml-1">Self-Built</small></a></li>
           </ul>
           <!-- .uk-tab -->
           <div class="searchBar form_space_m uk-form uk-form-horizontal">
@@ -163,23 +163,23 @@
                   <option>臨床指引</option>
                 </select>
               </div>
-              <div class="uk-width-1-6@m"><a class="btn_primary w-100 uk-button uk-button-primary" href="#">搜　　尋</a></div>
+              <div class="uk-width-1-6@m"><a class="btn_primary w-100 uk-button uk-button-primary" href="#">Search</a></div>
             </div>
           </div>
           <!-- .searchBar -->
           <div class="content uk-margin">
-            <p class="btmline m-0">資源列表 / 搜尋結果：<strong class="color_secondary mr-3">77歲</strong></p>
+            <p class="btmline m-0">資源列表 / 搜尋結果<small class="eng fontSize07 ml-1">Search result</small>：共<span class="sum">234</span>筆 / <strong class="color_secondary mr-3">77歲</strong></p>
             <div class="uk-form uk-margin">
               <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
+                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
                 <li class="uk-flex uk-flex-middle">
                   <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
                     <option>1</option>
                     <option>2</option>
                   </select>
-                  <span class="uk-text-nowrap">/ <span class="sum">20</span></span>
+                  <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
                 </li>
-                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
               </ul>
               <!-- uk-pagination / select -->
               <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
@@ -187,13 +187,13 @@
                 <div>
                   <div class="uk-grid-small uk-child-width-expand" uk-grid>
                     <div class="min_width1_6!@m uk-width-auto">
-                      <a class="active px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle">類型<span class="toggle ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
+                      <a class="uk-active line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle">類型<div class="eng fontSize07">Type</div><span class="toggle m-0"><i class="fas fa-caret-up"></i></span><span class="toggle m-0" hidden><i class="fas fa-caret-down"></i></span></a>
                     </div>
                     <div class="min_width1_2!@m uk-width-auto">
-                      <a class="px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle1">簡介<span class="toggle1 ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle1 ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
+                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle1">簡介<div class="eng fontSize07">Summary</div><span class="toggle1 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle1 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
                     </div>
                     <div class="min_width1_3!@m uk-width-auto">
-                      <a class="px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle2">網址<span class="toggle2 ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle2 ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
+                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle2">網址<div class="eng fontSize07">URL</div><span class="toggle2 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle2 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
                     </div>
                   </div>
                 </div>
@@ -220,15 +220,15 @@
               </ol>
               <!-- .listDecimalRow listBadge listBadgeWidthM listBadgeDivder / uk-list-striped -->
               <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
+                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
                 <li class="uk-flex uk-flex-middle">
                   <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
                     <option>1</option>
                     <option>2</option>
                   </select>
-                  <span class="uk-text-nowrap">/ <span class="sum">20</span></span>
+                  <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
                 </li>
-                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
               </ul>
               <!-- uk-pagination / select -->
             </div>

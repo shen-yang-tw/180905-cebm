@@ -34,7 +34,7 @@
           <div class="px-2 px-md-4 uk-container uk-container-large" uk-navbar>
             <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
             <div class="uk-navbar-left">
-              <h1 class="pl-2 py-2 mr-4 uk-flex uk-flex-middle"><a class="px-0 uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+              <h1 class="pl-2 p-lg-2 py-2 uk-flex uk-flex-middle"><a class="uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
             </div>
             <div class="uk-navbar-right">
               <div class="h-100 py-1 uk-flex uk-flex-middle" uk-margin>
@@ -79,13 +79,13 @@
                 <span class="btnFontSize btnFontSizeS bgBlack uk-visible@m"><button class="uk-button" title="縮小字級">A-</button></span>
                 <span class="btnFontSize btnFontSizeM bgBlack active uk-visible@m"><button class="uk-button" title="適中字級">A</button></span>
                 <span class="btnFontSize btnFontSizeL bgBlack uk-visible@m"><button class="uk-button" title="加大字級">A+</button></span>
-                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入</a></span>
-                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出</a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a></span>
               </div>
-              </div>
+            </div>
             <div class="uk-hidden@m uk-navbar-right">
-              <a class="min_width50 text-dark text-right" href="#login" uk-toggle hidden>登入</a>
-              <a class="min_width50 text-dark text-right" href="#">登出</a>
+              <a class="min_width50 line_height1 text-dark text-right" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a>
+              <a class="min_width50 line_height1 text-dark text-right" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a>
             </div>
           </div>
           <div class="py-1 border-top grid_xxsmall uk-grid-small uk-flex-center uk-hidden@l" uk-margin uk-grid>
@@ -126,7 +126,7 @@
   </header>
   <!-- header -->
   <section class="position-relative" uk-height-viewport="expand: true">
-    <div class="containerExpand uk-container uk-container-large">
+    <div class="containerExpand uk-container">
       <ul class="text-dark uk-breadcrumb uk-visible@m">
         <li><a class="linkline" href="#">首頁</a></li>
         <li><a class="linkline" href="#">Link</a></li>
@@ -135,7 +135,7 @@
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
       <div class="rounded20@s p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">個人</h2>
+        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 uk-text-break position-relative">個人</h2>
         <div class="min_height200 min_heightM500 p-3">
           <div class="uk-grid-medium uk-grid-divider" uk-grid>
             <div class="uk-width-1-3@m uk-width-1-4@l">
@@ -144,89 +144,62 @@
                   <img class="img-thumbnail w-100" data-src="img/man-user.svg" width="100" alt="#" uk-img>
                 </div>
                 <div>
-                  <form class="form_space_s uk-form-horizontal uk-flex-middle uk-margin" uk-margin>
-                    <div>
-                      <label class="fontSize1 font-weight-bold uk-form-label" for="form_name">姓名</label>
-                      <div class="uk-form-controls">
-                        <input class="uk-input" id="form_name" type="text" placeholder="" value="李先知">
-                      </div>
-                    </div>
-                    <div>
-                      <label class="fontSize1 font-weight-bold uk-form-label">性別</label>
-                      <div class="uk-form-controls uk-flex">
-                        <label class="mr-3 ml-0 uk-form-label"><input class="form_white mr-1 uk-radio" type="radio" name="gender" checked>男</label>
-                        <label class="mr-3 ml-0 uk-form-label"><input class="form_white mr-1 uk-radio" type="radio" name="gender">女</label>
-                      </div>
-                    </div>
-                  </form>
+                  <a class="btn_primary w-100 uk-button uk-button-primary" href="#">Change Photo</a>
                 </div>
               </div>
             </div>
             <div class="uk-width-expand@m">
               <form class="form_space_l uk-form-horizontal uk-child-width-1-2@s uk-child-width-1-1@m uk-child-width-1-2@l" uk-grid uk-margin>
                 <div class="uk-width-1-1">
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_account">帳　　號</label>
+                  <label class="fontSize1 line_height1 font-weight-bold uk-form-label" for="form_account">帳　　號&nbsp;<small class="eng fontSize07">Account</small></label>
                   <div class="uk-form-controls">
-                    <input class="uk-input" id="form_account" type="text" placeholder="" value="AAA">
-                  </div>
-                </div>
-                <div class="uk-width-1-1">
-                  <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-margin>
-                    <div class="uk-width-expand@s">
-                      <label class="fontSize1 font-weight-bold uk-form-label" for="form_password">密　　碼</label>
-                      <div class="uk-form-controls">
-                        <div class="position-relative">
-                          <button class="remove_underline uk-button uk-button-link uk-form-icon uk-form-icon-flip" type="button" uk-toggle="target: .toggle" onclick="togglePassword('.password')">
-                            <i class="toggle far fa-eye" title="顯示" hidden></i><i class="toggle far fa-eye-slash" title="隱藏"></i>
-                            <!-- <small class="toggle">顯示</small><small class="toggle" hidden>隱藏</small> -->
-                          </button>
-                          <input class="password uk-input" id="form_password" type="password" value="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="uk-width-expand@s">
-                      <label class="fontSize1 font-weight-bold uk-form-label" for="form_password1">密碼確認</label>
-                      <div class="uk-form-controls">
-                        <div class="position-relative">
-                          <button class="remove_underline uk-button uk-button-link uk-form-icon uk-form-icon-flip" type="button" uk-toggle="target: .toggle" onclick="togglePassword('.password')">
-                            <i class="toggle far fa-eye" title="顯示" hidden></i><i class="toggle far fa-eye-slash" title="隱藏"></i>
-                            <!-- <small class="toggle">顯示</small><small class="toggle" hidden>隱藏</small> -->
-                          </button>
-                          <input class="password uk-input" id="form_password1" type="password" value="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="uk-width-auto@m"><a class="btn_primary w-100 uk-button uk-button-default" href="#" onclick="inputReset('input.password')">重　　設</a></div>
+                    <input class="uk-input" id="form_account" type="text" placeholder="" value="AAA" disabled>
                   </div>
                 </div>
                 <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_branch">機構名稱</label>
+                  <label class="fontSize1 line_height1 font-weight-bold uk-form-label" for="form_branch">機構名稱&nbsp;<small class="eng fontSize07">Institution</small></label>
                   <div class="uk-form-controls">
-                    <input class="uk-input" id="form_branch" type="text" placeholder="" value="臺北榮民總醫院">
+                    <input class="uk-input" id="form_branch" type="text" placeholder="" value="臺北榮民總醫院" disabled>
                   </div>
                 </div>
                 <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_dep">服務科別</label>
+                  <label class="fontSize1 line_height1 font-weight-bold uk-form-label" for="form_dep">服務科別&nbsp;<small class="eng fontSize07">Division</small></label>
                   <div class="uk-form-controls">
-                    <select class="uk-select" id="form_dep">
+                    <select class="uk-select" id="form_dep" disabled>
                       <option>Option 01</option>
                       <option>Option 02</option>
                     </select>
                   </div>
                 </div>
                 <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_tel">聯絡電話</label>
+                  <label class="fontSize1 line_height1 font-weight-bold uk-form-label" for="form_tel">聯絡電話&nbsp;<small class="eng fontSize07">Phone</small></label>
                   <div class="uk-form-controls">
-                    <input class="uk-input" id="form_tel" type="text" placeholder="" value="">
+                    <input class="uk-input" id="form_tel" type="text" placeholder="" value="" disabled>
                   </div>
                 </div>
                 <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_email">聯絡信箱</label>
+                  <label class="fontSize1 line_height1 font-weight-bold uk-form-label" for="form_email">聯絡信箱&nbsp;<small class="eng fontSize07">Email</small></label>
                   <div class="uk-form-controls">
-                    <input class="uk-input" id="form_email" type="text" placeholder="" value="">
+                    <input class="uk-input" id="form_email" type="text" placeholder="" value="" disabled>
                   </div>
                 </div>
-                <div class="uk-width-1-1"><a class="btn_secondary w-100 uk-button uk-button-primary" href="#">儲　　存</a></div>
+                <div class="uk-width-1-1">
+                  <label class="fontSize1 line_height1 font-weight-bold uk-form-label" for="form_pos">職級&nbsp;<small class="eng fontSize07">Position</small></label>
+                  <div class="uk-form-controls uk-grid-collapse uk-child-width-auto" uk-grid>
+                    <div><label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox">R</label></div>
+                    <div><label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox">PGY</label></div>
+                    <div><label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox">Intern</label></div>
+                    <div><label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox">V</label></div>
+                    <div><label class="mr-4"><input class="mr-1 uk-checkbox" type="checkbox">護理 Nurse</label></div>
+                    <div>
+                      <label class="mr-4" aria-labelledby="form_other">
+                        <input class="mr-1 uk-checkbox" type="checkbox">其他 Other
+                        <input class="uk-input uk-width-auto@s" id="form_other" type="text" placeholder="" value="">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-1-1"><a class="btn_secondary w-100 uk-button uk-button-primary" href="#">Save</a></div>
               </form>
             </div>
           </div>

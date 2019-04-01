@@ -34,7 +34,7 @@
           <div class="px-2 px-md-4 uk-container uk-container-large" uk-navbar>
             <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
             <div class="uk-navbar-left">
-              <h1 class="pl-2 py-2 mr-4 uk-flex uk-flex-middle"><a class="px-0 uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+              <h1 class="pl-2 p-lg-2 py-2 uk-flex uk-flex-middle"><a class="uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
             </div>
             <div class="uk-navbar-right">
               <div class="h-100 py-1 uk-flex uk-flex-middle" uk-margin>
@@ -79,13 +79,13 @@
                 <span class="btnFontSize btnFontSizeS bgBlack uk-visible@m"><button class="uk-button" title="縮小字級">A-</button></span>
                 <span class="btnFontSize btnFontSizeM bgBlack active uk-visible@m"><button class="uk-button" title="適中字級">A</button></span>
                 <span class="btnFontSize btnFontSizeL bgBlack uk-visible@m"><button class="uk-button" title="加大字級">A+</button></span>
-                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入</a></span>
-                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出</a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a></span>
               </div>
             </div>
             <div class="uk-hidden@m uk-navbar-right">
-              <a class="min_width50 text-dark text-right" href="#login" uk-toggle hidden>登入</a>
-              <a class="min_width50 text-dark text-right" href="#">登出</a>
+              <a class="min_width50 line_height1 text-dark text-right" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a>
+              <a class="min_width50 line_height1 text-dark text-right" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a>
             </div>
           </div>
           <div class="py-1 border-top grid_xxsmall uk-grid-small uk-flex-center uk-hidden@l" uk-margin uk-grid>
@@ -135,7 +135,7 @@
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
       <div class="rounded20@s p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">資源</h2>
+        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 uk-text-break position-relative">資源</h2>
         <div class="min_height200 min_heightM500 p-3">
           <div class="uk-heading-line uk-text-center uk-margin">
             <div>
@@ -147,184 +147,135 @@
           </div>
           <!-- uk-heading-line -->
           <ul class="border2 border_secondary uk-tab">
-            <li><a href="03-knowledge4.html">推薦資源</a></li>
-            <li class="uk-active"><a href="03-knowledge5.html">自建資源</a></li>
+            <li><a href="03-knowledge4.html">推薦資源<small class="eng fontSize07 ml-1">Recommendation</small></a></li>
+            <li class="uk-active"><a href="03-knowledge5.html">自建資源<small class="eng fontSize07 ml-1">Self-Built</small></a></li>
           </ul>
           <!-- .uk-tab -->
           <div class="content uk-margin">
-            <p class="btmline m-0">資源列表</p>
+            <p class="btmline m-0">資源列表<a class="btn_primary uk-button uk-button-small uk-button-primary uk-float-right" href="#modify" uk-toggle>Add</a></p>
             <div class="uk-form uk-margin">
-              <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
-                <li class="uk-flex uk-flex-middle">
-                  <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
-                    <option>1</option>
-                    <option>2</option>
-                  </select>
-                  <span class="uk-text-nowrap">/ <span class="sum">20</span></span>
-                </li>
-                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
-              </ul>
-              <!-- uk-pagination / select -->
-              <!-- <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-                <div class="uk-width uk-visible@m" style="width: 115px;"></div>
+              <div class="pagesBar uk-margin uk-flex-right uk-flex-middle uk-grid-collapse uk-child-width-expand" uk-grid>
                 <div>
-                  <div class="uk-grid-small uk-child-width-expand" uk-grid>
-                    <div class="min_width1_6!@m uk-width-auto">
-                      <a class="active px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle">類型<span class="toggle ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
-                    </div>
-                    <div class="min_width1_2!@m uk-width-auto">
-                      <a class="px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle1">簡介<span class="toggle1 ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle1 ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
-                    </div>
-                    <div class="min_width1_3!@m uk-width-auto">
-                      <a class="px-1 px-sm-2 btn-light uk-button-small" href="#" uk-toggle="target: .toggle2">網址<span class="toggle2 ml-1"><i class="fas fa-caret-up"></i></span><span class="toggle2 ml-1" hidden><i class="fas fa-caret-down"></i></span></a>
+                  <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
+                    <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
+                    <li class="uk-flex uk-flex-middle">
+                      <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
+                    </li>
+                    <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                  </ul>
+                  <!-- uk-pagination / select -->
+                </div>
+                <div class="uk-width-auto uk-hidden@l">
+                  <div class="uk-inline">
+                    <button class="uk-button uk-button-default" type="button">排序</button>
+                    <div uk-dropdown="boundary: .content">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">個案編號 ↑</a></li>
+                        <li><a href="#">個案編號 ↓</a></li>
+                        <li><a href="#">討論主題 ↑</a></li>
+                        <li><a href="#">討論主題 ↓</a></li>
+                        <li><a href="#">臨床情境 ↑</a></li>
+                        <li><a href="#">臨床情境 ↓</a></li>
+                        <li><a href="#">發起人 ↑</a></li>
+                        <li><a href="#">發起人 ↓</a></li>
+                        <li><a href="#">發起日期 ↑</a></li>
+                        <li><a href="#">發起日期 ↓</a></li>
+                        <li><a href="#">討論狀態 ↑</a></li>
+                        <li><a href="#">討論狀態 ↓</a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div class="uk-width uk-visible@m" style="width: 64px;"></div>
-              </div> -->
+              </div>
+              <!-- pagesBar - uk-pagination & uk-dropdown-nav -->
+              <div class="uk-grid-small uk-child-width-expand uk-visible@l" uk-grid>
+                <div class="uk-width" style="width: 115px;"></div>
+                <div>
+                  <div class="uk-grid-small uk-child-width-auto uk-child-width-expand@xl" uk-grid>
+                    <div class="min_width1_10!@xl">
+                      <a class="uk-active line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle">類型<div class="eng fontSize07">Type</div><span class="toggle m-0"><i class="fas fa-caret-up"></i></span><span class="toggle m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                    </div>
+                    <div class="min_width1_2!@xl">
+                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle1">簡介<div class="eng fontSize07">Summary</div><span class="toggle1 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle1 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                    </div>
+                    <div class="min_width3_10!@xl">
+                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle2">網址<div class="eng fontSize07">URL</div><span class="toggle2 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle2 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                    </div>
+                    <div class="min_width1_10!@xl">
+                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle3">動作<div class="eng fontSize07">Action</div><span class="toggle3 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle3 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <ol class="listDecimalRow listBadge listBadgeWidthM listBadgeDivder uk-list uk-list-striped">
-                <li class="uk-hidden" uk-alert>
-                  <a class="p-2 uk-position-right uk-alert-close" title="刪除"><i class="fontSize1_4 fas fa-times"></i></a>
-                  <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-                    <div class="uk-width-expand">
-                      <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-                        <div class="min_width1_6!@m">
-                          <select class="uk-select">
-                            <option selected>-資源類別-</option>
-                            <option>網站資源</option>
-                            <option>臨床指引</option>
-                          </select>
-                        </div>
-                        <div class="min_width1_2!@m">
-                          <textarea class="uk-textarea" rows="3" style="height: 40px;"></textarea>
-                        </div>
-                        <div class="min_width1_3!@m">
-                          <input class="uk-input" type="text" placeholder="" value="">
-                        </div>
-                      </div>
+                <li>
+                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@xl" uk-grid>
+                    <div class="min_width1_10!@m uk-width-expand@xl">
+                      <span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">網站資源</span>
                     </div>
-                    <div class="px-4 uk-width uk-visible@m" style="width: 54px;"></div>
+                    <div class="min_width1_2!@m">
+                      <h3 class="fontSizeH5">中票向裡就白資相全光現甚根較太元精地要票。<strong class="color_secondary">77歲</strong>數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</h3>
+                    </div>
+                    <div class="min_width3_10!@m uk-width-auto uk-width-expand@xl"><a class="linkline d-inline uk-text-break" href="#">https://www.tebma.org.tw/</a></div>
+                    <div class="min_width1_10!@m uk-width-auto uk-width-expand@xl"><a class="btn_secondary w-100 uk-button uk-button-primary" href="#modify" uk-toggle>Modify</a></div>
                   </div>
                 </li>
-                <li uk-alert>
-                  <a class="p-2 uk-position-right uk-alert-close" title="刪除"><i class="fontSize1_4 fas fa-times"></i></a>
-                  <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-                    <div class="uk-width-expand">
-                      <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-                        <div class="min_width1_6!@m">
-                          <select class="uk-select">
-                            <option selected>網站資源</option>
-                            <option>臨床指引</option>
-                          </select>
-                        </div>
-                        <div class="min_width1_2!@m">
-                          <textarea class="uk-textarea" rows="3" style="height: 40px;">中票向裡就白資相全光現甚根較太元精地要票。數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</textarea>
-                        </div>
-                        <div class="min_width1_3!@m">
-                          <input class="uk-input" type="text" placeholder="" value="https://www.tebma.org.tw/">
-                        </div>
-                      </div>
+                <li>
+                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@xl" uk-grid>
+                    <div class="min_width1_10!@m uk-width-expand@xl">
+                      <span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">臨床指引</span>
                     </div>
-                    <div class="px-4 uk-width uk-visible@m" style="width: 54px;"></div>
-                  </div>
-                </li>
-                <li uk-alert>
-                  <a class="p-2 uk-position-right uk-alert-close" title="刪除"><i class="fontSize1_4 fas fa-times"></i></a>
-                  <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-                    <div class="uk-width-expand">
-                      <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-                        <div class="min_width1_6!@m">
-                          <select class="uk-select">
-                            <option>網站資源</option>
-                            <option selected>臨床指引</option>
-                          </select>
-                        </div>
-                        <div class="min_width1_2!@m">
-                          <textarea class="uk-textarea" rows="3" style="height: 40px;">象常以直再程而農明。制實數人用路起百教味我各一院：和不民生投車氣、展機賣車外到。</textarea>
-                        </div>
-                        <div class="min_width1_3!@m">
-                          <input class="uk-input" type="text" placeholder="" value="https://www.google.tw/">
-                        </div>
-                      </div>
+                    <div class="min_width1_2!@m">
+                      <h3 class="fontSizeH5">象常以直再程而農明。制實數人用路起百教<strong class="color_secondary">77歲</strong>味我各一院：和不民生投車氣、展機賣車外到。</h3>
                     </div>
-                    <div class="px-4 uk-width uk-visible@m" style="width: 54px;"></div>
+                    <div class="min_width3_10!@m uk-width-auto uk-width-expand@xl"><a class="linkline d-inline uk-text-break" href="#">https://www.google.tw/</a></div>
+                    <div class="min_width1_10!@m uk-width-auto uk-width-expand@xl"><a class="btn_secondary w-100 uk-button uk-button-primary" href="#modify" uk-toggle>Modify</a></div>
                   </div>
                 </li>
               </ol>
               <!-- .listDecimalRow listBadge listBadgeWidthM listBadgeDivder / uk-list-striped -->
-              <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
-                <li class="uk-flex uk-flex-middle">
-                  <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
-                    <option>1</option>
-                    <option>2</option>
-                  </select>
-                  <span class="uk-text-nowrap">/ <span class="sum">20</span></span>
-                </li>
-                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁</span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
-              </ul>
-              <!-- uk-pagination / select -->
-              <hr>
-              <!-- <div class="cloneBlock uk-margin" uk-margin>
-                <div class="uk-grid-small uk-child-width-expand@s uk-hidden" uk-margin uk-grid>
-                  <div>
-                    <label class="w-100 uk-form-label">資源類型
-                      <select class="mt-1 uk-select">
-                        <option>- 資源類別 -</option>
-                        <option>網站資源</option>
-                        <option>臨床指引</option>
+              <div class="pagesBar uk-margin uk-flex-right uk-flex-middle uk-grid-collapse uk-child-width-expand" uk-grid>
+                <div>
+                  <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
+                    <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
+                    <li class="uk-flex uk-flex-middle">
+                      <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
+                        <option>1</option>
+                        <option>2</option>
                       </select>
-                    </label>
-                  </div>
-                  <div>
-                    <label class="w-100 uk-form-label">資源簡介
-                      <textarea class="mt-1 uk-textarea" rows="3" style="height: 40px;"></textarea>
-                    </label>
-                  </div>
-                  <div>
-                    <label class="w-100 uk-form-label">網址
-                      <input class="mt-1 uk-input" type="text" placeholder="">
-                    </label>
-                  </div>
-                  <div>
-                    <label class="w-100 uk-form-label">備註
-                      <textarea class="mt-1 uk-textarea" rows="3" style="height: 40px;"></textarea>
-                    </label>
+                      <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
+                    </li>
+                    <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                  </ul>
+                  <!-- uk-pagination / select -->
+                </div>
+                <div class="uk-width-auto uk-hidden@l">
+                  <div class="uk-inline">
+                    <button class="uk-button uk-button-default" type="button">排序</button>
+                    <div uk-dropdown="boundary: .content">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">個案編號 ↑</a></li>
+                        <li><a href="#">個案編號 ↓</a></li>
+                        <li><a href="#">討論主題 ↑</a></li>
+                        <li><a href="#">討論主題 ↓</a></li>
+                        <li><a href="#">臨床情境 ↑</a></li>
+                        <li><a href="#">臨床情境 ↓</a></li>
+                        <li><a href="#">發起人 ↑</a></li>
+                        <li><a href="#">發起人 ↓</a></li>
+                        <li><a href="#">發起日期 ↑</a></li>
+                        <li><a href="#">發起日期 ↓</a></li>
+                        <li><a href="#">討論狀態 ↑</a></li>
+                        <li><a href="#">討論狀態 ↓</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
-                  <div>
-                    <label class="w-100 uk-form-label">資源類型
-                      <select class="mt-1 uk-select">
-                        <option>- 資源類別 -</option>
-                        <option>網站資源</option>
-                        <option>臨床指引</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div>
-                    <label class="w-100 uk-form-label">資源簡介
-                      <textarea class="mt-1 uk-textarea" rows="3" style="height: 40px;"></textarea>
-                    </label>
-                  </div>
-                  <div>
-                    <label class="w-100 uk-form-label">網址
-                      <input class="mt-1 uk-input" type="text" placeholder="">
-                    </label>
-                  </div>
-                  <div>
-                    <label class="w-100 uk-form-label">備註
-                      <textarea class="mt-1 uk-textarea" rows="3" style="height: 40px;"></textarea>
-                    </label>
-                  </div>
-                </div>
-              </div> -->
-              <div class="uk-grid-small uk-child-width-1-2" uk-margin uk-grid>
-                <div><button class="btn_primary w-100 uk-button uk-button-primary" onclick="addCloneBlock('.listDecimalRow')">Add</button></div>
-                <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#">Save</a></div>
               </div>
-              <a class="btn_secondary mt-2 w-100 uk-button uk-button-primary" href="#">Output</a>
+              <!-- pagesBar - uk-pagination & uk-dropdown-nav -->
             </div>
             <!-- .uk-form -->
           </div>
@@ -337,6 +288,45 @@
     <!-- .containerExpand uk-container -->
   </section>
   <!-- page main content -->
+
+  <div id="modify" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">實證醫學教學研究互動知識網 登入</h2>
+      </div>
+      <div class="uk-modal-body">
+        <form>
+          <div class="uk-margin">
+            <label class="w-100 uk-form-label">資源類型
+              <select class="uk-select">
+                <option>-Please select resource type-</option>
+                <option>Option</option>
+              </select>
+            </label>
+          </div>
+          <div class="uk-margin">
+            <label class="w-100 uk-form-label">資源名稱
+              <input class="uk-input" type="text" placeholder="Please enter resource name">
+            </label>
+          </div>
+          <div class="uk-margin">
+            <label class="w-100 uk-form-label">資源連結
+              <input class="uk-input" type="text" placeholder="Please enter resource url">
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="text-right uk-modal-footer">
+        <button class="btn_primary uk-button uk-button-primary" type="button">Add</button>
+        <button class="btn_primary uk-button uk-button-primary" type="submit">Save</button>
+        <button class="btn_secondary uk-button uk-button-primary" type="button">Delete</button>
+        <button class="btn_secondary uk-button uk-button-primary uk-modal-close" type="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal-Modify -->
+
   <div id="footer" class="p-3 text-dark position-relative">
     <div class="containerExpand uk-container uk-container-large position-relative">
       <div class="position-relative"><a class="remove_underline text-dark px-1 uk-position-absolute uk-visible@m" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z" style="left:-30px">:::</a></div>

@@ -27,10 +27,10 @@
   <a class="bg_blackOpacity5 bg_hover_blackOpacity7 p-2 text-white rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" aria-label="Go to Top" uk-totop uk-scroll></a>
   <header class="pt-lg-3 uk-position-relative">
     <div class="uk-position-cover uk-visible@m" style="background: linear-gradient(to bottom, rgba(255, 255, 255, .9) 0%, rgba(255, 255, 255, 0) 100%);"></div>
-    <div class="p-2 pt-lg-0 containerExpand uk-container">
+    <div class="px-2 pt-lg-0 containerExpand uk-container">
       <div class="shadow-sm bg_white opacity90 uk-position-cover uk-hidden@m"></div>
       <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-        <div class="px-2 px-md-4 py-0 containerExpand uk-container uk-hidden@m">
+        <div class="pr-2 px-md-4 py-0 containerExpand uk-container uk-hidden@m">
           <div class="uk-navbar-center">
             <h1 class="py-2"><a href="index.html" class="uk-logo" title="Logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
           </div>
@@ -38,18 +38,22 @@
         <div class="uk-navbar-center uk-visible@m">
           <h1 class="py-2"><a class="px-0 uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
         </div>
-        <div class="uk-navbar-right uk-position-relative uk-visible@m">
+        <div class="uk-navbar-right uk-visible@m">
           <a class="remove_underline text-dark px-1 uk-position-center" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:-20px; margin-top:-2px;">:::</a>
           <div class="h-100 uk-flex uk-flex-middle" uk-margin>
             <!-- <span class="bgBlack"><a class="px-2 text-dark" href="#">English</a></span> -->
             <span class="btnFontSize btnFontSizeS bgBlack text-dark"><button class="uk-button" title="縮小字級">A-</button></span>
             <span class="btnFontSize btnFontSizeM bgBlack text-dark active"><button class="uk-button" title="適中字級">A</button></span>
             <span class="btnFontSize btnFontSizeL bgBlack text-dark"><button class="uk-button" title="加大字級">A+</button></span>
-            <span class="bgBlack"><a class="min_width50 text-dark text-center" href="#login" uk-toggle>登入</a></span>
-            <span class="bgBlack"><a class="min_width50 text-dark text-center" href="#" hidden>登出</a></span>
+            <span class="bgBlack"><a class="min_width50 px-2 text-dark text-center" href="#login" uk-toggle>登入<small class="eng fontSize07 ml-1">Login</small></a></span>
+            <span class="bgBlack"><a class="min_width50 text-dark text-center" href="#" hidden>登出<small class="eng fontSize07 ml-1">Logout</small></a></span>
           </div>
         </div>
-        <div class="uk-navbar-right uk-position-relative uk-hidden@m"><span class="bg_black"><a class="min_width50 text-white text-center" href="#login" uk-toggle>登入</a></span></div>
+        <div class="uk-hidden@m uk-navbar-right">
+          <a class="min_width50 line_height1 text-dark text-right" href="#login" uk-toggle>登入<small class="eng fontSize07 ml-1">Login</small></a>
+          <a class="min_width50 line_height1 text-dark text-right" href="#" hidden>登出<small class="eng fontSize07 ml-1">Logout</small></a>
+        </div>
+        <!-- <div class="uk-navbar-right uk-hidden@m"><span class="bg_black"><a class="min_width50 line_height1 pt-1 text-white text-center" href="#login" uk-toggle>登入<small class="eng fontSize07 ml-1">Login</small></a></span></div> -->
       </nav>
     </div>
   </header>
@@ -66,7 +70,7 @@
             <div><input class="uk-input" type="text" placeholder="密碼"></div>
             <div>
               <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#">登入</a></div>
+                <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#">登入<small class="eng fontSize07 ml-1">Login</small></a></div>
                 <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#">註冊</a></div>
               </div>
             </div>
@@ -77,7 +81,7 @@
             <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
                 <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
-                  <div class="position-relative"><i class="toggle mr-1 text-white fas fa-hospital"></i>實證醫學中心<span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
+                  <div class="position-relative"><i class="toggle mr-1 text-white fas fa-hospital"></i>實證醫學中心<div class="eng fontSize07 line_height1 mb-1">About VGH EBM Center</div><span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
               </h2>
@@ -101,7 +105,7 @@
             <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
                 <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
-                  <div class="position-relative"><i class="toggle mr-1 text-white fas fa-list-alt"></i>訊息公告<span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
+                  <div class="position-relative"><i class="toggle mr-1 text-white fas fa-list-alt"></i>訊息公告<div class="eng fontSize07 line_height1 mb-1">News</div><span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
               </h2>
@@ -125,7 +129,7 @@
             <div class="bg_secondary rounded5@s rounded20@m">
               <h2 class="m-0">
                 <a class="btn_secondary h1vw roundedT20@m px-3 p-lg-3 w-100 uk-button uk-button-primary" href="#" uk-toggle="target: .toggle">
-                  <div class="position-relative"><i class="toggle mr-1 text-white fas fa-dna"></i>實證資源<span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
+                  <div class="position-relative"><i class="toggle mr-1 text-white fas fa-dna"></i>實證資源<div class="eng fontSize07 line_height1 mb-1">EBM Resource</div><span class="toggle text-white uk-position-center-right" hidden uk-icon="icon: plus"></span><span class="toggle text-white uk-position-center-right" uk-icon="icon: minus"></span></div>
                 </a>
                 <hr class="border_white_opacity2 m-0">
               </h2>
@@ -154,40 +158,35 @@
     <div class="uk-modal-dialog uk-margin-auto-vertical">
       <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
       <div class="uk-modal-header">
-        <h2 class="uk-modal-title">會員登入</h2>
+        <h2 class="uk-modal-title">實證醫學教學研究互動知識網 登入<br><small class="eng fontSize07 d-block">CEBM Login</small></h2>
       </div>
       <div class="uk-modal-body">
         <form>
-          <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-            <div class="min_width1_2!@m">
-              <input class="uk-input" type="text" placeholder="請輸入個人信箱">
-            </div>
-            <div class="min_width1_2!@m">
-              <input class="uk-input" type="text" placeholder="6-15碼英數混合密碼">
-              <p class="mt-1 uk-text-small">英文字母需區分大小寫</p>
-            </div>
-            <div class="min_width1_2!@m">
-              <input class="uk-input" type="text" placeholder="請輸入圖形6碼數字">
-            </div>
-            <div class="min_width1_2!@m">
-              <!-- <img src="http://fakeimg.pl/150x40/"> -->
-              <img data-src="http://fakeimg.pl/150x40/" width="150" height="40" alt="驗證碼" uk-img>
-            </div>
-            <div><label class="mr-2"><input class="mr-1 uk-checkbox" type="checkbox">記住我的帳號</label></div>
+          <div class="uk-margin">
+            <label class="w-100 uk-form-label">帳號
+              <input class="uk-input" type="text" placeholder="Pease enter your id">
+            </label>
+          </div>
+          <div class="uk-margin">
+            <label class="w-100 uk-form-label">密碼
+              <input class="uk-input" type="text" placeholder="Pease enter your password">
+            </label>
+          </div>
+          <div class="uk-margin">
+            <label class="mr-2"><input class="mr-1 uk-checkbox" type="checkbox">記住我的帳號</label>
+          </div>
+          <div class="fontSize09 uk-margin">
+            <strong>注意：</strong>
+            <ol class="m-0">
+              <li>3270 主機帳號 = 輸入電子假單的帳號、3270 終端機帳號、院內應用入口帳號。</li>
+              <li>尚無 3270 主機帳號者，請與人事室聯繫設定。</li>
+            </ol>
           </div>
         </form>
       </div>
-      <div class="uk-modal-footer">
-        <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-          <div class="min_width1_2!@m">
-            <a class="" href="#register" uk-toggle>會員註冊</a>
-            <a class="" href="#">忘記密碼</a>
-          </div>
-          <div class="min_width1_2!@m text-lg-right">
-            <a href="#" class="btn_secondary uk-button uk-button-primary">登　　入</a>
-            <button class="uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
-          </div>
-        </div>
+      <div class="text-right uk-modal-footer">
+        <a href="#" class="btn_secondary uk-button uk-button-primary">Login</a>
+        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
       </div>
     </div>
   </div>

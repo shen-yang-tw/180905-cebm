@@ -12,7 +12,6 @@
   <title>楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/uikit.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/fontawesome-svg-with-js.min.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900'>
@@ -46,7 +45,7 @@
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
+                  <a class="active active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-comments"></i></div>
                     <div class="fontSize09 pb-2 text-white">討論<span class="eng fontSize07 remove_underline d-block">Discuss</span></div>
                   </a>
@@ -70,7 +69,7 @@
                   </a>
                 </span>
                 <span class="p-1 uk-visible@l">
-                  <a class="active active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
+                  <a class="active_secondary btn_primary circleTab noResize min_width100 text-center" href="#">
                     <div class="fontSize1_4 text-white"><i class="fas fa-question-circle"></i></div>
                     <div class="fontSize09 pb-2 text-white">Q/A</div>
                   </a>
@@ -83,7 +82,7 @@
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a></span>
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a></span>
               </div>
-              </div>
+            </div>
             <div class="uk-hidden@m uk-navbar-right">
               <a class="min_width50 line_height1 text-dark text-right" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a>
               <a class="min_width50 line_height1 text-dark text-right" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a>
@@ -96,7 +95,7 @@
               </a>
             </div>
             <div>
-              <a class="active_secondary btn_primary circleTab noResize text-center" href="#">
+              <a class="active active_secondary btn_primary circleTab noResize text-center" href="#">
                 <div class="fontSize1_4 text-white h-100 position-relative"><i class="fas fa-comments uk-position-center"></i></div>
               </a>
             </div>
@@ -111,7 +110,7 @@
               </a>
             </div>
             <div>
-              <a class="active active_secondary btn_primary circleTab noResize text-center" href="#">
+              <a class="active_secondary btn_primary circleTab noResize text-center" href="#">
                 <div class="fontSize1_4 text-white h-100 position-relative"><i class="fas fa-first-aid uk-position-center"></i></div>
               </a>
             </div>
@@ -136,7 +135,7 @@
       <!-- End uk-breadcrumb -->
       <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
       <div class="rounded20@s p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 uk-text-break position-relative">Q/A</h2>
+        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 uk-text-break position-relative">討論 Discuss</h2>
         <div class="min_height200 min_heightM500 p-3">
           <div class="uk-heading-line uk-text-center uk-margin">
             <div>
@@ -148,8 +147,9 @@
           </div>
           <!-- uk-heading-line -->
           <ul class="border2 border_secondary uk-tab">
-            <li><a href="05-Q&A1.html">我要提問</a></li>
-            <li class="uk-active"><a href="05-Q&A2.html">Q/A紀錄</a></li>
+            <li><a href="03-knowledge2-1.html">討論列表<small class="eng fontSize07 d-block">Discussion List</small></a></li>
+            <li><a href="03-knowledge2-2.html">我的討論<small class="eng fontSize07 d-block">My Discussion</small></a></li>
+            <li class="uk-active"><a href="03-knowledge2-3.html">新增討論<small class="eng fontSize07 d-block">Add Discussion</small></a></li>
           </ul>
           <!-- .uk-tab -->
           <div class="searchBar form_space_m uk-form uk-form-horizontal">
@@ -157,96 +157,148 @@
               <div>
                 <input class="uk-width-expand uk-input" id="form_i_keywords" type="text" placeholder="Please enter keywords" value="">
               </div>
-              <div class="uk-width-1-6@m">
-                <select class="w-100 uk-select">
-                  <option>- 問題類型 -</option>
-                  <option>網站資源</option>
-                  <option>臨床指引</option>
-                </select>
-              </div>
-              <div class="uk-width-1-6@m"><a class="btn_primary w-100 uk-button uk-button-primary" href="#">Search</a></div>
+              <div class="uk-width-1-6@m"><a class="btn_primary w-100 uk-button uk-button-primary" href="#">搜　　尋<small class="eng fontSize07 ml-1">Search</small></a></div>
             </div>
           </div>
           <!-- .searchBar -->
           <div class="content uk-margin">
-            <p class="btmline m-0">資源列表 / 搜尋結果<small class="eng fontSize07 ml-1">Search result</small>：共<span class="sum">234</span>筆 / <strong class="color_secondary mr-3">77歲</strong></p>
+            <p class="btmline m-0">搜尋結果<small class="eng fontSize07 ml-1">Search result</small>：共<span class="sum">234</span>筆 / <strong class="color_secondary mr-3">77歲</strong></p>
             <div class="uk-form uk-margin">
-              <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
-                <li class="uk-flex uk-flex-middle">
-                  <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
-                    <option>1</option>
-                    <option>2</option>
-                  </select>
-                  <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
-                </li>
-                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
-              </ul>
-              <!-- uk-pagination / select -->
-              <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-                <div class="uk-width uk-visible@m" style="width: 115px;"></div>
+              <div class="pagesBar uk-margin uk-flex-right uk-flex-middle uk-grid-collapse uk-child-width-expand" uk-grid>
                 <div>
-                  <div class="uk-grid-small uk-child-width-expand" uk-grid>
-                    <div class="min_width1_6!@m uk-width-auto">
-                      <a class="uk-active line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle">類型<div class="eng fontSize07">Type</div><span class="toggle m-0"><i class="fas fa-caret-up"></i></span><span class="toggle m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                  <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
+                    <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
+                    <li class="uk-flex uk-flex-middle">
+                      <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
+                    </li>
+                    <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                  </ul>
+                  <!-- uk-pagination / select -->
+                </div>
+                <div class="uk-width-auto uk-hidden@l">
+                  <div class="uk-inline">
+                    <button class="uk-button uk-button-default" type="button">排序</button>
+                    <div uk-dropdown="boundary: .content">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">個案編號 ↑</a></li>
+                        <li><a href="#">個案編號 ↓</a></li>
+                        <li><a href="#">討論主題 ↑</a></li>
+                        <li><a href="#">討論主題 ↓</a></li>
+                        <li><a href="#">臨床情境 ↑</a></li>
+                        <li><a href="#">臨床情境 ↓</a></li>
+                        <li><a href="#">發起人 ↑</a></li>
+                        <li><a href="#">發起人 ↓</a></li>
+                        <li><a href="#">發起日期 ↑</a></li>
+                        <li><a href="#">發起日期 ↓</a></li>
+                        <li><a href="#">討論狀態 ↑</a></li>
+                        <li><a href="#">討論狀態 ↓</a></li>
+                      </ul>
                     </div>
-                    <div class="min_width1_2!@m uk-width-auto">
-                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle1">主題<div class="eng fontSize07">Subject</div><span class="toggle1 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle1 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- pagesBar - uk-pagination & uk-dropdown-nav -->
+              <div class="uk-grid-small uk-child-width-expand uk-visible@l" uk-grid>
+                <div class="uk-width" style="width: 115px;"></div>
+                <div>
+                  <div class="uk-grid-small uk-child-width-auto uk-child-width-expand@xl" uk-grid>
+                    <div class="min_width1_10!@xl">
+                      <a class="uk-active line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle">個案編號<div class="eng fontSize07">Case No</div><span class="toggle m-0"><i class="fas fa-caret-up"></i></span><span class="toggle m-0" hidden><i class="fas fa-caret-down"></i></span></a>
                     </div>
-                    <div class="min_width1_6!@m uk-width-auto">
-                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle2">時間<div class="eng fontSize07">Time</div><span class="toggle2 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle2 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                    <div class="min_width3_5!@xl">
+                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle1">臨床情境<div class="eng fontSize07">Clinical Scenario</div><span class="toggle1 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle1 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
                     </div>
-                    <div class="min_width1_6!@m uk-width-auto">
-                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle3">狀態<div class="eng fontSize07">Status</div><span class="toggle3 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle3 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                    <div class="min_width1_10!@xl">
+                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle2">作者姓名<div class="eng fontSize07">Author</div><span class="toggle2 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle2 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
+                    </div>
+                    <div class="min_width1_10!@xl">
+                      <a class="line_height1 text-center py-1 px-2 uk-button-default uk-button-small" href="#" uk-toggle="target: .toggle3">動作<div class="eng fontSize07">Action</div><span class="toggle3 m-0"><i class="fas fa-caret-up"></i></span><span class="toggle3 m-0" hidden><i class="fas fa-caret-down"></i></span></a>
                     </div>
                   </div>
                 </div>
               </div>
               <ol class="listDecimalRow listBadge listBadgeWidthM listBadgeDivder uk-list uk-list-striped">
                 <li>
-                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@m" uk-grid>
-                    <div class="min_width1_6!@m"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">網站資源</span></div>
-                    <div class="min_width1_2!@m">
-                      <h3 class="fontSizeH5">中票向裡就白資相全光現甚根較太元精地要票。<strong class="color_secondary">77歲</strong>數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</h3>
+                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@xl" uk-grid>
+                    <div class="min_width1_10!@m uk-width-expand@xl">
+                      <a class="remove_underline uk-flex uk-flex-middle" href="#" title="展開文字" uk-toggle="target: .uk-text-truncate; cls: remove_truncate">
+                        <span class="fontSize08 vertical_align10 text-white bg-secondary mr-1 uk-label">000100</span>
+                        <span class="arrow" uk-icon="icon: chevron-right"></span><span class="arrow" hidden uk-icon="icon: chevron-down"></span>
+                        <span class="uk-position-cover" uk-toggle="target: .arrow"></span>
+                      </a>
                     </div>
-                    <div class="min_width1_6!@m">2019/2/1</div>
-                    <div class="min_width1_6!@m"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">處理中</span></div>
+                    <div class="min_width3_5!@m">
+                      <h3 class="fontSizeH5 uk-text-truncate"><a class="remove_underline hover_borderline" href="03-knowledge2-4.html">中票向裡就白資相全光現甚根較太元精地要票。<strong class="color_secondary">77歲</strong>數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</a></h3>
+                    </div>
+                    <div class="min_width1_10!@m uk-width-auto uk-width-expand@xl">陳光光</div>
+                    <div class="min_width1_10!@m uk-width-auto uk-width-expand@xl"><a class="btn_secondary line_height1 py-1 w-100 uk-button uk-button-primary" href="#">新增討論<small class="eng fontSize07 ml-1">New discuss</small></a></div>
                   </div>
                 </li>
                 <li>
-                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@m" uk-grid>
-                    <div class="min_width1_6!@m"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">網站資源</span></div>
-                    <div class="min_width1_2!@m">
-                      <h3 class="fontSizeH5">中票向裡就白資相全光現甚根較太元精地要票。<strong class="color_secondary">77歲</strong>數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</h3>
+                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@xl" uk-grid>
+                    <div class="min_width1_10!@m uk-width-expand@xl">
+                      <a class="remove_underline uk-flex uk-flex-middle" href="#" title="展開文字" uk-toggle="target: .uk-text-truncate; cls: remove_truncate">
+                        <span class="fontSize08 vertical_align10 text-white bg-secondary mr-1 uk-label">000000000100</span>
+                        <span class="arrow" uk-icon="icon: chevron-right"></span><span class="arrow" hidden uk-icon="icon: chevron-down"></span>
+                        <span class="uk-position-cover" uk-toggle="target: .arrow"></span>
+                      </a>
                     </div>
-                    <div class="min_width1_6!@m">2019/2/1</div>
-                    <div class="min_width1_6!@m"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">處理中</span></div>
+                    <div class="min_width3_5!@m">
+                      <h3 class="fontSizeH5 uk-text-truncate"><a class="remove_underline hover_borderline" href="03-knowledge2-4.html">中票向裡就白資相全光現甚根較太元精地要票。<strong class="color_secondary">77歲</strong>數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</a></h3>
+                    </div>
+                    <div class="min_width1_10!@m uk-width-auto uk-width-expand@xl">陳光光</div>
+                    <div class="min_width1_10!@m uk-width-auto uk-width-expand@xl"><a class="btn_secondary line_height1 py-1 w-100 uk-button uk-button-primary" href="#">新增討論<small class="eng fontSize07 ml-1">New discuss</small></a></div>
                   </div>
                 </li>
               </ol>
-              <!-- .listDecimalRow listBadge listBadgeWidthM listBadgeDivder / uk-list-striped -->
-              <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
-                <li class="uk-flex uk-flex-middle">
-                  <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
-                    <option>1</option>
-                    <option>2</option>
-                  </select>
-                  <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
-                </li>
-                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
-              </ul>
-              <!-- uk-pagination / select -->
+              <!-- .uk-form -->
+              <div class="pagesBar uk-margin uk-flex-right uk-flex-middle uk-grid-collapse uk-child-width-expand" uk-grid>
+                <div>
+                  <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
+                    <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
+                    <li class="uk-flex uk-flex-middle">
+                      <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
+                    </li>
+                    <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                  </ul>
+                  <!-- uk-pagination / select -->
+                </div>
+                <div class="uk-width-auto uk-hidden@l">
+                  <div class="uk-inline">
+                    <button class="uk-button uk-button-default" type="button">排序</button>
+                    <div uk-dropdown="boundary: .content">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">個案編號 ↑</a></li>
+                        <li><a href="#">個案編號 ↓</a></li>
+                        <li><a href="#">討論主題 ↑</a></li>
+                        <li><a href="#">討論主題 ↓</a></li>
+                        <li><a href="#">臨床情境 ↑</a></li>
+                        <li><a href="#">臨床情境 ↓</a></li>
+                        <li><a href="#">發起人 ↑</a></li>
+                        <li><a href="#">發起人 ↓</a></li>
+                        <li><a href="#">發起日期 ↑</a></li>
+                        <li><a href="#">發起日期 ↓</a></li>
+                        <li><a href="#">討論狀態 ↑</a></li>
+                        <li><a href="#">討論狀態 ↓</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- pagesBar - uk-pagination & uk-dropdown-nav -->
             </div>
-            <!-- .uk-form -->
           </div>
-          <!-- .content -->
         </div>
-        <!-- .min_height200 -->
       </div>
-      <!-- .uk-card -->
-    </div>
-    <!-- .containerExpand uk-container -->
+      <!-- .containerExpand uk-container -->
   </section>
   <!-- page main content -->
   <div id="footer" class="p-3 text-dark position-relative">
@@ -274,18 +326,8 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/bootstrap-datepicker.zh-TW.min.js"></script>
   <script src="js/fontawesome-all.min.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    //datepicker
-    $('#form_i_date').datepicker({
-      language: "zh-TW",
-      autoclose: true,
-      todayHighlight: true
-    });
-  </script>
 </body>
 
 </html>

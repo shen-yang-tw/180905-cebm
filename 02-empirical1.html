@@ -34,7 +34,7 @@
           <div class="px-2 px-md-4 uk-container uk-container-large" uk-navbar>
             <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
             <div class="uk-navbar-left">
-              <h1 class="pl-2 py-2 mr-4 uk-flex uk-flex-middle"><a class="px-0 uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+              <h1 class="pl-2 p-lg-2 py-2 uk-flex uk-flex-middle"><a class="uk-logo" href="index.html" title="#"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
             </div>
             <div class="uk-navbar-right">
               <div class="h-100 py-1 uk-flex uk-flex-middle" uk-margin>
@@ -79,13 +79,13 @@
                 <span class="btnFontSize btnFontSizeS bgBlack uk-visible@m"><button class="uk-button" title="縮小字級">A-</button></span>
                 <span class="btnFontSize btnFontSizeM bgBlack active uk-visible@m"><button class="uk-button" title="適中字級">A</button></span>
                 <span class="btnFontSize btnFontSizeL bgBlack uk-visible@m"><button class="uk-button" title="加大字級">A+</button></span>
-                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入</a></span>
-                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出</a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a></span>
+                <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a></span>
               </div>
             </div>
             <div class="uk-hidden@m uk-navbar-right">
-              <a class="min_width50 text-dark text-right" href="#login" uk-toggle hidden>登入</a>
-              <a class="min_width50 text-dark text-right" href="#">登出</a>
+              <a class="min_width50 line_height1 text-dark text-right" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a>
+              <a class="min_width50 line_height1 text-dark text-right" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a>
             </div>
           </div>
           <div class="py-1 border-top grid_xxsmall uk-grid-small uk-flex-center uk-hidden@l" uk-margin uk-grid>
@@ -174,17 +174,17 @@
         </div>
       </div>
       <div class="rounded20@s p-0 uk-card uk-card-small uk-card-default uk-card-body">
-        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 position-relative">Ask : Clinical Scenario</h2>
+        <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 uk-text-break position-relative">Ask : Clinical Scenario</h2>
         <div class="min_height200 min_heightM500 p-3">
           <form class="uk-form-stacked" uk-margin>
             <div>
-              <label class="fontSize1 font-weight-bold uk-form-label" for="form_textarea">臨床情境</label>
+              <label class="fontSize1 font-weight-bold uk-form-label" for="form_textarea">臨床情境<small class="eng fontSize07 ml-1">Clinical Scenario</small></label>
               <div class="uk-form-controls">
                 <textarea class="uk-textarea" id="form_textarea" rows="4">77歲的林奶奶，有風濕性關節炎，胃潰瘍病 史，去年因急性冠心症接受心導管介入，放 置兩隻塗藥支架，術後開始使用抗血小板藥 品治療，心臟科醫師知道林奶奶有胃潰瘍病 史，因此建議使用PPI預防腸胃道出血。</textarea>
               </div>
             </div>
             <div>
-              <label class="fontSize1 font-weight-bold uk-form-label" for="form_que">臨床問題</label>
+              <label class="fontSize1 font-weight-bold uk-form-label" for="form_que">臨床問題<small class="eng fontSize07 ml-1">Clinical Question</small></label>
               <div class="uk-form-controls">
                 <textarea class="uk-textarea" id="form_que" rows="4">77歲的林奶奶，有風濕性關節炎，胃潰瘍病 史，去年因急性冠心症接受心導管介入，放 置兩隻塗藥支架，術後開始使用抗血小板藥 品治療，心臟科醫師知道林奶奶有胃潰瘍病 史，因此建議使用PPI預防腸胃道出血。</textarea>
               </div>
@@ -192,7 +192,7 @@
             <div>
               <div class="uk-grid-small uk-child-width-expand@m" uk-margin uk-grid>
                 <div class="min_width1_2!@m min_width1_3!@l">
-                  <label class="fontSize1 font-weight-bold uk-form-label">Gender</label>
+                  <label class="fontSize1 font-weight-bold uk-form-label">性別<small class="eng fontSize07 ml-1">Gender</small></label>
                   <div class="uk-form-controls">
                     <label class="mr-4"><input class="form_white mr-1 uk-radio" type="radio" name="gender" checked>Male</label>
                     <label class="mr-4"><input class="form_white mr-1 uk-radio" type="radio" name="gender">Female</label>
@@ -200,14 +200,14 @@
                   </div>
                 </div>
                 <div class="min_width1_2!@m min_width1_7!@l min_width1_3!@xl uk-width-auto@l">
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_s_div">科別</label>
+                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_s_div">科別<small class="eng fontSize07 ml-1">Division</small></label>
                   <select id="form_s_div" class="uk-select">
                     <option>Option 01</option>
                     <option>Option 02</option>
                   </select>
                 </div>
                 <div class="min_width1_2@m min_width1_3!@l">
-                  <label class="fontSize1 font-weight-bold uk-form-label">決策類型</label>
+                  <label class="fontSize1 font-weight-bold uk-form-label">決策類型<small class="eng fontSize07 ml-1">Decision type</small></label>
                   <div class="uk-form-controls">
                     <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="r_type">診斷</label>
                     <label class="mr-4"><input class="mr-1 uk-radio" type="radio" name="r_type">篩檢</label>
@@ -217,14 +217,14 @@
                   </div>
                 </div>
                 <div class="uk-width-1-1">
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_s_keywords">關鍵字</label>
+                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_s_keywords">關鍵字<small class="eng fontSize07 ml-1">Confirm</small></label>
                   <input class="uk-input" id="form_s_keywords" type="text" placeholder="">
                 </div>
               </div>
             </div>
             <div class="uk-grid-small uk-child-width-expand" uk-grid>
-              <!-- <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#">搜　　尋</a></div> -->
-              <div><a class="btn_secondary w-100 uk-button uk-button-primary" href="#">儲　　存</a></div>
+              <!-- <div><a class="btn_primary w-100 uk-button uk-button-primary" href="#">Search</a></div> -->
+              <div><a class="btn_secondary w-100 uk-button uk-button-primary" href="#">Save</a></div>
             </div>
           </form>
         </div>

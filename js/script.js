@@ -1,3 +1,79 @@
+
+//Find Element's Closest Parent by tag name - the tag name must be uppercase in html: onclick="findParent(this, 'LI')"
+function findParent(thisElement, parentTagName) {
+  while ((thisElement = thisElement.parentElement) && (thisElement.tagName != parentTagName));
+  //Searching loop only stop while parent is founded
+  return thisElement; //if searching no one will return null
+}
+
+//Find Element's Closest Parent by Class
+function findParentClass(thisElement, cls) {
+  while ((thisElement = thisElement.parentElement) && !thisElement.classList.contains(cls));
+  //Searching loop only stop while parent class name is "cls"
+  return thisElement; //if searching no one will return null
+}
+
+//Get child id
+function findChildID(el) {
+  return document.querySelector(el).id;
+}
+
+//Get child class name
+function findChildClass(parentEL, sl) {
+  console.log(parentEL);
+  return parentEL.querySelector(sl).className;
+}
+
+//Get child by Selector
+function findChild(parentEL, sl) {
+  return parentEL.querySelector(sl);
+}
+
+//Go to given anchor
+function gotoHash(elID) {
+  location.hash = elID;
+}
+
+//Show Selector
+function showSelector(sl) {
+  //if (elID.getAttribute("aria-hidden") == "true"))
+  var el = document.querySelector(sl)
+  if (el.hasAttribute("hidden")) {
+    el.removeAttribute("hidden");
+  }
+  el.classList.remove("uk-hidden");
+}
+
+//Show this element
+function showElement(thisElement) {
+  //if (elID.getAttribute("aria-hidden") == "true"))
+  if (thisElement.hasAttribute("hidden")) {
+    thisElement.removeAttribute("hidden");
+  }
+  thisElement.classList.remove("uk-hidden");
+}
+
+//Toggle Show this element
+function toggleShowElement(thisElement) {
+  //if (elID.getAttribute("aria-hidden") == "true"))
+  if (thisElement.hasAttribute("hidden")) {
+    thisElement.removeAttribute("hidden");
+  } else {
+    thisElement.setAttribute("hidden", true);
+  }
+}
+
+//Go to given anchor
+function gotoShow(elID) {
+  //if (elID.getAttribute("aria-hidden") == "true"))
+  var el = document.querySelector(elID)
+  if (el.hasAttribute("hidden")) {
+    el.removeAttribute("hidden");
+  }
+  location.hash = elID;
+  // gotoHash(elID);
+}
+
 //Input Check with Check All - <input type="checkbox" onchange="inputCheck(this,'.listCheck','.checkAll')">
 function inputCheck(thisCheck, thisClass, selectorCheckAll) {
   var i,
@@ -79,10 +155,11 @@ function inputReset(cs) {
   }
 }
 
-//Clone child
+//Clone first child
 function addCloneBlock(cloneBlock) {
   var cln = document.querySelector(cloneBlock).firstElementChild.cloneNode(true);
   cln.classList.remove("uk-hidden");
+  cln.removeAttribute("hidden");
   document.querySelector(cloneBlock).appendChild(cln);
 }
 
@@ -103,19 +180,20 @@ function trimTxt(inputtx) {
   return inputtx.replace(/^\s+|\s+$/gm, "");
 }
 
-//Clone
+//Clone someone child with any parent
 function cloneBlock(cloneDiv, el) {
   var clnParent = document.querySelector(cloneDiv);
   var cln = el.cloneNode(true);
   cln.classList.remove("uk-hidden");
+  cln.removeAttribute("hidden");
   clnParent.appendChild(cln);
   // document.querySelector(cloneDiv).appendChild(cln);
 }
 
 //Remove child by class
-function remove(cls){
+function remove(cls) {
   var el = document.getElementsByClassName(cls);
-  while(el[0]) {
+  while (el[0]) {
     el[0].parentNode.removeChild(el[0]);
   }
 }
@@ -158,7 +236,7 @@ function inputMesh(modalSelector, inputKey, tag, classKey, classMesh) {
   } else {
     modalKeyword.innerHTML = "(未輸入任何關鍵字)";
   }
-  
+
   //Click button to add new tag
   modalDiv.querySelector("#btnSave").addEventListener("click", newTag);
 
@@ -192,6 +270,28 @@ function inputMesh(modalSelector, inputKey, tag, classKey, classMesh) {
   }
 }
 //--------------End Mesh-------------------------------------//
+
+//The onkeypress event is not fired for all keys (e.g. ALT, CTRL, SHIFT, ESC) in all browsers. To detect only whether the user has pressed a key, use the onkeydown event instead, because it works for all keys.
+//Check if key enter - <input type="text" onkeydown="inputEnter(event)">
+function keyEnter(event) {
+  // var el = document.querySelector(sl);
+  // if (!event) event = window.event;
+  var keyCode = event.which || event.keyCode; //event.keyCode is used for IE8 and earlier
+  // var keyCode = event.which; //another option
+  if (keyCode == '13') { //code 13 means press enter key
+    return true;
+  }
+}
+
+//Input and Clone - 03-knowledge2-5.html
+function enterClone(cloneBlock, setName, thisInput, event) {
+  var inputVal = thisInput.value;
+  // var nameBlock = document.querySelector(cloneBlock).lastChild;
+  if (keyEnter(event) && trimTxt(inputVal).length > 0) {
+    addCloneBlock(cloneBlock);
+    document.querySelector(cloneBlock).lastChild.querySelector(setName).innerHTML = inputVal;
+  }
+}
 
 
 //--------------- end js ----------------------------------------------------------//
@@ -262,8 +362,8 @@ $(window).on("load", function() {
       .prop("hidden", "hidden"); //all child select hidden
     if (
       $(this)
-        .children(":first-child")
-        .is(":selected")
+      .children(":first-child")
+      .is(":selected")
     ) {
       //if 1st option selected
       $(".select_div:first")
@@ -281,14 +381,14 @@ $(window).on("load", function() {
     //child select
     if (
       $(this)
-        .children(":first-child")
-        .is(":selected")
+      .children(":first-child")
+      .is(":selected")
     ) {
       //if 1st option selected
       if (
         $("#select_dep")
-          .children(":first-child")
-          .is(":selected")
+        .children(":first-child")
+        .is(":selected")
       ) {
         //and if 1st option of parent select selected
         $("#search_input").val(""); //empty input text
@@ -303,8 +403,8 @@ $(window).on("load", function() {
   //(02-empirical3, 03-knowledge2) for Add clone - button #add cannot place in <form> or not working
   $(".clone:first").before(
     $(".clone:first")
-      .clone()
-      .addClass("uk-hidden")
+    .clone()
+    .addClass("uk-hidden")
   );
   $(".addClone").click(function() {
     var clone = $(this)
@@ -316,8 +416,8 @@ $(window).on("load", function() {
     if (counter < 4) {
       clone.last().after(
         $(".clone.uk-hidden")
-          .clone()
-          .removeClass("uk-hidden")
+        .clone()
+        .removeClass("uk-hidden")
       );
     }
   });
