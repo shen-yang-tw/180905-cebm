@@ -586,6 +586,8 @@ label {margin-bottom: inherit;}
 
 .uk-modal.uk-flex-top.uk-open {display: flex !important;}
 
+.uk-form-custom input[type=file]::before {content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+
 @media (min-width:640px) {
 .uk-width-auto\@s {flex: inherit;}
 .containerExpand.uk-container {padding: 30px;}
