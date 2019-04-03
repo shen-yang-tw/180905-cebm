@@ -171,19 +171,45 @@
           <div class="content uk-margin">
             <p class="btmline m-0">資源列表 / 搜尋結果<small class="eng fontSize07 ml-1">Search result</small>：共<span class="sum">234</span>筆 / <strong class="color_secondary mr-3">77歲</strong></p>
             <div class="uk-form uk-margin">
-              <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
-                <li class="uk-flex uk-flex-middle">
-                  <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
-                    <option>1</option>
-                    <option>2</option>
-                  </select>
-                  <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
-                </li>
-                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
-              </ul>
-              <!-- uk-pagination / select -->
-              <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+              <div class="pagesBar uk-margin uk-flex-right uk-flex-middle uk-grid-collapse uk-child-width-expand" uk-grid>
+                <div>
+                  <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
+                    <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
+                    <li class="uk-flex uk-flex-middle">
+                      <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
+                    </li>
+                    <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                  </ul>
+                  <!-- uk-pagination / select -->
+                </div>
+                <div class="uk-width-auto uk-hidden@l">
+                  <div class="uk-inline">
+                    <button class="uk-button uk-button-default" type="button">排序</button>
+                    <div uk-dropdown="boundary: .content">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">個案編號 ↑</a></li>
+                        <li><a href="#">個案編號 ↓</a></li>
+                        <li><a href="#">討論主題 ↑</a></li>
+                        <li><a href="#">討論主題 ↓</a></li>
+                        <li><a href="#">臨床情境 ↑</a></li>
+                        <li><a href="#">臨床情境 ↓</a></li>
+                        <li><a href="#">發起人 ↑</a></li>
+                        <li><a href="#">發起人 ↓</a></li>
+                        <li><a href="#">發起日期 ↑</a></li>
+                        <li><a href="#">發起日期 ↓</a></li>
+                        <li><a href="#">討論狀態 ↑</a></li>
+                        <li><a href="#">討論狀態 ↓</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- pagesBar - uk-pagination & uk-dropdown-nav -->
+              <div class="uk-grid-small uk-child-width-expand uk-visible@l" uk-grid>
                 <div class="uk-width uk-visible@m" style="width: 115px;"></div>
                 <div>
                   <div class="uk-grid-small uk-child-width-expand" uk-grid>
@@ -204,7 +230,7 @@
               </div>
               <ol class="listDecimalRow listBadge listBadgeWidthM listBadgeDivder uk-list uk-list-striped">
                 <li>
-                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@m" uk-grid>
+                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@l" uk-grid>
                     <div class="min_width1_6!@m"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">網站資源</span></div>
                     <div class="min_width1_2!@m">
                       <h3 class="fontSizeH5">中票向裡就白資相全光現甚根較太元精地要票。<strong class="color_secondary">77歲</strong>數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</h3>
@@ -214,7 +240,7 @@
                   </div>
                 </li>
                 <li>
-                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@m" uk-grid>
+                  <div class="grid_divider_stack_remove uk-grid-small uk-grid-divider uk-child-width-expand@l" uk-grid>
                     <div class="min_width1_6!@m"><span class="fontSize08 vertical_align10 bg-secondary mr-1 uk-label">網站資源</span></div>
                     <div class="min_width1_2!@m">
                       <h3 class="fontSizeH5">中票向裡就白資相全光現甚根較太元精地要票。<strong class="color_secondary">77歲</strong>數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族</h3>
@@ -225,18 +251,44 @@
                 </li>
               </ol>
               <!-- .listDecimalRow listBadge listBadgeWidthM listBadgeDivder / uk-list-striped -->
-              <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-                <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
-                <li class="uk-flex uk-flex-middle">
-                  <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
-                    <option>1</option>
-                    <option>2</option>
-                  </select>
-                  <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
-                </li>
-                <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
-              </ul>
-              <!-- uk-pagination / select -->
+              <div class="pagesBar uk-margin uk-flex-right uk-flex-middle uk-grid-collapse uk-child-width-expand" uk-grid>
+                <div>
+                  <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
+                    <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
+                    <li class="uk-flex uk-flex-middle">
+                      <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
+                    </li>
+                    <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
+                  </ul>
+                  <!-- uk-pagination / select -->
+                </div>
+                <div class="uk-width-auto uk-hidden@l">
+                  <div class="uk-inline">
+                    <button class="uk-button uk-button-default" type="button">排序</button>
+                    <div uk-dropdown="boundary: .content">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">個案編號 ↑</a></li>
+                        <li><a href="#">個案編號 ↓</a></li>
+                        <li><a href="#">討論主題 ↑</a></li>
+                        <li><a href="#">討論主題 ↓</a></li>
+                        <li><a href="#">臨床情境 ↑</a></li>
+                        <li><a href="#">臨床情境 ↓</a></li>
+                        <li><a href="#">發起人 ↑</a></li>
+                        <li><a href="#">發起人 ↓</a></li>
+                        <li><a href="#">發起日期 ↑</a></li>
+                        <li><a href="#">發起日期 ↓</a></li>
+                        <li><a href="#">討論狀態 ↑</a></li>
+                        <li><a href="#">討論狀態 ↓</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- pagesBar - uk-pagination & uk-dropdown-nav -->
             </div>
             <!-- .uk-form -->
           </div>
