@@ -12,6 +12,7 @@
   <title>楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/fontawesome-svg-with-js.min.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900'>
@@ -126,7 +127,7 @@
   </header>
   <!-- header -->
   <section class="position-relative" uk-height-viewport="expand: true">
-    <div class="containerExpand uk-container uk-container-large">
+    <div class="containerExpand uk-container">
       <ul class="text-dark uk-breadcrumb uk-visible@m">
         <li><a class="linkline" href="#">首頁</a></li>
         <li><a class="linkline" href="#">Link</a></li>
@@ -146,157 +147,52 @@
             </div>
           </div>
           <!-- uk-heading-line -->
-          <ul class="border2 border_secondary uk-tab">
-            <li class="uk-active"><a href="03-knowledge2-1.html">討論列表<small class="eng fontSize07 d-block">Discussion List</small></a></li>
-            <li><a href="03-knowledge2-2.html">我的討論<small class="eng fontSize07 d-block">My Discussion</small></a></li>
-            <li><a href="03-knowledge2-3.html">新增討論<small class="eng fontSize07 d-block">Add Discussion</small></a></li>
-          </ul>
-          <!-- .uk-tab -->
           <div class="content uk-margin">
             <div class="p-2 p-md-3 uk-margin-medium uk-card uk-card-default">
-              <h2 class="btmline">抗血小板藥品是否能夠醫治XXX症狀的病人</h2>
-              <article class="uk-comment uk-grid-small" uk-grid>
-                <div class="uk-width-1-3@s uk-width-1-4@l">
-                  <header class="uk-comment-header uk-grid-small" uk-grid>
-                    <div class="uk-width-1-4 uk-width-1-3@s uk-width-1-4@m">
-                      <img class="w-100 uk-comment-avatar" src="img/man-user.svg" alt="個人照片">
-                    </div>
-                    <div class="uk-width-expand" uk-margin>
-                      <h3 class="fontSize1 uk-margin-remove"><a class="linkline" href="#"><strong class="text-dark">發起人姓名</strong></a></h3>
-                      <time><time><small class="w-100">2018-05-21 PM10:33</small></time></time>
-                    </div>
-                  </header>
-                  <div class="uk-visible@s" uk-margin>
-                    <a class="btn_secondary uk-button uk-button-primary" href="#reply" uk-toggle="target: #reply">回覆<small class="eng fontSize07 ml-1">Reply</small></a>
-                    <a class="btn_primary uk-button uk-button-primary" href="#" uk-toggle="target: #close">結束<small class="eng fontSize07 ml-1">Close</small></a>
-                    <a class="btn_primary uk-button uk-button-primary" href="03-knowledge2-5.html">修改<small class="eng fontSize07 ml-1">Edit</small></a>
-                    <a class="btn_primary uk-button uk-button-primary" href="#" uk-toggle="target: #delete">刪除<small class="eng fontSize07 ml-1">Delete</small></a>
-                  </div>
-                </div>
-                <div class="uk-width-expand@s">
-                  <div class="bg_lightGrey p-2 uk-comment-body" uk-margin>
-                    <div class="uk-flex uk-flex-between">
-                      <div>
-                        <span class="fontSize08 vertical_align10 text-white bg-secondary mr-1 uk-label">000000000100</span>
-                      </div>
-                      <div>
-                        <strong>Clinical Scenario</strong>
-                      </div>
-                    </div>
-                    <h3 class="m-0 uk-comment-title uk-flex uk-flex-middle"><strong class="mr-2">張大名</strong></h3>
-                    <time><small class="w-100">03/20/2109</small></time>
-                    <p class="m-0 text-justify">象常以直再程而農明。制實數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族，選情可！家急庭對關心有，年就身，你語問施簡所本寫眾別比的化顧約本治現生為型眾這對之近史懷。</p>
-                    <hr>
-                    <p class="m-0 text-justify"><span class="bg-dark mr-1 uk-label">評論內容<small class="eng fontSize07 ml-1">Comment</small></span></p>
-                    <h3 class="fontSizeH4 text-body m-0 text-justify">邊口響說里同裡決低來四解表……小效小男。身才人心生國消東善服色來金當。中票向裡就白資相全光現甚根較太元精地要票，用用國這……我公走社，用望色的以同；的開受開公國禮計人國認許會小門人臺們是接了</h3>
-                  </div>
-                  <div class="uk-margin-top uk-hidden@s" uk-margin>
-                    <a class="btn_secondary uk-button uk-button-primary" href="#reply" uk-toggle="target: #reply">回覆<small class="eng fontSize07 ml-1">Reply</small></a>
-                    <a class="btn_primary uk-button uk-button-primary" href="#" uk-toggle="target: #close">結束<small class="eng fontSize07 ml-1">Close</small></a>
-                    <a class="btn_primary uk-button uk-button-primary" href="03-knowledge2-5.html">修改<small class="eng fontSize07 ml-1">Edit</small></a>
-                    <a class="btn_primary uk-button uk-button-primary" href="#" uk-toggle="target: #delete">刪除<small class="eng fontSize07 ml-1">Delete</small></a>
-                  </div>
-                </div>
-              </article>
-              <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
-                <div id="reply" hidden>
-                  <form class="min_width1_2!@s uk-margin">
-                    <textarea class="edit uk-textarea uk-margin-small" rows="4" placeholder="Please edit your content"></textarea>
-                    <button class="btn_primary px-5 uk-button uk-button-primary" type="button">確　　認<small class="eng fontSize07 ml-1">Confirm</small></button>
-                  </form>
-                </div>
+              <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
+                <div class="min_width1_2!@s"></div>
               </div>
+              <span class="fontSize08 vertical_align10 text-white bg-secondary mr-1 uk-label">000000000100</span>
+              <h3 class="fontSizeH5 my-1"><strong class="mr-2">張大名</strong></h3>
+              <h3 class="fontSizeH5 m-0 text-justify">象常以直再程而農明。制實數人用路起百教高民味我各一院：和不民生投車氣、展機賣車外到。命顧百三邊由活病理英員天理老象要業聽族，選情可！家急庭對關心有，年就身，你語問施簡所本寫眾別比的化顧約本治現生為型眾這對之近史懷。</h3>
             </div>
             <!-- .uk-card -->
-            <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-              <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
-              <li class="uk-flex uk-flex-middle">
-                <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
-                  <option>1</option>
-                  <option>2</option>
-                </select>
-                <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
-              </li>
-              <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
-            </ul>
-            <!-- uk-pagination / select -->
-            <div class="uk-margin">
-              <ol class="listDecimalRow listBadge listBadgeR uk-list uk-list-striped">
-                <li class="li">
-                  <article class="uk-comment uk-grid-small" uk-grid>
-                    <div class="uk-width-1-4@s">
-                      <header class="uk-comment-header uk-grid-small" uk-grid>
-                        <div class="uk-width-1-4 uk-width-1-3@s uk-width-1-4@m">
-                          <img class="w-100 uk-comment-avatar" src="img/man-user.svg" alt="個人照片">
-                        </div>
-                        <div class="uk-width-expand" uk-margin>
-                          <h3 class="fontSize1 uk-margin-remove"><a class="linkline" href="#"><strong class="text-dark">回覆者姓名</strong></a></h3>
-                          <time><small class="w-100">2018-05-21 PM10:33</small></time>
-                          <button class="btn_secondary uk-button uk-button-primary" type="button" onclick="toggleShowElement(findChild(findParent(this, 'LI'), '.reply'))">回覆<small class="eng fontSize07 ml-1">Reply</small></button>
-                          <a class="btn_primary uk-button uk-button-primary" href="#" uk-toggle="target: #delete">刪除<small class="eng fontSize07 ml-1">Delete</small></a>
-                        </div>
-                      </header>
-                    </div>
-                    <div class="uk-width-3-5@s uk-width-2-3@m">
-                      <div class="uk-comment-body">
-                        <p class="m-0 text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                        <p class="border-top pt-1">
-                          <small>回覆：<strong class="text-dark">發起人姓名</strong></small>
-                          <a class="uk-float-right btn_primary uk-button uk-button-primary uk-button-small" href="03-knowledge2-5.html">修改<small class="eng fontSize07 ml-1">Edit</small></a>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                  <form class="reply uk-margin" uk-margin hidden>
-                    <textarea class="edit mb-2 uk-textarea" rows="4" placeholder="回覆"></textarea>
-                    <button class="btn_primary px-5 uk-button uk-button-primary" type="button">確認<small class="eng fontSize07 ml-1">Confirm</small></button>
-                  </form>
-                </li>
-                <li class="li">
-                  <article class="uk-comment uk-grid-small" uk-grid>
-                    <div class="uk-width-1-4@s">
-                      <header class="uk-comment-header uk-grid-small" uk-grid>
-                        <div class="uk-width-1-4 uk-width-1-3@s uk-width-1-4@m">
-                          <img class="w-100 uk-comment-avatar" src="img/man-user.svg" alt="個人照片">
-                        </div>
-                        <div class="uk-width-expand" uk-margin>
-                          <h3 class="fontSize1 uk-margin-remove"><a class="linkline" href="#"><strong class="text-dark">回覆者姓名</strong></a></h3>
-                          <time><small class="w-100">2018-05-21 PM10:33</small></time>
-                          <button class="btn_secondary uk-button uk-button-primary" type="button" onclick="toggleShowElement(findChild(findParent(this, 'LI'), '.reply'))">回覆<small class="eng fontSize07 ml-1">Reply</small></button>
-                          <a class="btn_primary uk-button uk-button-primary" href="#" uk-toggle="target: #delete">刪除<small class="eng fontSize07 ml-1">Delete</small></a>
-                        </div>
-                      </header>
-                    </div>
-                    <div class="uk-width-3-5@s uk-width-2-3@m">
-                      <div class="uk-comment-body">
-                        <p class="m-0 text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                        <p class="border-top pt-1">
-                          <small>回覆：<strong class="text-dark">1樓姓名</strong></small>
-                          <a class="uk-float-right btn_primary uk-button uk-button-primary uk-button-small" href="03-knowledge2-5.html">修改<small class="eng fontSize07 ml-1">Edit</small></a>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                  <form class="reply uk-margin" uk-margin hidden>
-                    <textarea class="edit mb-2 uk-textarea" rows="4" placeholder="回覆"></textarea>
-                    <button class="btn_primary px-5 uk-button uk-button-primary" type="button">確認<small class="eng fontSize07 ml-1">Confirm</small></button>
-                  </form>
-                </li>
-              </ol>
-            </div>
+            <form>
+              <div class="uk-grid-small uk-child-width-expand@s" uk-margin uk-grid>
+                <div class="uk-width-1-1">
+                  <label class="w-100 font-weight-bold" for="i_topic">討論主題</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_topic" type="text" placeholder="Please enter the topic">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s">
+                  <label class="w-100 font-weight-bold" for="form_date">發起日期</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="form_date" type="text" placeholder="Please select the initiation date">
+                  </div>
+                </div>
+                <div class="min_width1_2!@s">
+                  <label class="w-100 font-weight-bold" for="i_member">討論成員</label>
+                  <div class="uk-form-controls">
+                    <input class="uk-input" id="i_member" type="text" placeholder="Please Type the name and press the Enter key" onkeydown="enterClone('.cloneBlock', '.cloneBlock span', this, event)">
+                  </div>
+                  <div class="cloneBlock mt-2"><small class="mr-2 badge badge-secondary uk-hidden" uk-alert><span>Keyword Text</span><a class="uk-alert-close" title="刪除 Delete" uk-close></a></small></div>
+                </div>
+                <div class="min_width1-1">
+                  <label class="w-100 font-weight-bold" for="i_content">討論內容</label>
+                  <div class="uk-form-controls">
+                    <textarea id="i_content" class="uk-textarea" rows="5" placeholder="Please edit your content"></textarea>
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
+                    <div><a class="btn_secondary w-100 uk-button uk-button-primary" href="03-knowledge2-3.html">Cancel</a></div>
+                    <div><button class="btn_primary w-100 uk-button uk-button-primary" type="button">Add</button></div>
+                  </div>
+                </div>
+              </div>
+            </form>
             <!-- .uk-margin -->
-            <ul class="pagination_paddingS uk-pagination uk-flex-center" uk-margin>
-              <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁<small class="eng fontSize07 ml-1">Last</small></span></a></li>
-              <li class="uk-flex uk-flex-middle">
-                <select class="min_width50 w-auto mr-1 uk-select uk-form-small">
-                  <option>1</option>
-                  <option>2</option>
-                </select>
-                <span class="uk-text-nowrap">&nbsp;/&nbsp;<span class="sum">20</span></span>
-              </li>
-              <li class="uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="下一頁"><span class="uk-visible@s">下一頁<small class="eng fontSize07 ml-1">Next</small></span><span class="ml-2" uk-pagination-next aria-label="下一頁"></span></a></li>
-            </ul>
-            <!-- uk-pagination / select -->
           </div>
         </div>
       </div>
@@ -310,8 +206,8 @@
       <form>
         <div class="uk-modal-body">你確定要結束此主題討論?<br><small class="eng fontSize07 ml-1">Are you sure you want to end this topic discussion?</small></div>
         <div class="uk-modal-footer uk-text-right">
-          <button class="uk-button uk-button-default uk-modal-close" type="button">取消<small class="eng fontSize07 ml-1">Cancel</small></button>
-          <button class="uk-button uk-button-primary">結束<small class="eng fontSize07 ml-1">Close</small></button>
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+          <button class="uk-button uk-button-primary">Close</button>
         </div>
       </form>
     </div>
@@ -322,8 +218,8 @@
       <form>
         <div class="uk-modal-body">你確定要刪除此主題討論? 所有內容在刪除後不再留存。<br><small class="eng fontSize07 ml-1">Are you sure you want to delete this topic discussion? All content will not be retained after deletion.</small></div>
         <div class="uk-modal-footer uk-text-right">
-          <button class="uk-button uk-button-default uk-modal-close" type="button">取消<small class="eng fontSize07 ml-1">Cancel</small></button>
-          <button class="uk-button uk-button-primary">刪除<small class="eng fontSize07 ml-1">Delete</small></button>
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+          <button class="uk-button uk-button-primary">Delete</button>
         </div>
       </form>
     </div>
@@ -355,8 +251,18 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/bootstrap-datepicker.zh-TW.min.js"></script>
   <script src="js/fontawesome-all.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    //datepicker
+    $('#form_date').datepicker({
+      language: "zh-TW",
+      autoclose: true,
+      todayHighlight: true
+    });
+  </script>
 </body>
 
 </html>
