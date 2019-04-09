@@ -185,6 +185,7 @@ small.eng {line-height: normal;}
 .fstMultipleMode .fstQueryInput {font-size: inherit; padding: 0;}
 .fstMultipleMode .fstControls {display: flex; align-items: center; flex-wrap: wrap; padding: 1px 10px; min-height: 38px;}
 .fstResults {top: calc(100% + 5px);}
+.fstNoResults {font-size: inherit;}
 
 /* Bootstrap 4 Style
 ---------------------------------------------------- */
