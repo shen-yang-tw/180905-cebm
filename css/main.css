@@ -34,7 +34,7 @@ a:hover, a:hover>span, a:hover>strong, a:hover>small, a:hover>*>span, a:hover>*>
 /* a:hover, a:hover>span, a:hover>strong, a:hover>small, a:hover>*>span, a:hover>*>strong {text-decoration: underline;} */
 a:hover, a:hover>* {transition: all 500ms ease;}
 .notransition, [class*=btn]:hover *, [class*=uk-card]:hover, [class*=uk-button]:hover *, [class*=uk-slidenav]:hover *, [class*=uk-nav]:hover a, [class*=uk-tab]:hover a, [class*=list]:hover a {transition: none;}
-a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px solid rgba(30, 135, 240, 0.85) !important; -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; outline-color: rgba(30, 135, 240, 0.85);}
+a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 1px solid rgba(30, 135, 240, 0.85) !important; -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; outline: 1px solid white !important;}
 /* *:focus {-webkit-box-shadow: 0 0 0 3px #1e87f0 !important; box-shadow: 0 0 0 3px #1e87f0 !important;} */
 a.disabled, fieldset:disabled a {pointer-events: none; opacity: .65;}
 
@@ -484,7 +484,6 @@ caption {caption-side: top;}
 
 [class*=uk-] * {text-transform: inherit !important;}
 
-
 .grid_xsmall {margin-left: -10px;}
 .grid_xxsmall {margin-left: -5px;}
 .grid_xsmall>* {padding-left: 10px;}
@@ -589,7 +588,10 @@ caption {caption-side: top;}
 
 .uk-modal.uk-flex-top.uk-open {display: flex !important;}
 
-.uk-form-custom input[type=file]::before {content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+.uk-form-custom {width: 50%; min-height: 27px;}
+.uk-form-custom input[type=file]::before {content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: white;}
+.uk-form-custom input[type=file]:focus {opacity: 1;}
+.uk-form-custom input[type=file]:focus+.uk-link {z-index: 1; position: absolute; width: 100%; left: 0;}
 
 @media (min-width:640px) {
 .uk-width-auto\@s {flex: inherit;}

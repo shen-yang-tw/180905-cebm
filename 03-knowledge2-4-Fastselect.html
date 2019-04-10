@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/uikit.min.css">
   <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css">
+  <link rel="stylesheet" href="css/fastselect.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/fontawesome-svg-with-js.min.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900'>
@@ -174,9 +175,13 @@
                 <div class="min_width1_2!@s">
                   <label class="w-100 font-weight-bold" for="i_member">討論成員</label>
                   <div class="uk-form-controls">
-                    <input class="uk-input" id="i_member" type="text" placeholder="Please Type the name and press the Enter key" onkeydown="enterClone('.cloneBlock', '.cloneBlock span', this, event)">
+                    <select class="multipleSelect" multiple name="name">
+                      <option value="Bangladesh">Bangladesh</option>
+                      <option selected value="Barbados">Barbados</option>
+                      <option selected value="Belarus">Belarus</option>
+                      <option value="Belgium">Belgium</option>
+                    </select>
                   </div>
-                  <div class="cloneBlock mt-2"><small class="mr-2 badge badge-secondary uk-hidden" uk-alert><span>Keyword Text</span><a class="uk-alert-close" title="刪除 Delete" uk-close tabindex="0"></a></small></div>
                 </div>
                 <div class="min_width1-1">
                   <label class="w-100 font-weight-bold" for="i_content">討論內容</label>
@@ -253,6 +258,7 @@
   <script src="js/uikit-icons.min.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/bootstrap-datepicker.zh-TW.min.js"></script>
+  <script src="js/fastselect.standalone.min.js"></script>
   <script src="js/fontawesome-all.min.js"></script>
   <script src="js/script.js"></script>
   <script>
@@ -262,6 +268,8 @@
       autoclose: true,
       todayHighlight: true
     });
+    //Fastselect
+    $('.multipleSelect').fastselect();
   </script>
 </body>
 

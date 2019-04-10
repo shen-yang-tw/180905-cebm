@@ -283,7 +283,7 @@ function keyEnter(event) {
   }
 }
 
-//Input and Clone - 03-knowledge2-5.html
+//Input and Clone - 03-knowledge2-4.html
 function enterClone(cloneBlock, setName, thisInput, event) {
   var inputVal = thisInput.value;
   // var nameBlock = document.querySelector(cloneBlock).lastChild;
