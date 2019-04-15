@@ -82,7 +82,7 @@
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a></span>
                 <span class="bgBlack uk-visible@m"><a class="min_width50 text-dark text-center" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a></span>
               </div>
-              </div>
+            </div>
             <div class="uk-hidden@m uk-navbar-right">
               <a class="min_width50 line_height1 text-dark text-right" href="#login" uk-toggle hidden>登入<small class="eng fontSize07 ml-1">Login</small></a>
               <a class="min_width50 line_height1 text-dark text-right" href="#">登出<small class="eng fontSize07 ml-1">Logout</small></a>
@@ -137,7 +137,7 @@
       <div class="uk-grid-match uk-grid-small uk-child-width-1-2@m uk-margin-bottom" uk-margin uk-grid>
         <div class="uk-width-2-3@m uk-width-3-4@l">
           <!-- <div class="bg_primary line_height_ukbtn border_transparent px-2 text-white border-top border-bottom uk-text-truncate"><i class="mr-1 fas fa-info-circle"></i>案下議示是新是再洲朋入……只的香灣正出？就點告度邊提</div> -->
-          <a class="fontSizeH5 remove_underline btn_primary p-2 w-100 text-left text-white" href="#"><i class="mr-1 fas fa-info-circle"></i>案下議示是新是再洲朋入……只的香灣正出？就點告度邊提</a>
+          <a class="fontSizeH5 remove_underline btn_primary p-2 w-100 text-white uk-text-truncate" href="#"><i class="mr-1 fas fa-info-circle"></i>案下議示是新是再洲朋入……只的香灣正出？就點告度邊提</a>
         </div>
         <div class="uk-width-auto@s uk-width-1-3@m uk-width-1-4@l"><a class="btn_secondary uk-flex uk-flex-middle uk-flex-center w-100 uk-button uk-button-primary" href="#">進入實證評讀<small class="eng fontSize07 ml-1">Start EBM Appraisal</small></a></div>
         <div class="uk-width-1-2@m uk-width-1-3@l">
@@ -157,7 +157,7 @@
         <div class="uk-width-1-2@m uk-width-2-3@l">
           <div class="rounded20@s uk-card uk-card-small uk-card-default uk-card-body">
             <div class="uk-grid-match uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" uk-margin uk-grid uk-height-match="target: > div > div > div:nth-child(2)">
-              <div class="uk-width-1-2 uk-width-1-4@l">
+              <div class="uk-width-1-2@s">
                 <div class="heightJS uk-inline">
                   <div class="rounded20@s bg_primary opacity10 uk-position-cover"></div>
                   <div class="position-relative">
@@ -173,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="uk-width-1-2 uk-width-1-4@l">
+              <!-- <div class="uk-width-1-2 uk-width-1-4@l">
                 <div class="heightJS uk-inline">
                   <div class="rounded20@s bg_primary opacity10 uk-position-cover"></div>
                   <div class="position-relative">
@@ -188,13 +188,13 @@
                     <h2 class="fontSizeH1 color_primary text-center font-weight-bold m-0 position-relative"><a class="google_roboto font_weight_900" href="#">12</a></h2>
                   </div>
                 </div>
-              </div>
-              <div class="uk-width-1-2@l">
+              </div> -->
+              <div class="uk-width-1-2@s">
                 <div class="pb-4 uk-inline">
-                  <div class="rounded20@s bg_secondary opacity10 uk-position-cover"></div>
+                  <div class="rounded20@s bg_primary opacity10 uk-position-cover"></div>
                   <div class="position-relative">
-                    <div class="bg_secondary opacity10 roundedT20@s uk-position-cover"></div>
-                    <h2 class="fontSize09 color_secondary font-weight-bold m-0 px-3 py-1 position-relative">Not Finished</h2>
+                    <div class="bg_primary opacity10 roundedT20@s uk-position-cover"></div>
+                    <h2 class="fontSize09 color_primary font-weight-bold m-0 px-3 py-1 position-relative">Not Finished</h2>
                   </div>
                   <div class="position-relative">
                     <ul class="min_height100 list_collapse px-3 m-0 uk-list">
@@ -210,7 +210,7 @@
                       </li>
                     </ul>
                   </div>
-                  <a class="color_secondary d-block text-right py-1 pr-3 uk-position-bottom" href="#">more</a>
+                  <a class="color_primary d-block text-right py-1 pr-3 uk-position-bottom" href="#">more</a>
                 </div>
               </div>
               <div class="uk-width-1-2 uk-width-1-4@s">
@@ -296,9 +296,13 @@
               <h2 class="bg_secondary roundedT20@s fontSizeH4 text-white m-0 px-3 py-2 uk-text-break position-relative">PDAs Search</h2>
               <form class="form_space_m p-3 position-relative uk-form-horizontal" uk-margin>
                 <div>
-                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_text3">Division</label>
+                  <label class="fontSize1 font-weight-bold uk-form-label" for="form_sel">Division</label>
                   <div class="uk-form-controls">
-                    <input class="uk-input" id="form_text3" type="text" placeholder="Please enter Divisions">
+                    <!-- <input class="uk-input" id="form_text3" type="text" placeholder="Please enter Divisions"> -->
+                    <select id="form_sel" class="uk-select">
+                      <option>Option 01</option>
+                      <option>Option 02</option>
+                    </select>
                   </div>
                 </div>
                 <div>
