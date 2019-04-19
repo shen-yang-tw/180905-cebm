@@ -204,7 +204,7 @@
               </a>
             </div>
             <div>
-              <a class="py-3 w-100 btn btn-light" href="mailto:aaa@gamil.com">
+              <a class="py-3 w-100 btn btn-light" href="#mail" uk-toggle>
                 <i class="fas fa-envelope fa-3x"></i>
                 <p class="mt-2">寄送紀錄單<br>E-mail</p>
               </a>
@@ -222,6 +222,38 @@
     <!-- .containerExpand uk-container -->
   </section>
   <!-- page main content -->
+  <div id="mail" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">寄信</h2>
+      </div>
+      <div class="uk-modal-body">
+        <form>
+          <div class="uk-margin">
+            <label class="w-100 uk-form-label">收件人
+              <input class="uk-input" type="text" placeholder="">
+            </label>
+          </div>
+          <div class="uk-margin">
+            <label class="w-100 uk-form-label">標題
+              <input class="uk-input" type="text" placeholder="">
+            </label>
+          </div>
+          <div class="uk-margin">
+            <label class="w-100 uk-form-label">內容
+              <textarea class="uk-textarea" id="t_txt" rows="5" placeholder=""></textarea>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="text-right uk-modal-footer">
+        <a href="#" class="btn_secondary uk-button uk-button-primary">確認</a>
+        <button class="uk-button uk-button-default uk-modal-close" type="button">取消</button>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal-login / simple -->
   <div id="footer" class="p-3 text-dark position-relative">
     <div class="containerExpand uk-container uk-container-large position-relative">
       <div class="position-relative"><a class="remove_underline text-dark px-1 uk-position-absolute uk-visible@m" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z" style="left:-30px">:::</a></div>
