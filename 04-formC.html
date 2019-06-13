@@ -341,12 +341,7 @@
                   </div>
                   <div class="uk-width-1-3@m"><label class="fontSize1 font-weight-bold uk-form-label">Appraised Files</label></div>
                   <div class="uk-width-2-3@m">
-                    <div class="w-100 js-upload" uk-form-custom>
-                      <input class="w-100" type="file" multiple>
-                      <button class="w-100 uk-button uk-button-default" type="button" tabindex="-1">Select</button>
-                      <p></p>
-                    </div>
-                    <div class="js-upload uk-placeholder uk-text-center">
+                    <div class="mb-2 js-upload uk-placeholder uk-text-center">
                       <span uk-icon="icon: cloud-upload"></span>
                       <span class="uk-text-middle">Attach files by dropping them here or</span>
                       <div uk-form-custom>
@@ -354,7 +349,7 @@
                         <span class="uk-link">selecting multiple files</span>
                       </div>
                     </div>
-                    <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+                    <progress id="js-progressbar" class="mt-2 uk-progress" value="0" max="100" hidden></progress>
                   </div>
                   <div class="uk-width-1-3@m"><label class="fontSize1 d-inline-block mr-1 font-weight-bold uk-form-label" for="form_se">Level of Evidence</label><a href="#viewFile" title="檔案下載" uk-toggle><i class="fontSize1_4 color_secondary fas fa-info-circle"></i></a></div>
                   <div class="uk-width-2-3@m">
@@ -483,9 +478,6 @@
   <script src="js/script.js"></script>
   <script>
     var bar = document.getElementById('js-progressbar');
-    // UIkit.util.on('.js-upload', 'upload', function(e, files) {
-    //   console.log(files);
-    // });
     UIkit.upload('.js-upload', {
       url: '',
       multiple: true,
