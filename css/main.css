@@ -3,9 +3,8 @@
 ---------------------------------------------------------------------------------- */
 * {font-family: '微軟正黑體', 'Microsoft JhengHei', 'PingFang TC', 'Heiti TC', 'Microsoft YaHei', Helvetica, Arial, Verdana, sans-serif !important; text-shadow: none !important;}
 [class*=fa-]:not(.fa-layers-text):not(.font_default) {font-family: "Font Awesome 5 Free" !important;}
-html {font-size: 16px !important;}
-html.fontSizeM {font-size: 18px !important;}
-html.fontSizeL {font-size: 20px !important;}
+html.fontSizeM {font-size: calc(18rem/16) !important;}
+html.fontSizeL {font-size: calc(20rem/16) !important;}
 body {color: #6f6f6f; background-color: #F5F5F5; line-height: 1.5 !important;}
 body {font-size: 1rem !important;} /* 1rem x 16px = 16px , line-height=1.5 */
 h1, .fontSizeH1 {font-size: 1.875rem !important;} /* 30px / 16px = 1.875rem */
