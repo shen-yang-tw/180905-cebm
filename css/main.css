@@ -588,7 +588,6 @@ caption {caption-side: top;}
 .uk-modal.uk-flex-top.uk-open {display: flex !important;}
 
 .uk-form-custom {width: 50%; min-height: 27px;}
-.uk-form-custom input[type=file]::before {content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: white;}
 .uk-form-custom input[type=file]:focus {opacity: 1;}
 .uk-form-custom input[type=file]:focus+.uk-link {z-index: 1; position: absolute; width: 100%; left: 0;}
 
