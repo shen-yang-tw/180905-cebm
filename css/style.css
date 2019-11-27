@@ -154,7 +154,7 @@ a.color_secondary:hover, a.color_secondary:hover *:not([class*=color_]):not([cla
 .bg_heart_index {background-position-y: -150px; background-size: 570px;}
 
 /* .circleTab {background-image: url("data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjaXJjbGUiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgY2xhc3M9InN2Zy1pbmxpbmUtLWZhIGZhLWNpcmNsZSBmYS13LTE2IGZhLTN4Ij48cGF0aCBmaWxsPSIjMzY4NjNkIiBkPSJNMjU2IDhDMTE5IDggOCAxMTkgOCAyNTZzMTExIDI0OCAyNDggMjQ4IDI0OC0xMTEgMjQ4LTI0OFMzOTMgOCAyNTYgOHoiPjwvcGF0aD48L3N2Zz4=");} */
-header .uk-navbar-right>.uk-flex>span:nth-child(6)>.circleTab {min-height: 83px;}
+header .uk-navbar-right>.uk-flex>span:nth-child(6)>.circleTab {min-height: 91px;}
 header .uk-navbar-right>.uk-flex>span:nth-child(6)>.circleTab>.pb-2 {margin-top: 7px;}
 .circleTab>img {width: 45px;}
 .circleTab {border-radius: 50%!important;}
